@@ -9,8 +9,17 @@ a {
   margin: 0;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
+
 body {
   background-color: black;
   height: 100vh;
   color: rgb(148, 230, 26);
+  font-family: "Lato", sans-serif;
 }
+
+ul {
+  list-style: none;
+}
+
+@import "./structure/main.scss";

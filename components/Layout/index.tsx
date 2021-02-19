@@ -6,7 +6,7 @@ const Layout = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <section className='block'>{children}</section>
+      <main className='main--block'>{children}</main>
     </>
   );
 };
