@@ -6,8 +6,6 @@ const Artist = (props) => {
 };
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  console.log(context.query);
-
   return { props: {} };
 };
 

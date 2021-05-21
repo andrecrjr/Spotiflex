@@ -6,6 +6,9 @@ const Layout = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
+      <header>
+        <h1>Spotiflex</h1>
+      </header>
       <main className='main--block'>{children}</main>
     </>
   );

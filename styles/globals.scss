@@ -7,6 +7,7 @@ a {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
@@ -22,4 +23,10 @@ ul {
   list-style: none;
 }
 
+#main-box {
+  margin-top: 60px;
+}
+
 @import "./structure/main.scss";
+@import "./structure/header.scss";
+@import "./structure/herobanner.scss";

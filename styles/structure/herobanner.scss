@@ -1,0 +1,40 @@
+.block--herobanner {
+  width: 100%;
+  background: url("/images/young-man-song.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    width: 21rem;
+    margin-left: 45px;
+
+    h2 {
+      font-size: 1.4rem;
+      color: white;
+      text-shadow: 2px 3px 5px black;
+    }
+    a {
+      cursor: pointer;
+      display: flex;
+      border: 3px solid black;
+      border-radius: 10px;
+      padding: 0.6rem;
+      width: 55%;
+      text-align: center;
+      justify-content: center;
+      margin-top: 1.875rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 2px 3px 5px black;
+      background: #282828c9;
+      transition: all 500ms ease-in;
+      &:hover {
+        padding: 10px;
+      }
+    }
+  }
+}
