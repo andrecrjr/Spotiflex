@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "./Menu";
 
 const Layout = ({ title, children }) => {
   return (
@@ -6,9 +7,7 @@ const Layout = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <header>
-        <h1>Spotiflex</h1>
-      </header>
+      <Header />
       <main className='main--block'>{children}</main>
     </>
   );
