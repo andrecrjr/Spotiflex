@@ -13,7 +13,6 @@ export default function Home({
   playlistsGenre?: PlaylistItems[];
   latestReleases?: ISpotifyAlbum[];
 }) {
-  console.log(playlistsGenre);
   return (
     <Layout title='Main Page'>
       <Herobanner />

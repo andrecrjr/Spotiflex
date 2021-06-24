@@ -1,18 +1,25 @@
 .block {
   height: 100vh;
   overflow: hidden;
+
   &--title {
     margin-bottom: 25px;
+  }
+  &--horizontal-list {
+    &:first-of-type {
+      margin-top: 3rem;
+    }
+    margin: 3.5rem 0 0 1.5rem;
   }
   &__pane {
     display: inline-flex;
     align-items: center;
-    overflow: auto hidden;
+    overflow: hidden;
     width: 100%;
     justify-self: center;
 
-    margin-left: 1.25rem;
     &--genre {
+      cursor: pointer;
       width: 150px;
       height: 150px;
       border-radius: 10%;
@@ -23,6 +30,7 @@
       margin-bottom: 25px;
       margin-top: auto;
       color: white;
+      z-index: 2;
     }
     &--space {
       position: relative;
@@ -50,6 +58,11 @@
     &--section {
       width: 150px;
       height: 150px;
+      display: flex;
+      position: relative;
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
     }
   }
 }
