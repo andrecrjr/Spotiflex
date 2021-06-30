@@ -2,7 +2,7 @@
   width: 100%;
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   overflow: hidden;
   h1 {
     font-size: 1.3rem;
@@ -14,11 +14,10 @@
     margin-right: 2rem;
     ul {
       transition: all 300ms;
-      transform: translateX(100vh);
+      transform: translateX(-100%);
       display: flex;
       flex-direction: column;
       position: fixed;
-      right: 0;
     }
   }
 }
@@ -29,8 +28,7 @@
 
 .menu--check:checked {
   ~ ul {
-    transform: translateX(0%);
-    width: 50%;
+    transform: translateX(100%);
     li {
     }
   }

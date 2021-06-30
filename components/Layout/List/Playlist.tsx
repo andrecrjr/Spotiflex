@@ -21,3 +21,24 @@ export const GeneralPlaylist: React.FC<{
     </>
   );
 };
+
+export const GeneralAlbum: React.FC<{
+  album: ISpotifyAlbum;
+  slugName: string;
+}> = ({ album, slugName }) => {
+  const router = useRouter();
+  return (
+    <>
+      <section>
+        <div className='block__pane--space' key={album.id}>
+          <div
+            className='block__pane--genre'
+            onClick={() => router.push(`/genre/${album.id}`)}
+          >
+            <Image src={album.images[0].url} alt={album.name} layout='fill' />
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};

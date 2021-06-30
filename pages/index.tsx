@@ -18,12 +18,12 @@ export default function Home({
       <Herobanner />
       <section className='block' id='main-box'>
         <SongList
-          listType={{ playlists: playlistsGenre, album: [] }}
+          listType={{ playlists: playlistsGenre }}
           name={"Genre Playlist"}
           iconsWithTitle={true}
         />
         <SongList
-          listType={{ playlists: [], album: latestReleases }}
+          listType={{ albums: latestReleases }}
           name={"Latest Users"}
           iconsWithTitle={false}
         />
