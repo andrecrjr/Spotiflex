@@ -36,9 +36,7 @@
       position: relative;
       width: 100%;
       height: auto;
-      &:not(:first-child) {
-        margin: 0 15px;
-      }
+      margin-right: 25px;
     }
     &--image {
       transition: 800ms;

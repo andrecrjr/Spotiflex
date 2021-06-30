@@ -29,6 +29,7 @@
 .menu--check:checked {
   ~ ul {
     transform: translateX(100%);
+    width: 2rem;
     li {
     }
   }
