@@ -1,36 +1,42 @@
 .header {
   width: 100%;
-  position: fixed;
+  // position: fixed;
   display: flex;
-  // justify-content: space-between;
   overflow: hidden;
   h1 {
     font-size: 1.3rem;
     margin-left: 25px;
   }
+  .menu,
+  .logo {
+    margin-top: 0.9375rem;
+  }
+  .menu {
+    position: fixed;
+    left: 1.5625rem;
+    transition: all 200ms;
+    &.opened {
+      left: $menu-size;
+      margin-left: 1.5625rem;
+    }
+  }
+  .logo {
+    position: absolute;
+    right: 1.5625rem;
+    font-weight: bold;
+  }
   &__menu {
     display: flex;
     justify-content: flex-end;
     margin-right: 2rem;
+
     ul {
-      transition: all 300ms;
-      transform: translateX(-100%);
       display: flex;
       flex-direction: column;
-      position: fixed;
     }
   }
 }
 
 .open-menu {
   z-index: 2;
-}
-
-.menu--check:checked {
-  ~ ul {
-    transform: translateX(100%);
-    width: 2rem;
-    li {
-    }
-  }
 }

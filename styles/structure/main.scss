@@ -1,5 +1,9 @@
 @use "structure.scss";
 
+.main--block {
+  overflow: hidden;
+}
+
 @media (min-width: 661px) {
   .block {
     &__pane {

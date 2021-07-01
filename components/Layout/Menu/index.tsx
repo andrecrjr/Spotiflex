@@ -1,19 +1,17 @@
 import React from "react";
 
 function Menu() {
+  const openMenu = () => {
+    document.querySelector(".main--grid").classList.toggle("open--menu");
+    document.querySelector(".menu").classList.toggle("opened");
+  };
   return (
     <header className='header'>
+      <div className='menu' onClick={openMenu}>
+        Menu
+      </div>
+      <div className='logo'>Spotiflex</div>
       <nav className='header__menu'>
-        <label htmlFor='open-menu' className='open-menu'>
-          <div className='menu'>Menu</div>
-        </label>
-        <input
-          type='checkbox'
-          name='open-menu'
-          className='menu--check'
-          id='open-menu'
-          style={{ width: "0px" }}
-        />
         <ul>
           <li>Home</li>
           <li>Playlists</li>

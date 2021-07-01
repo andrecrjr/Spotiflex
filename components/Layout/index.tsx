@@ -7,8 +7,10 @@ const Layout = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <Header />
-      <main className='main--block'>{children}</main>
+      <section className='main--grid'>
+        <Header />
+        <main className='main--block'>{children}</main>
+      </section>
     </>
   );
 };
