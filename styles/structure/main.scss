@@ -3,6 +3,10 @@
 .main--block {
   overflow: hidden;
 }
+.main--wrapper {
+  overflow-x: hidden;
+  height: 100vh;
+}
 
 @media (min-width: 661px) {
   .block {

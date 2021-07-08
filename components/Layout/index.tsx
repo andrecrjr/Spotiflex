@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React, { ReactChildren } from "react";
 import Header from "./Menu";
 
 const Layout = ({ title, children }) => {
@@ -9,7 +10,9 @@ const Layout = ({ title, children }) => {
       </Head>
       <section className='main--grid'>
         <Header />
-        <main className='main--block'>{children}</main>
+        <section className='main--wrapper'>
+          <main className='main--block'>{children}</main>
+        </section>
       </section>
     </>
   );
