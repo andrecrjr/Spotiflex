@@ -8,7 +8,6 @@ const SongList: React.FC<{
   name: string;
   iconsWithTitle: boolean;
 }> = ({ listType: { playlists = [], albums = [] }, name }) => {
-  console.log(albums);
   return (
     <section className='block--horizontal-list'>
       <h1 className='block--title'>{name}:</h1>

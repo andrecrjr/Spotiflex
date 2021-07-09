@@ -65,7 +65,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     playlists: { items },
   } = await data.json();
 
-  console.log(items);
   return {
     props: { items, title: params.id },
     revalidate: 5,

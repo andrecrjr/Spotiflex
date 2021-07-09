@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import CarouselButton from './CarouselButton';
 import { GeneralPlaylist, GeneralAlbum } from './Playlist';
@@ -89,4 +89,4 @@ const Carousel: React.FC<{
   );
 };
 
-export default Carousel;
+export default memo(Carousel);
