@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const CarouselButton: React.FC<{
   fn: (e: React.MouseEvent) => void;

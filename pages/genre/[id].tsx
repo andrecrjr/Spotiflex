@@ -1,24 +1,23 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-import { ISpotifyPlaylist } from "../../types/spotifyTypes";
-import { getPublicAuth } from "../../helper";
-import Layout from "../../components/Layout";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { ISpotifyPlaylist } from '../../types/spotifyTypes';
+import { getPublicAuth } from '../../helper';
+import Layout from '../../components/Layout';
 
 interface PropsGenre {
   items: ISpotifyPlaylist[];
   title?: string;
 }
 
-function Genre({ items, title }: PropsGenre, loading) {
-  console.log(loading);
+const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
     <Layout title={title}>
-      <div className=''>
+      <section className='main--block__page'>
         <h1>{title}</h1>
 
         <ul className='block__wrapper'>
           {items &&
-            items.map((item) => (
-              <a href={item.href}>
+            items.map((item, index) => (
+              <a href={item.href} key={index}>
                 <style jsx>{`
                   .block__genre--section {
                     background: url(${item.images[0].url});
@@ -29,18 +28,18 @@ function Genre({ items, title }: PropsGenre, loading) {
               </a>
             ))}
         </ul>
-      </div>
+      </section>
     </Layout>
   );
-}
+};
 
 export default Genre;
 
-export const getStaticPaths: GetStaticPaths = async (context) => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const auth = await getPublicAuth(process.env.SERVER_URL);
-  let paths = [{ params: { id: "rock" } }];
+  let paths = [{ params: { id: 'rock' } }];
 
-  const data = await fetch("https://api.spotify.com/v1/browse/categories", {
+  const data = await fetch('https://api.spotify.com/v1/browse/categories', {
     headers: {
       Authorization: `${auth.token_type} ${auth.access_token}`,
     },

@@ -1,8 +1,11 @@
-import Head from "next/head";
-import React, { ReactChildren } from "react";
-import Header from "./Menu";
+import Head from 'next/head';
+import React from 'react';
+import Header from './Menu';
 
-const Layout = ({ title, children }) => {
+const Layout: React.FC<{ title: string; children: React.ReactNode }> = ({
+  title,
+  children,
+}) => {
   return (
     <>
       <Head>

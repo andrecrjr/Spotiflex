@@ -1,8 +1,10 @@
-import "../styles/globals.scss";
+import React from 'react';
+import '../styles/globals.scss';
+import type { AppProps /*, AppContext */ } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
-}
+};
 
 // MyApp.getInitialProps = async (appContext: AppContext) => {
 //   const appProps: GlobalContext = await App.getInitialProps(appContext);

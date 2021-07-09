@@ -1,7 +1,9 @@
 @use "structure.scss";
 
 .main--block {
-  overflow: hidden;
+  &__page {
+    margin-top: 50px;
+  }
 }
 .main--wrapper {
   overflow-x: hidden;

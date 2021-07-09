@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { PlaylistItems, ISpotifyAlbum } from "../../../types";
-import CarouselButton from "./CarouselButton";
-import { GeneralPlaylist, GeneralAlbum } from "./Playlist";
+import React, { useState } from 'react';
+import { PlaylistItems, ISpotifyAlbum } from '../../../types';
+import CarouselButton from './CarouselButton';
+import { GeneralPlaylist, GeneralAlbum } from './Playlist';
 
 const Carousel: React.FC<{
   listType: {
@@ -18,10 +18,10 @@ const Carousel: React.FC<{
 
   const nextStep = (e: React.MouseEvent) => {
     e.preventDefault();
-    let scrollWidth = document.querySelector(
+    const scrollWidth = document.querySelector(
       `.block__pane[data-carousel=carousel-${slugName}]`
     ).scrollWidth;
-    let windowPane = document.querySelector(
+    const windowPane = document.querySelector(
       `.block__pane[data-carousel=carousel-${slugName}]`
     ).clientWidth;
     if (scrollWidth - windowPane >= Math.abs(width)) {
@@ -30,10 +30,10 @@ const Carousel: React.FC<{
   };
 
   const previousStep = (e: React.MouseEvent) => {
-    let scrollWidth = document.querySelector(
+    const scrollWidth = document.querySelector(
       `.block__pane[data-carousel=carousel-${slugName}]`
     ).scrollWidth;
-    let windowPane = document.querySelector(
+    const windowPane = document.querySelector(
       `.block__pane[data-carousel=carousel-${slugName}]`
     ).clientWidth;
     e.preventDefault();
@@ -59,11 +59,13 @@ const Carousel: React.FC<{
             <div className='block__pane' data-carousel={`carousel-${slugName}`}>
               {iconsWithTitle &&
                 playlists &&
-                playlists?.map((item) => <GeneralPlaylist album={item} />)}
+                playlists?.map((item, index) => (
+                  <GeneralPlaylist key={index} album={item} />
+                ))}
             </div>
           </ul>
-          <CarouselButton fn={nextStep} iconValue={"➡️"} />
-          <CarouselButton fn={previousStep} iconValue={"⬅️"} />
+          <CarouselButton fn={nextStep} iconValue={'➡️'} />
+          <CarouselButton fn={previousStep} iconValue={'⬅️'} />
         </>
       )}
 
@@ -72,13 +74,15 @@ const Carousel: React.FC<{
           <ul className='slider__wrapper'>
             <div className='block__pane' data-carousel={`carousel-${slugName}`}>
               {albums.map((item) => (
-                <GeneralAlbum album={item} slugName={slugName} />
+                <div key={item.id}>
+                  <GeneralAlbum album={item} slugName={slugName} />
+                </div>
               ))}
             </div>
           </ul>
 
-          <CarouselButton fn={nextStep} iconValue={"➡️"} />
-          <CarouselButton fn={previousStep} iconValue={"⬅️"} />
+          <CarouselButton fn={nextStep} iconValue={'➡️'} />
+          <CarouselButton fn={previousStep} iconValue={'⬅️'} />
         </>
       )}
     </>

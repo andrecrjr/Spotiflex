@@ -1,4 +1,5 @@
 // pages/404.js
-export default function Custom404() {
+const Custom404: React.FC = () => {
   return <h1>404 - Page Not Found by Spotiflex</h1>;
-}
+};
+export default Custom404;

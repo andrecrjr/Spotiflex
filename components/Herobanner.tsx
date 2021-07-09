@@ -1,8 +1,8 @@
-function Herobanner(props) {
+function Herobanner(): JSX.Element {
   return (
     <section className='block--herobanner'>
       <div className='block--herobanner__wrapper'>
-        <h2>O cliente mais legal para usar seu Spotify direto pelo browser!</h2>
+        <h2>O melhor cliente para usar seu Spotify no browser!</h2>
         <a href='#main-box'>Acessar</a>
       </div>
     </section>
