@@ -10,27 +10,19 @@ a {
   scroll-behavior: smooth;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap");
-@import "./definitions.scss";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import './definitions.scss';
 
 body {
   background-color: black;
-  color: rgb(148, 230, 26);
-  font-family: "Lato", sans-serif;
-}
-
-.main--grid {
-  display: grid;
-  grid-template-columns: 0rem 1fr;
-  &.open--menu {
-    grid-template-columns: $menu-size 1fr;
-  }
+  color: $green-main-font;
+  font-family: 'Lato', sans-serif;
 }
 
 ul {
   list-style: none;
 }
 
-@import "./structure/main.scss";
-@import "./structure/header.scss";
-@import "./structure/herobanner.scss";
+@import './structure/main.scss';
+@import './structure/header.scss';
+@import './structure/herobanner.scss';

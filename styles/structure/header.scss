@@ -1,8 +1,10 @@
 .header {
-  width: 100%;
-  // position: fixed;
   display: flex;
   overflow: hidden;
+  width: 20%;
+  transition: width 300ms linear;
+  flex-direction: column;
+  background: $black-background;
   h1 {
     font-size: 1.3rem;
     margin-left: 25px;
@@ -12,13 +14,8 @@
     margin-top: 0.9375rem;
   }
   .menu {
-    position: fixed;
-    left: 1.5625rem;
     transition: all 200ms;
-    &.opened {
-      left: $menu-size;
-      margin-left: 1.5625rem;
-    }
+    align-self: center;
   }
   .logo {
     position: absolute;
@@ -28,14 +25,30 @@
   &__menu {
     display: flex;
     justify-content: flex-end;
+    margin-left: 6rem;
     width: 100%;
+    transition: all 1s;
     &--wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-evenly;
       width: 100%;
-      background: rgb(37, 35, 35);
+      li {
+        width: auto;
+      }
+    }
+  }
+}
+
+//menu header effect
+.main--grid {
+  display: flex;
+  &.open--menu {
+    header {
+      width: 25rem;
+      .header__menu {
+        margin-left: 2rem;
+      }
     }
   }
 }

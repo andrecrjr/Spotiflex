@@ -4,7 +4,6 @@ import Link from 'next/link';
 function Menu(): JSX.Element {
   const openMenu = () => {
     document.querySelector('.main--grid').classList.toggle('open--menu');
-    document.querySelector('.menu').classList.toggle('opened');
   };
   return (
     <header className='header'>
