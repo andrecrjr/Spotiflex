@@ -1,7 +1,6 @@
 .header {
   display: flex;
-  overflow: hidden;
-  width: 20%;
+  width: $header-close;
   transition: width 300ms linear;
   flex-direction: column;
   background: $black-background;
@@ -25,16 +24,22 @@
   &__menu {
     display: flex;
     justify-content: flex-end;
-    margin-left: 6rem;
-    width: 100%;
     transition: all 1s;
+    overflow: hidden;
     &--wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       width: 100%;
-      li {
-        width: auto;
+      margin-top: 50px;
+    }
+    .menu--item {
+      display: grid;
+      grid-template-columns: $header-close 1fr;
+      .menu--icon {
+        width: 50%;
+        fill: $green-main-font;
+        justify-self: center;
       }
     }
   }
@@ -45,10 +50,10 @@
   display: flex;
   &.open--menu {
     header {
-      width: 25rem;
-      .header__menu {
-        margin-left: 2rem;
-      }
+      width: 200px;
+      // .header__menu {
+      //   margin-left: 2rem;
+      // }
     }
   }
 }

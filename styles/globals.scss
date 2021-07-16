@@ -22,7 +22,7 @@ body {
 ul {
   list-style: none;
 }
-
+@import './structure/block-panel.scss';
 @import './structure/main.scss';
 @import './structure/header.scss';
 @import './structure/herobanner.scss';
