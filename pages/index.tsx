@@ -21,7 +21,7 @@ const Home: React.FC<{
         />
         <SongList
           listType={{ albums: latestReleases }}
-          name={'Latest Users'}
+          name={'New Album Releases'}
           iconsWithTitle={false}
         />
       </section>

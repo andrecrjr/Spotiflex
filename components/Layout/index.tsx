@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import Header from './Menu';
+import Header from './Header';
 
 const Layout: React.FC<{ title: string; children: React.ReactNode }> = ({
   title,

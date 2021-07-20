@@ -1,5 +1,5 @@
 .block {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
 
   &--title {
@@ -28,6 +28,16 @@
       border-radius: 10%;
       display: flex;
       justify-content: center;
+      position: relative;
+    }
+
+    &--item {
+      &-description {
+        margin: 15px 0 15px 0;
+      }
+      &-title {
+        font-size: 0.75rem;
+      }
     }
     &--title {
       font-size: 0.85rem;
@@ -42,6 +52,7 @@
       height: auto;
       margin-right: 20px;
     }
+
     &--image {
       transition: 800ms;
       width: 200px;

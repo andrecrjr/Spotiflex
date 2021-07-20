@@ -27,16 +27,19 @@ export const GeneralAlbum: React.FC<{
   const router = useRouter();
   return (
     <>
-      <section>
-        <div className='block__pane--space' key={album.id}>
-          <div
-            className='block__pane--genre'
-            onClick={() => router.push(`/genre/${album.id}`)}
-          >
-            <Image src={album.images[0].url} alt={album.name} layout='fill' />
-          </div>
+      <div
+        className='block__pane--space'
+        data-album={album.id}
+        key={album.id}
+        onClick={() => router.push(`/album/${album.id}`)}
+      >
+        <div className='block__pane--genre'>
+          <Image src={album.images[0].url} alt={album.name} layout='fill' />
         </div>
-      </section>
+        <section className='block__pane--item-description'>
+          <h2 className='block__pane--item-title'>{album.name}</h2>
+        </section>
+      </div>
     </>
   );
 };
