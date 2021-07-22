@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
-const CarouselButton: React.FC<{
-  fn: (e: React.MouseEvent) => void;
-  iconValue: string;
-}> = ({ fn, iconValue }) => {
-  return (
-    <button className='slider__button' onClick={fn}>
-      {iconValue}
-    </button>
-  );
-};
+const CarouselButton = forwardRef<HTMLButtonElement, { iconValue: string }>(
+  ({ iconValue }, ref) => {
+    return (
+      <button className='slider__button' ref={ref}>
+        {iconValue}
+      </button>
+    );
+  }
+);
 
 export default CarouselButton;
