@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useLayoutEffect, forwardRef } from 'react';
+import React, { useRef, useState, useLayoutEffect, forwardRef } from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import CarouselButton from './CarouselButton';
 import { GeneralPlaylist, GeneralAlbum } from './Playlist';
@@ -28,12 +28,21 @@ const Carousel: React.FC<{
     const blockPane =
       divCarousel && (divCarousel.children as HTMLCollectionOf<HTMLElement>);
 
+    if (width.current === 0 && previousStep.current) {
+      previousStep.current.style.display = 'none';
+    }
+
     nextStep.current?.addEventListener('click', (e) => {
       e.preventDefault();
       if (scrollWidth - windowPane >= Math.abs(width.current)) {
         const newWidth = width.current - windowPane;
         blockPane[0].style.transform = `translateX(${newWidth}px)`;
         width.current = newWidth;
+        if (Math.abs(newWidth) >= scrollWidth - windowPane) {
+          nextStep.current.style.display = 'none';
+        } else {
+          previousStep.current.style.display = 'block';
+        }
       }
     });
 
@@ -47,22 +56,6 @@ const Carousel: React.FC<{
       }
     });
   }, []);
-
-  // e.preventDefault();
-  // console.log(block_pane.current?.scrollWidth);
-  // console.log(block_pane.current?.clientWidth);
-  // const scrollWidth = document.querySelector(
-  //   `.block__pane[data-carousel=carousel-${slugName}]`
-  // ).scrollWidth;
-  // const windowPane = document.querySelector(
-  //   `.block__pane[data-carousel=carousel-${slugName}]`
-  // ).clientWidth;
-  // e.preventDefault();
-  // if (scrollWidth + windowPane > width && width !== 0) {
-  //   setWidth((oldData) => oldData + windowPane);
-  // } else {
-  //   setWidth(0);
-  // }
 
   return (
     <>
@@ -79,7 +72,6 @@ const Carousel: React.FC<{
           </ul>
 
           <CarouselButton ref={nextStep} iconValue={'➡️'} />
-
           <CarouselButton ref={previousStep} iconValue={'⬅️'} />
         </>
       )}
@@ -97,7 +89,7 @@ const Carousel: React.FC<{
           </ul>
 
           <CarouselButton ref={nextStep} iconValue={'➡️'} />
-          {/* <CarouselButton fn={previousStep} iconValue={'⬅️'} /> */}
+          <CarouselButton ref={previousStep} iconValue={'⬅️'} />
         </>
       )}
     </>
