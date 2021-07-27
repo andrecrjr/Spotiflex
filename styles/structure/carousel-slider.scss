@@ -6,11 +6,6 @@
   }
 
   &__button {
-    display: none;
-  }
-}
-@media (min-width: 661px) {
-  .slider__button {
     display: block;
     position: absolute;
     top: 50%;
@@ -18,11 +13,11 @@
     border: none;
     border-radius: 80%;
     padding: 5px;
-    background: green;
+    background: $green-main-font;
     cursor: pointer;
     transition: 200ms background;
     &:hover {
-      background: lightgreen;
+      background: $green-opacity-font;
     }
     .icon {
       width: 25px;
@@ -36,6 +31,10 @@
         rotate: 180deg;
       }
     }
+  }
+}
+@media (min-width: 661px) {
+  .slider__button {
     &.none {
       display: none;
     }

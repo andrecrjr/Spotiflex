@@ -19,6 +19,7 @@
     display: inline-flex;
     align-items: center;
     transition: 200ms all;
+
     &--genre {
       cursor: pointer;
       width: 150px;
@@ -27,6 +28,10 @@
       display: flex;
       justify-content: center;
       position: relative;
+      transition: 500ms font-size;
+      &:hover {
+        font-size: 1.2em;
+      }
     }
 
     &--item {
