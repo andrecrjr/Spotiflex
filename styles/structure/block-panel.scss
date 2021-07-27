@@ -1,14 +1,4 @@
-.slider {
-  &__wrapper {
-    overflow-x: hidden;
-    width: 100%;
-    justify-self: center;
-  }
-}
-
-.none {
-  display: none;
-}
+@import './carousel-slider';
 
 .block {
   min-height: 100vh;
@@ -19,12 +9,9 @@
   }
   &--horizontal-list {
     margin: 2rem 0 0 1.5rem;
+    position: relative;
     &:first-of-type {
       margin-top: 4rem;
-    }
-
-    .slider__button {
-      display: none;
     }
   }
 
@@ -95,12 +82,6 @@
   .block--horizontal-list {
     .block__pane {
       overflow-x: hidden;
-    }
-    .slider__button {
-      display: block;
-      &.none {
-        display: none;
-      }
     }
   }
 }

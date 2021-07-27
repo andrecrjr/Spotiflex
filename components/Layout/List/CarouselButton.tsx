@@ -1,19 +1,17 @@
 import React, { forwardRef } from 'react';
 
-interface configButton {
-  firstPage: boolean;
-  previous: boolean;
-  next: boolean;
-}
-
-const CarouselButton = forwardRef<HTMLButtonElement, { iconValue: string }>(
-  ({ iconValue }, ref) => {
-    return (
-      <button className={`slider__button`} ref={ref}>
-        {iconValue}
-      </button>
-    );
+const CarouselButton = forwardRef<
+  HTMLButtonElement,
+  {
+    controlSide: string;
+    children: JSX.Element;
   }
-);
+>(({ controlSide, children }, ref) => {
+  return (
+    <button className={`slider__button`} data-control={controlSide} ref={ref}>
+      {children}
+    </button>
+  );
+});
 
 export default CarouselButton;
