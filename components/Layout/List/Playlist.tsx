@@ -1,6 +1,6 @@
-import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 
 export const GeneralPlaylist: React.FC<{
   album: PlaylistItems;

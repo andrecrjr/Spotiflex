@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect, forwardRef } from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import CarouselButton from './CarouselButton';
 import { GeneralPlaylist, GeneralAlbum } from './Playlist';
@@ -25,8 +25,7 @@ const Carousel: React.FC<{
     const windowPane = block_pane.current?.clientWidth;
     const { current: divCarousel } = block_pane;
 
-    const blockPane =
-      divCarousel && (divCarousel.children as HTMLCollectionOf<HTMLElement>);
+    const blockPane = divCarousel?.children as HTMLCollectionOf<HTMLElement>;
 
     if (width.current === 0 && previousStep.current) {
       previousStep.current.style.display = 'none';
