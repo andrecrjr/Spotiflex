@@ -36,7 +36,7 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
 export default Genre;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const auth = await getPublicAuth(process.env.SERVER_URL);
+  const auth = await getPublicAuth();
   let paths = [{ params: { id: 'rock' } }];
 
   const data = await fetch('https://api.spotify.com/v1/browse/categories', {
@@ -44,29 +44,36 @@ export const getStaticPaths: GetStaticPaths = async () => {
       Authorization: `${auth.token_type} ${auth.access_token}`,
     },
   });
-  const { categories: items } = await data.json();
+  const { categories } = await data.json();
 
-  paths = items.items.map((genres) => ({ params: { id: genres.id } }));
+  paths = categories?.items.map((genres) => ({
+    params: { id: genres.id },
+  }));
+  console.log(paths);
   return { paths, fallback: true };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const auth = await getPublicAuth(process.env.SERVER_URL);
+  try {
+    const auth = await getPublicAuth();
 
-  const data = await fetch(
-    `https://api.spotify.com/v1/browse/categories/${params.id}/playlists`,
-    {
-      headers: {
-        Authorization: `${auth.token_type} ${auth.access_token}`,
-      },
-    }
-  );
-  const {
-    playlists: { items },
-  } = await data.json();
+    const data = await fetch(
+      `https://api.spotify.com/v1/browse/categories/${params.id}/playlists`,
+      {
+        headers: {
+          Authorization: `${auth.token_type} ${auth.access_token}`,
+        },
+      }
+    );
+    const {
+      playlists: { items },
+    } = await data.json();
 
-  return {
-    props: { items, title: params.id },
-    revalidate: 5,
-  };
+    return {
+      props: { items: items, title: params.id },
+      revalidate: 5,
+    };
+  } catch (error) {
+    return { notFound: true };
+  }
 };

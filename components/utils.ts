@@ -1,10 +1,4 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from 'next';
-
-const spotifyAuth = async (
-  req: NextApiRequest,
-  res: NextApiResponse
-): Promise<void> => {
+export const spotifyAuth = async (): Promise<void> => {
   const body = 'grant_type=client_credentials';
   const response = await fetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
@@ -17,7 +11,5 @@ const spotifyAuth = async (
     body: body,
   });
   const data = await response.json();
-
-  res.status(200).json(data);
+  return data;
 };
-export default spotifyAuth;

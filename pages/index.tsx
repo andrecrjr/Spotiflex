@@ -29,8 +29,8 @@ const Home: React.FC<{
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async (context) => {
-  const auth = await getPublicAuth(context.req.headers.host);
+export const getServerSideProps: GetServerSideProps = async () => {
+  const auth = await getPublicAuth();
   const fetchPlaylists = await Promise.all([
     fetch('https://api.spotify.com/v1/browse/categories', {
       headers: {
