@@ -1,0 +1,22 @@
+.header {
+  &__album {
+    &--wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--pic {
+      width: 130px;
+      height: 130px;
+      position: relative;
+    }
+    &--name {
+      padding-left: 0.5rem;
+      font-size: 0.75rem;
+      line-height: 1.2rem;
+    }
+    &--artist {
+      font-size: 0.55rem;
+    }
+  }
+}

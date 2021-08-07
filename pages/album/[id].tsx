@@ -4,17 +4,12 @@ import { GetServerSideProps } from 'next';
 import { getPublicAuth } from '../../helper';
 import { ISpotifyAlbum } from '../../types';
 
+import AlbumHeader from '../../components/Layout/AlbumComponent/AlbumHeader';
+
 const Album: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
   return (
-    <Layout title={album.name}>
-      <section className='header__album'>
-        <div>
-          <img src={album.images[0].url} />
-        </div>
-        <div>
-          <h1>{album.name}</h1>
-        </div>
-      </section>
+    <Layout title={album.name} subpage={true}>
+      <AlbumHeader album={album} />
     </Layout>
   );
 };
@@ -27,7 +22,6 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     },
   });
   const album = await data.json();
-  console.log(album);
   return { props: { album } };
 };
 

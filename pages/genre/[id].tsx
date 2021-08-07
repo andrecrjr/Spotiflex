@@ -3,32 +3,30 @@ import { ISpotifyPlaylist } from '../../types/spotifyTypes';
 import { getPublicAuth } from '../../helper';
 import Layout from '../../components/Layout';
 
-interface PropsGenre {
+type PropsGenre = {
   items: ISpotifyPlaylist[];
   title?: string;
-}
+};
 
 const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
-    <Layout title={title}>
-      <section className='main--block__page'>
-        <h1>{title}</h1>
+    <Layout title={title} subpage={true}>
+      <h1>{title}</h1>
 
-        <ul className='block__wrapper'>
-          {items &&
-            items.map((item, index) => (
-              <a href={item.href} key={index}>
-                <style jsx>{`
-                  .block__genre--section {
-                    background: url(${item.images[0].url});
-                    background-size: 150px 150px;
-                  }
-                `}</style>
-                <li className='block__genre--section' key={item.id}></li>
-              </a>
-            ))}
-        </ul>
-      </section>
+      <ul className='block__wrapper'>
+        {items &&
+          items.map((item, index) => (
+            <a href={item.href} key={index}>
+              <style jsx>{`
+                .block__genre--section {
+                  background: url(${item.images[0].url});
+                  background-size: 150px 150px;
+                }
+              `}</style>
+              <li className='block__genre--section' key={item.id}></li>
+            </a>
+          ))}
+      </ul>
     </Layout>
   );
 };
