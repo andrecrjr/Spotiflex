@@ -47,14 +47,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
   paths = categories?.items.map((genres) => ({
     params: { id: genres.id },
   }));
-  console.log(paths);
   return { paths, fallback: true };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
     const auth = await getPublicAuth();
-
     const data = await fetch(
       `https://api.spotify.com/v1/browse/categories/${params.id}/playlists`,
       {
