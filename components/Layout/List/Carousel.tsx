@@ -18,11 +18,16 @@ const Carousel: React.FC<{
   const block_pane = useRef<HTMLUListElement>();
   const nextStep = useRef<HTMLButtonElement>();
   const previousStep = useRef<HTMLButtonElement>();
+
   const width = useRef(0);
 
   useLayoutEffect(() => {
     const scrollWidth = block_pane.current?.scrollWidth;
     const windowPane = block_pane.current?.clientWidth;
+    const carouselChildrenLength =
+      block_pane.current?.firstChild.childNodes.length;
+    const sizeOfChildren = scrollWidth / carouselChildrenLength;
+    const totalCarouselChildrenLength = sizeOfChildren * carouselChildrenLength;
     const { current: divCarousel } = block_pane;
 
     const blockPane = divCarousel?.children as HTMLCollectionOf<HTMLElement>;
@@ -33,8 +38,10 @@ const Carousel: React.FC<{
 
     nextStep.current?.addEventListener('click', (e) => {
       e.preventDefault();
-      if (scrollWidth - windowPane >= Math.abs(width.current)) {
-        const newWidth = width.current - windowPane;
+
+      let nextPath = windowPane / sizeOfChildren;
+      if (scrollWidth - windowPane >= -totalCarouselChildrenLength) {
+        const newWidth = width.current - sizeOfChildren * Math.floor(nextPath);
         blockPane[0].style.transform = `translateX(${newWidth}px)`;
         width.current = newWidth;
         if (Math.abs(newWidth) >= scrollWidth - windowPane) {
@@ -48,11 +55,10 @@ const Carousel: React.FC<{
 
     previousStep.current?.addEventListener('click', (e) => {
       e.preventDefault();
+      let nextPath = windowPane / sizeOfChildren;
       if (scrollWidth + windowPane > width.current && width.current !== 0) {
-        width.current = width.current + windowPane;
+        width.current = width.current + sizeOfChildren * Math.floor(nextPath);
         blockPane[0].style.transform = `translateX(${width.current}px)`;
-        console.log(Math.abs(width.current));
-        console.log(scrollWidth + windowPane);
         if (Math.abs(width.current) > 0) {
           nextStep.current.style.display = 'block';
         } else {
