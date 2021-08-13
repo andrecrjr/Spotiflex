@@ -28,6 +28,8 @@ const Carousel: React.FC<{
       block_pane.current?.firstChild.childNodes.length;
     const sizeOfChildren = scrollWidth / carouselChildrenLength;
     const totalCarouselChildrenLength = sizeOfChildren * carouselChildrenLength;
+    const nextPath = windowPane / sizeOfChildren;
+
     const { current: divCarousel } = block_pane;
 
     const blockPane = divCarousel?.children as HTMLCollectionOf<HTMLElement>;
@@ -40,7 +42,6 @@ const Carousel: React.FC<{
       console.log(width.current);
       e.preventDefault();
 
-      let nextPath = windowPane / sizeOfChildren;
       if (scrollWidth - windowPane >= -totalCarouselChildrenLength) {
         const newWidth = width.current - sizeOfChildren * Math.floor(nextPath);
         blockPane[0].style.transform = `translateX(${newWidth}px)`;
@@ -56,7 +57,7 @@ const Carousel: React.FC<{
 
     previousStep.current?.addEventListener('click', (e) => {
       e.preventDefault();
-      let nextPath = windowPane / sizeOfChildren;
+
       if (scrollWidth + windowPane > width.current && width.current !== 0) {
         width.current = width.current + sizeOfChildren * Math.floor(nextPath);
         blockPane[0].style.transform = `translateX(${width.current}px)`;

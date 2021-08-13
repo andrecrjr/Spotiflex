@@ -6,7 +6,7 @@ const AlbumHeader: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
   return (
     <section className='header__album--wrapper'>
       <div className='header__album--pic'>
-        <Image src={album.images[0].url} layout='fill' />
+        <Image src={album.images[0].url} layout='fill' alt={album.name} />
       </div>
       <div className='header__album--name'>
         <h2 className='header__album--title'>{album.name}</h2>
