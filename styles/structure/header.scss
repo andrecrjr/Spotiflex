@@ -14,7 +14,8 @@
   }
   .menu {
     transition: all 200ms;
-    align-self: center;
+    align-self: flex-end;
+    margin-right: 10px;
   }
   .logo {
     position: absolute;
