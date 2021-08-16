@@ -11,10 +11,11 @@ const AlbumHeader: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
       <div className='header__album--name'>
         <h2 className='header__album--title'>{album.name}</h2>
         <div className='header__album--artist'>
-          {album.artists.map((artist) => {
+          {album.artists.map((artist, index, array) => {
             return (
               <>
-                <h2 key={artist.id}>{artist.name}</h2>
+                {artist.name}
+                {index + 1 === array.length ? '' : ', '}
               </>
             );
           })}

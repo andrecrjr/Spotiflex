@@ -10,7 +10,7 @@
 
 body {
   background-color: black;
-  color: $green-main-font;
+  color: rgb(214, 214, 214);
   font-family: 'Lato', sans-serif;
 }
 
@@ -27,4 +27,5 @@ a {
 @import './structure/main.scss';
 @import './structure/header.scss';
 @import './structure/herobanner.scss';
-@import './structure/header-album.scss';
+@import './structure/tracklist-header.scss';
+@import './structure/tracklist.scss';

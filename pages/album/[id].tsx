@@ -5,11 +5,13 @@ import { getPublicAuth } from '../../helper';
 import { ISpotifyAlbum } from '../../types';
 
 import AlbumHeader from '../../components/Layout/AlbumComponent/AlbumHeader';
+import Tracklist from '../../components/Layout/Tracklist';
 
 const Album: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
   return (
     <Layout title={album.name} subpage={true}>
       <AlbumHeader album={album} />
+      <Tracklist list={album} />
     </Layout>
   );
 };

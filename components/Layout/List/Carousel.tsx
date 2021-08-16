@@ -39,7 +39,6 @@ const Carousel: React.FC<{
     }
 
     nextStep.current?.addEventListener('click', (e) => {
-      console.log(width.current);
       e.preventDefault();
 
       if (scrollWidth - windowPane >= -totalCarouselChildrenLength) {
