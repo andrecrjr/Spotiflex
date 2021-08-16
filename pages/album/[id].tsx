@@ -4,14 +4,14 @@ import { GetServerSideProps } from 'next';
 import { getPublicAuth } from '../../helper';
 import { ISpotifyAlbum } from '../../types';
 
-import AlbumHeader from '../../components/Layout/AlbumComponent/AlbumHeader';
+import TrackListHeader from '../../components/Layout/Tracklist/TrackListHeader';
 import Tracklist from '../../components/Layout/Tracklist';
+import TrackListWrapper from '../../components/Layout/Tracklist/wrapper';
 
 const Album: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
   return (
-    <Layout title={album.name} subpage={true}>
-      <AlbumHeader album={album} />
-      <Tracklist list={album} />
+    <Layout title={album.name} subpage={true} hasSideMenu={false}>
+      <TrackListWrapper album={album} />
     </Layout>
   );
 };

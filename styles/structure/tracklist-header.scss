@@ -10,16 +10,16 @@
       width: 130px;
       height: 130px;
       position: relative;
+      margin-bottom: 0.5rem;
     }
     &--name {
-      padding-left: 0.5rem;
       font-size: 0.75rem;
       line-height: 1.2rem;
       text-align: center;
       display: inline;
     }
     &--artist {
-      font-size: 0.5rem;
+      font-size: 0.55rem;
     }
   }
 }

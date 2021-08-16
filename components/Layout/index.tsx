@@ -6,14 +6,15 @@ const Layout: React.FC<{
   title: string;
   children: React.ReactNode;
   subpage?: boolean;
-}> = ({ title, children, subpage = false }) => {
+  hasSideMenu?: boolean;
+}> = ({ title, children, subpage = false, hasSideMenu = true }) => {
   return (
     <>
       <Head>
         <title>{title}</title>
       </Head>
       <section className={`main--grid`}>
-        <Header />
+        <Header hasMenu={hasSideMenu} />
         <section className='main--wrapper'>
           <main className={`main--block${(subpage && '__subpage') || ''}`}>
             {children}

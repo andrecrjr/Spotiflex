@@ -9,6 +9,10 @@
   height: 100vh;
 }
 
+.logo {
+  color: $green-main-font;
+}
+
 @media (min-width: 661px) {
   .block {
     &__pane {

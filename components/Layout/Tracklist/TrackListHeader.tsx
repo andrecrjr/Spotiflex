@@ -2,7 +2,7 @@ import React from 'react';
 import { ISpotifyAlbum } from '../../../types';
 import Image from 'next/image';
 
-const AlbumHeader: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
+const TrackListHeader: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
   return (
     <section className='header__album--wrapper'>
       <div className='header__album--pic'>
@@ -25,4 +25,4 @@ const AlbumHeader: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
   );
 };
 
-export default AlbumHeader;
+export default TrackListHeader;

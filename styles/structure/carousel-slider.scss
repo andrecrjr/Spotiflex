@@ -1,6 +1,6 @@
 .slider {
   &__wrapper {
-    overflow-x: hidden;
+    overflow-x: scroll;
     width: 100%;
     justify-self: center;
 
@@ -11,6 +11,7 @@
 }
 @media (min-width: 661px) {
   .slider__wrapper {
+    overflow: hidden;
     &--controls {
       display: flex;
       width: 100px;

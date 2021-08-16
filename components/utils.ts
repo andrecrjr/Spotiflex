@@ -13,3 +13,15 @@ export const spotifyAuth = async (): Promise<void> => {
   const data = await response.json();
   return data;
 };
+
+export function msToTime(duration: number) {
+  var milliseconds = Math.floor((duration % 1000) / 100),
+    seconds = Math.floor((duration / 1000) % 60),
+    minutes = Math.floor((duration / (1000 * 60)) % 60),
+    hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+  let newMinutes = minutes < 10 ? '0' + minutes : minutes;
+  let newSeconds = seconds < 10 ? '0' + seconds : seconds;
+
+  return newMinutes + ':' + newSeconds;
+}
