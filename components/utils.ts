@@ -14,14 +14,12 @@ export const spotifyAuth = async (): Promise<void> => {
   return data;
 };
 
-export function msToTime(duration: number) {
-  var milliseconds = Math.floor((duration % 1000) / 100),
-    seconds = Math.floor((duration / 1000) % 60),
-    minutes = Math.floor((duration / (1000 * 60)) % 60),
-    hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+export function msToTime(duration: number): string {
+  const seconds = Math.floor((duration / 1000) % 60);
+  const minutes = Math.floor((duration / (1000 * 60)) % 60);
 
-  let newMinutes = minutes < 10 ? '0' + minutes : minutes;
-  let newSeconds = seconds < 10 ? '0' + seconds : seconds;
+  const newMinutes = minutes < 10 ? '0' + minutes : minutes;
+  const newSeconds = seconds < 10 ? '0' + seconds : seconds;
 
   return newMinutes + ':' + newSeconds;
 }

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Menu from './Menu';
 
-function Header({ hasMenu }): JSX.Element {
+const Header: React.FC<{ hasMenu: boolean }> = ({ hasMenu }) => {
   const openMenu = () => {
     document.querySelector('.main--grid').classList.toggle('open--menu');
   };
@@ -22,6 +22,6 @@ function Header({ hasMenu }): JSX.Element {
       <Menu />
     </header>
   );
-}
+};
 
 export default Header;

@@ -16,4 +16,6 @@ const TrackListChild: React.FC<{ track: ITracklist }> = memo(({ track }) => {
   );
 });
 
+TrackListChild.displayName = 'TracklistChild';
+
 export default TrackListChild;

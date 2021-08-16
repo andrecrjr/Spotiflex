@@ -4,8 +4,6 @@ import { GetServerSideProps } from 'next';
 import { getPublicAuth } from '../../helper';
 import { ISpotifyAlbum } from '../../types';
 
-import TrackListHeader from '../../components/Layout/Tracklist/TrackListHeader';
-import Tracklist from '../../components/Layout/Tracklist';
 import TrackListWrapper from '../../components/Layout/Tracklist/wrapper';
 
 const Album: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
