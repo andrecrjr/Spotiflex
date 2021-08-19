@@ -23,9 +23,10 @@ a {
   text-decoration: none;
 }
 
-@import './structure/block-panel.scss';
-@import './structure/main.scss';
-@import './structure/header.scss';
-@import './structure/herobanner.scss';
-@import './structure/tracklist-header.scss';
-@import './structure/tracklist.scss';
+@import './structure/block-panel';
+@import './structure/main';
+@import './structure/header';
+@import './structure/herobanner';
+@import './structure/tracklist-header';
+@import './structure/tracklist';
+@import './structure/block-page';

@@ -11,19 +11,19 @@ type PropsGenre = {
 const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
     <Layout title={title} subpage={true}>
-      <h1>{title}</h1>
+      <h1 className='block__page--title'>{title}</h1>
 
-      <ul className='block__wrapper'>
+      <ul className='block__page--wrapper'>
         {items &&
           items.map((item, index) => (
             <a href={item.href} key={index}>
               <style jsx>{`
-                .block__genre--section {
+                .block__page--section {
                   background: url(${item.images[0].url});
                   background-size: 150px 150px;
                 }
               `}</style>
-              <li className='block__genre--section' key={item.id}></li>
+              <li className='block__page--section' key={item.id}></li>
             </a>
           ))}
       </ul>

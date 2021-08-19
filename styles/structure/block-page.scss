@@ -1,0 +1,27 @@
+.block {
+  &__page {
+    &--title {
+      text-align: center;
+    }
+    &--wrapper {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        margin-left: 10px;
+        margin-top: 15px;
+      }
+    }
+    &--section {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      position: relative;
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
+  }
+}

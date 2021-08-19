@@ -64,23 +64,6 @@
       }
     }
   }
-  &__wrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__genre {
-    &--section {
-      width: 150px;
-      height: 150px;
-      display: flex;
-      position: relative;
-      &:not(:first-child) {
-        margin-left: 20px;
-      }
-    }
-  }
 }
 
 @media (min-width: 661px) {
