@@ -16,7 +16,7 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
 
       <ul className='block__page--wrapper'>
         {items &&
-          items.map((item, index) => (
+          items.map((item) => (
             <section className='block__pane' key={item.id}>
               <GeneralAlbum album={item} />
             </section>
