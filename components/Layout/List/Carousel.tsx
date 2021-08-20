@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import CarouselButton from './CarouselButton';
 import { GeneralPlaylist, GeneralAlbum } from './Playlist';
@@ -21,7 +21,7 @@ const Carousel: React.FC<{
 
   const width = useRef(0);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const scrollWidth = block_pane.current?.scrollWidth;
     const windowPane = block_pane.current?.clientWidth;
     const carouselChildrenLength =
@@ -115,7 +115,7 @@ const Carousel: React.FC<{
           <ul className='slider__wrapper' ref={block_pane}>
             <div className='block__pane' data-carousel={`carousel-${slugName}`}>
               {albums.map((item) => (
-                <div key={item.id}>
+                <div key={item.id} style={{ display: 'contents' }}>
                   <GeneralAlbum album={item} slugName={slugName} />
                 </div>
               ))}

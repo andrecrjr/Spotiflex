@@ -14,8 +14,8 @@
   }
   .menu {
     transition: all 200ms;
-    align-self: flex-end;
-    margin-right: 10px;
+    align-self: flex-start;
+    margin-left: 10px;
   }
   .logo {
     position: absolute;
@@ -58,7 +58,7 @@
   display: flex;
   &.open--menu {
     header {
-      width: 250px;
+      width: 11rem;
     }
   }
 }

@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { ISpotifyPlaylist } from '../../types/spotifyTypes';
 import { getPublicAuth } from '../../helper';
 import Layout from '../../components/Layout';
+import { GeneralAlbum } from '../../components/Layout/List/Playlist';
 
 type PropsGenre = {
   items: ISpotifyPlaylist[];
@@ -16,15 +17,9 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
       <ul className='block__page--wrapper'>
         {items &&
           items.map((item, index) => (
-            <a href={item.href} key={index}>
-              <style jsx>{`
-                .block__page--section {
-                  background: url(${item.images[0].url});
-                  background-size: 150px 150px;
-                }
-              `}</style>
-              <li className='block__page--section' key={item.id}></li>
-            </a>
+            <section className='block__pane' key={item.id}>
+              <GeneralAlbum album={item} />
+            </section>
           ))}
       </ul>
     </Layout>

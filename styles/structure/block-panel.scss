@@ -5,10 +5,10 @@
   overflow: hidden;
 
   &--title {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   &--horizontal-list {
-    margin: 2rem 0 0 1.5rem;
+    margin: 2rem 0 0 0.5rem;
     position: relative;
     &:first-of-type {
       margin-top: 4rem;
@@ -22,8 +22,8 @@
 
     &--genre {
       cursor: pointer;
-      width: 150px;
-      height: 150px;
+      min-width: 100px;
+      height: 100px;
       border-radius: 10%;
       display: flex;
       justify-content: center;
@@ -39,12 +39,12 @@
         margin: 15px 0 15px 0;
       }
       &-title {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
       }
     }
     &--title {
-      font-size: 0.85rem;
-      margin-bottom: 25px;
+      font-size: 0.65rem;
+      margin-bottom: 20px;
       margin-top: auto;
       color: white;
       z-index: 2;
@@ -70,6 +70,10 @@
   .block--horizontal-list {
     .block__pane {
       overflow-x: hidden;
+      &--genre {
+        width: 150px;
+        height: 150px;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { PlaylistItems, ISpotifyAlbum } from '../../../types';
+import { PlaylistItems, ISpotifyAlbum, ISpotifyPlaylist } from '../../../types';
 
 export const GeneralPlaylist: React.FC<{
   album: PlaylistItems;
@@ -21,25 +21,23 @@ export const GeneralPlaylist: React.FC<{
 };
 
 export const GeneralAlbum: React.FC<{
-  album: ISpotifyAlbum;
-  slugName: string;
+  album: ISpotifyAlbum | ISpotifyPlaylist;
+  slugName?: string;
 }> = ({ album }) => {
   const router = useRouter();
   return (
-    <>
-      <div
-        className='block__pane--space'
-        data-album={album.id}
-        key={album.id}
-        onClick={() => router.push(`/album/${album.id}`)}
-      >
-        <div className='block__pane--genre'>
-          <Image src={album.images[0].url} alt={album.name} layout='fill' />
-        </div>
-        <section className='block__pane--item-description'>
-          <h2 className='block__pane--item-title'>{album.name}</h2>
-        </section>
+    <div
+      className='block__pane--space'
+      data-album={album.id}
+      key={album.id}
+      onClick={() => router.push(`/album/${album.id}`)}
+    >
+      <div className='block__pane--genre'>
+        <Image src={album.images[0].url} alt={album.name} layout='fill' />
       </div>
-    </>
+      <section className='block__pane--item-description'>
+        <h2 className='block__pane--item-title'>{album.name}</h2>
+      </section>
+    </div>
   );
 };
