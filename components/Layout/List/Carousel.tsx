@@ -35,7 +35,7 @@ const Carousel: React.FC<{
     const blockPane = divCarousel?.children as HTMLCollectionOf<HTMLElement>;
 
     if (previousStep.current && width.current === 0) {
-      previousStep.current.style.visibility = 'hidden';
+      previousStep.current.style.opacity = '0.4';
     }
 
     nextStep.current?.addEventListener('click', (e) => {
@@ -46,10 +46,12 @@ const Carousel: React.FC<{
         blockPane[0].style.transform = `translateX(${newWidth}px)`;
         width.current = newWidth;
         if (Math.abs(newWidth) >= scrollWidth - windowPane) {
-          nextStep.current.style.visibility = 'hidden';
-          previousStep.current.style.visibility = 'visible';
+          nextStep.current.style.opacity = '0.4';
+          nextStep.current.style.pointerEvents = 'none';
+          previousStep.current.style.opacity = '1';
         } else {
-          previousStep.current.style.visibility = 'visible';
+          previousStep.current.style.opacity = '1';
+          nextStep.current.style.pointerEvents = 'visible';
         }
       }
     });
@@ -61,11 +63,12 @@ const Carousel: React.FC<{
         width.current = width.current + sizeOfChildren * Math.floor(nextPath);
         blockPane[0].style.transform = `translateX(${width.current}px)`;
         if (Math.abs(width.current) > 0) {
-          previousStep.current.style.visibility = 'visible';
-          nextStep.current.style.visibility = 'visible';
+          previousStep.current.style.opacity = '1';
+          nextStep.current.style.opacity = '1';
+          nextStep.current.style.pointerEvents = 'visible';
         } else {
-          nextStep.current.style.visibility = 'visible';
-          previousStep.current.style.visibility = 'hidden';
+          nextStep.current.style.opacity = '1';
+          previousStep.current.style.opacity = '0.4';
         }
       }
     });
