@@ -8,6 +8,11 @@ const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
   const [transitionStage, setTransitionStage] = useState('fadeOut');
   const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
+  useEffect(() => {
+    router.events.on('routeChangeComplete', () => {
+      ref.current.scrollIntoView({ block: 'start' });
+    });
+  }, [router.events]);
 
   useEffect(() => {
     setTransitionStage('fadeIn');
@@ -27,7 +32,6 @@ const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
       onTransitionEnd={() => {
         if (transitionStage === 'fadeOut') {
           setChildren(children);
-          ref.current.scrollIntoView(true);
           setTransitionStage('fadeIn');
         }
       }}
