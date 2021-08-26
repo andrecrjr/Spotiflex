@@ -23,6 +23,21 @@ a {
   text-decoration: none;
 }
 
+.content {
+  opacity: 0;
+  transition: 200ms;
+  &.content--bottom-to-top {
+    margin-top: auto;
+    opacity: 1;
+    &.fadeTop {
+      margin-top: 0;
+    }
+  }
+  &.fadeIn {
+    opacity: 1;
+  }
+}
+
 @import './structure/block-panel';
 @import './structure/main';
 @import './structure/header';

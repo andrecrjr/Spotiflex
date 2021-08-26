@@ -5,13 +5,15 @@ import SongList from '../components/Layout/List';
 import Herobanner from '../components/Herobanner';
 
 import { ISpotifyAlbum, PlaylistItems } from '../types';
+import LayoutMetaSEO from '../components/Layout/LayoutMetaSEO';
 
 const Home: React.FC<{
   playlistsGenre?: PlaylistItems[];
   latestReleases?: ISpotifyAlbum[];
 }> = ({ playlistsGenre, latestReleases }) => {
   return (
-    <Layout title='Main Page'>
+    <>
+      <LayoutMetaSEO title='Spotiflex - The web coolest client ever' />
       <Herobanner />
       <section className='block' id='main-box'>
         <SongList
@@ -25,7 +27,7 @@ const Home: React.FC<{
           iconsWithTitle={false}
         />
       </section>
-    </Layout>
+    </>
   );
 };
 

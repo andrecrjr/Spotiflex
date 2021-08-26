@@ -3,6 +3,7 @@ import { ISpotifyPlaylist } from '../../types/spotifyTypes';
 import { getPublicAuth } from '../../helper';
 import Layout from '../../components/Layout';
 import { GeneralAlbum } from '../../components/Layout/List/Playlist';
+import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 
 type PropsGenre = {
   items: ISpotifyPlaylist[];
@@ -11,9 +12,9 @@ type PropsGenre = {
 
 const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
-    <Layout title={title} subpage={true}>
-      <h1 className='block__page--title'>{title}</h1>
-
+    <>
+      <LayoutMetaSEO title={title} />
+      {title && <h1 className='block__page--title'>{title}</h1>}
       <ul className='block__page--wrapper'>
         {items &&
           items.map((item) => (
@@ -22,7 +23,7 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
             </section>
           ))}
       </ul>
-    </Layout>
+    </>
   );
 };
 

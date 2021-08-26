@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../../components/Layout';
+import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 import { GetServerSideProps } from 'next';
 import { getPublicAuth } from '../../helper';
 import { ISpotifyAlbum } from '../../types';
@@ -8,9 +8,10 @@ import TrackListWrapper from '../../components/Layout/Tracklist/wrapper';
 
 const Album: React.FC<{ album: ISpotifyAlbum }> = ({ album }) => {
   return (
-    <Layout title={album.name} subpage={true} hasSideMenu={false}>
+    <>
+      <LayoutMetaSEO title={`${album.artists[0].name} - ${album.name}`} />
       <TrackListWrapper album={album} />
-    </Layout>
+    </>
   );
 };
 
