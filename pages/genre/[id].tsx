@@ -1,7 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ISpotifyPlaylist } from '../../types/spotifyTypes';
 import { getPublicAuth } from '../../helper';
-import Layout from '../../components/Layout';
 import { GeneralAlbum } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 

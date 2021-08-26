@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 
-function TransactionPage({ children }) {
+const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [displayChildren, setChildren] = useState(children);
   const [transitionStage, setTransitionStage] = useState('fadeOut');
   const ref = useRef<HTMLDivElement>(null);
@@ -33,6 +35,6 @@ function TransactionPage({ children }) {
       {displayChildren}
     </div>
   );
-}
+};
 
 export default TransactionPage;

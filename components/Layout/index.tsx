@@ -1,7 +1,5 @@
-import Head from 'next/head';
 import React from 'react';
 import Header from './Header';
-import { useRouter } from 'next/router';
 
 const Layout: React.FC<{
   children: React.ReactNode;

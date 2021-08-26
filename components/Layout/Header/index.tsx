@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import Menu from './Menu';
 
-const Header: React.FC<{ hasMenu?: boolean }> = ({ hasMenu }) => {
+const Header: React.FC = () => {
   const openMenu = () => {
     document.querySelector('.main--grid').classList.toggle('open--menu');
   };

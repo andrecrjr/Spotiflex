@@ -1,6 +1,5 @@
 import { GetServerSideProps } from 'next';
 import { getPublicAuth } from '../helper';
-import Layout from '../components/Layout';
 import SongList from '../components/Layout/List';
 import Herobanner from '../components/Herobanner';
 
