@@ -6,18 +6,12 @@ import { useRouter } from 'next/router';
 const Layout: React.FC<{
   children: React.ReactNode;
 }> = ({ children }) => {
-  const router = useRouter();
-
   return (
     <>
       <section className={`main--grid`}>
         <Header />
         <section className='main--wrapper'>
-          <main
-            className={`main--block${router.pathname !== '/' && '__subpage'}`}
-          >
-            {children}
-          </main>
+          <main className={`main--block`}>{children}</main>
         </section>
       </section>
     </>

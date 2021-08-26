@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 
 function TransactionPage({ children }) {
   const [displayChildren, setChildren] = useState(children);
   const [transitionStage, setTransitionStage] = useState('fadeOut');
+  const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -17,10 +18,14 @@ function TransactionPage({ children }) {
 
   return (
     <div
-      className={`content ${transitionStage}`}
+      className={`content ${transitionStage} ${
+        (router.pathname !== '/' && 'subpage') || ''
+      }`}
+      ref={ref}
       onTransitionEnd={() => {
         if (transitionStage === 'fadeOut') {
           setChildren(children);
+          ref.current.scrollIntoView(true);
           setTransitionStage('fadeIn');
         }
       }}
