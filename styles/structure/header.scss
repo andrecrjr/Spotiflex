@@ -16,8 +16,11 @@
   .menu {
     transition: all 200ms;
     align-self: flex-start;
-    margin-left: 10px;
+    margin-left: calc(#{$header-close} / 6);
   }
+	svg{
+		width:100%;
+	}
   .logo {
     position: absolute;
     right: 1.5625rem;
