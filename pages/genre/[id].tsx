@@ -3,6 +3,7 @@ import { ISpotifyPlaylist } from '../../types/spotifyTypes';
 import { getPublicAuth } from '../../helper';
 import { GeneralAlbum } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
+import { getOnlyCategories, getOnlyGenry } from '../../components/services';
 
 type PropsGenre = {
   items: ISpotifyPlaylist[];
@@ -29,15 +30,10 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
 export default Genre;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const auth = await getPublicAuth();
+  
   let paths = [{ params: { id: 'rock' } }];
 
-  const data = await fetch('https://api.spotify.com/v1/browse/categories', {
-    headers: {
-      Authorization: `${auth.token_type} ${auth.access_token}`,
-    },
-  });
-  const { categories } = await data.json();
+	const categories = await getOnlyCategories();
 
   paths = categories?.items.map((genres) => ({
     params: { id: genres.id },
@@ -46,20 +42,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  try {
-    const auth = await getPublicAuth();
-    const data = await fetch(
-      `https://api.spotify.com/v1/browse/categories/${params.id}/playlists`,
-      {
-        headers: {
-          Authorization: `${auth.token_type} ${auth.access_token}`,
-        },
-      }
-    );
-    const {
-      playlists: { items },
-    } = await data.json();
-
+	try {
+		const items = await getOnlyGenry(params.id);
     return {
       props: { items: items, title: params.id },
       revalidate: 5,

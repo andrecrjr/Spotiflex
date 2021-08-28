@@ -11,6 +11,7 @@
   .menu,
   .logo {
     margin-top: 0.9375rem;
+		z-index:99;
   }
   .menu {
     transition: all 200ms;
@@ -21,6 +22,7 @@
     position: absolute;
     right: 1.5625rem;
     font-weight: bold;
+		text-shadow: 1px 3px 7px #14d143;
   }
   &__menu {
     display: flex;
