@@ -1,18 +1,22 @@
 @import './carousel-slider';
 
+
 .block {
   min-height: 100vh;
   overflow: hidden;
-
+	&#explorer{
+		padding-top:2rem;
+		margin-left: 15px;
+	}
   &--title {
     margin-bottom: 20px;
   }
   &--horizontal-list {
-    margin: 2rem 0 0 0.5rem;
     position: relative;
-    &:first-of-type {
-      margin-top: 4rem;
-    }
+		margin-top:2rem;
+		&:not(:first-of-type){
+			margin-top:2.5rem;
+		}
   }
 
   &__pane {

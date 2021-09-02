@@ -13,7 +13,12 @@ export const GeneralPlaylist: React.FC<{
         className='block__pane--genre'
         onClick={() => router.push(`/genre/${album.id}`)}
       >
-        <Image src={album.icons[0].url} alt={album.name} layout='fill' />
+        <Image
+          src={album.icons[0].url}
+          className='pane--pic'
+          alt={album.name}
+          layout='fill'
+        />
         <h3 className='block__pane--title'>{album.name}</h3>
       </div>
     </div>
@@ -33,7 +38,12 @@ export const GeneralAlbum: React.FC<{
       onClick={() => router.push(`/album/${album.id}`)}
     >
       <div className='block__pane--genre'>
-        <Image src={album.images[0].url} alt={album.name} layout='fill' />
+        <Image
+          src={album.images[0].url}
+          className='pane--pic'
+          alt={album.name}
+          layout='fill'
+        />
       </div>
       <section className='block__pane--item-description'>
         <h2 className='block__pane--item-title'>{album.name}</h2>

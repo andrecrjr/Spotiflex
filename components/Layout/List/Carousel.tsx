@@ -14,7 +14,6 @@ const Carousel: React.FC<{
   listType: { playlists = [], albums = [], slugName },
   iconsWithTitle,
 }) => {
-  // const [width, setWidth] = useState<number>(0);
   const block_pane = useRef<HTMLUListElement>();
   const nextStep = useRef<HTMLButtonElement>();
   const previousStep = useRef<HTMLButtonElement>();

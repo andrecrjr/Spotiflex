@@ -1,6 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ISpotifyPlaylist } from '../../types/spotifyTypes';
-import { getPublicAuth } from '../../helper';
 import { GeneralAlbum } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 import { getOnlyCategories, getOnlyGenry } from '../../components/services';
@@ -30,11 +29,9 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
 export default Genre;
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  
   let paths = [{ params: { id: 'rock' } }];
 
-	const categories = await getOnlyCategories();
-
+  const categories = await getOnlyCategories();
   paths = categories?.items.map((genres) => ({
     params: { id: genres.id },
   }));
@@ -42,8 +39,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-	try {
-		const items = await getOnlyGenry(params.id);
+  try {
+    const items = await getOnlyGenry(params.id);
     return {
       props: { items: items, title: params.id },
       revalidate: 5,

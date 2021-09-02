@@ -1,7 +1,11 @@
-import { getPublicAuth } from "../helper";
+import { PlaylistItems } from './../types/index.d';
+import { ISpotifyAlbum, ISpotifyPlaylist } from './../types/spotifyTypes.d';
+import { getPublicAuth } from '../helper';
 
-export const getLatestAndGenres = async () => {
-	const auth = await getPublicAuth();
+export const getLatestAndGenres = async (): Promise<{
+  props: { playlistsGenre: PlaylistItems[]; latestReleases: ISpotifyAlbum[] };
+}> => {
+  const auth = await getPublicAuth();
   const fetchPlaylists = await Promise.all([
     fetch('https://api.spotify.com/v1/browse/categories', {
       headers: {
@@ -25,32 +29,36 @@ export const getLatestAndGenres = async () => {
   return {
     props: { playlistsGenre, latestReleases },
   };
-}
+};
 
-export const getOnlyGenry = async(id:string|string[]) => {
-	const auth = await getPublicAuth();
-    const data = await fetch(
-      `https://api.spotify.com/v1/browse/categories/${id}/playlists`,
-      {
-        headers: {
-          Authorization: `${auth.token_type} ${auth.access_token}`,
-        },
-      }
-    );
-    const {
-      playlists: { items },
-		} = await data.json();
-	return items;
-}
+export const getOnlyGenry = async (
+  id: string | string[]
+): Promise<ISpotifyPlaylist> => {
+  const auth = await getPublicAuth();
+  const data = await fetch(
+    `https://api.spotify.com/v1/browse/categories/${id}/playlists`,
+    {
+      headers: {
+        Authorization: `${auth.token_type} ${auth.access_token}`,
+      },
+    }
+  );
+  const {
+    playlists: { items },
+  } = await data.json();
+  return items;
+};
 
-export const getOnlyCategories = async () => {
-	const auth = await getPublicAuth();
-	const data = await fetch('https://api.spotify.com/v1/browse/categories', {
+export const getOnlyCategories = async (): Promise<{
+  items: [{ href: string; id: string; icons: []; name: string }];
+}> => {
+  const auth = await getPublicAuth();
+  const data = await fetch('https://api.spotify.com/v1/browse/categories', {
     headers: {
       Authorization: `${auth.token_type} ${auth.access_token}`,
     },
-	});
+  });
 
-	const { categories } = await data.json();
-	return categories
-}
+  const { categories } = await data.json();
+  return categories;
+};

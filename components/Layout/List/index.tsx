@@ -10,7 +10,7 @@ const SongList: React.FC<{
 }> = ({ listType: { playlists = [], albums = [] }, name }) => {
   return (
     <section className='block--horizontal-list'>
-      <h1 className='block--title'>{name}:</h1>
+      <h1 className='block--title'>{name}</h1>
       <Carousel
         listType={{ playlists, slugName: 'top' }}
         iconsWithTitle={true}

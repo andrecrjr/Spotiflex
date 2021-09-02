@@ -13,6 +13,11 @@
   color: $green-main-font;
 }
 
+.pane--pic:hover{
+	transform: scale(1.4);
+	transition: 400ms transform;
+}
+
 @media (min-width: 661px) {
   .block {
     &__pane {
