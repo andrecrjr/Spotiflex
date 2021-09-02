@@ -1,13 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { ISpotifyPlaylist } from '../../types/spotifyTypes';
+import { ISpotifyPlaylist, PropsGenre } from '../../types/spotifyTypes';
 import { GeneralAlbum } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 import { getOnlyCategories, getOnlyGenry } from '../../components/services';
-
-type PropsGenre = {
-  items: ISpotifyPlaylist[];
-  title?: string;
-};
 
 const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
