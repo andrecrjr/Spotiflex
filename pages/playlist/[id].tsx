@@ -1,12 +1,20 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
+import Album from '../album/[id]';
+import { getTrackListContent } from '../../components/services';
 
-function Playlist(props) {
-  return <div></div>;
+function Playlist({ playlist }) {
+  return <Album playlist={playlist} />;
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  return { props: '' };
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+  try {
+    return {
+      props: { playlist: await getTrackListContent('playlists', params.id) },
+    };
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 export default Playlist;

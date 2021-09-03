@@ -6,11 +6,11 @@ import { ISpotifyAlbum, ISpotifyPlaylist } from '../../../types';
 const TrackListWrapper: React.FC<{
   album?: ISpotifyAlbum;
   playlist?: ISpotifyPlaylist;
-}> = ({ album }) => {
+}> = ({ album, playlist }) => {
   return (
     <>
-      <TrackListHeader album={album} />
-      <Tracklist list={album} />
+      <TrackListHeader album={album} playlist={playlist} />
+      <Tracklist albumList={album} playList={playlist} />
     </>
   );
 };

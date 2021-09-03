@@ -1,11 +1,22 @@
 import React from 'react';
-import { ISpotifyAlbum } from '../../../types';
+import { ISpotifyAlbum, ISpotifyPlaylist } from '../../../types';
 import TrackListChild from './TrackListChild';
 
-const Tracklist: React.FC<{ list: ISpotifyAlbum }> = ({ list }) => {
+const Tracklist: React.FC<{
+  albumList?: ISpotifyAlbum;
+  playList?: ISpotifyPlaylist;
+}> = ({ albumList, playList }) => {
+  console.log(playList.tracks.items[0]);
   return (
     <ul className='tracklist__wrapper'>
-      {list.tracks.items.map((item) => {
+      {playList?.tracks.items.map((item) => {
+        return (
+          <li className='tracklist__item' key={item.id}>
+            <TrackListChild track={item} />
+          </li>
+        );
+      })}
+      {albumList?.tracks.items.map((item) => {
         return (
           <li className='tracklist__item' key={item.id}>
             <TrackListChild track={item} />

@@ -8,8 +8,15 @@ import TrackListWrapper from '../../components/Layout/Tracklist/wrapper';
 import { getTrackListContent } from '../../components/services';
 
 const Album: React.FC<{ album?: ISpotifyAlbum; playlist?: ISpotifyPlaylist }> =
-  ({ album }) => {
-    console.log(album);
+  ({ album, playlist }) => {
+    if (playlist) {
+      return (
+        <>
+          <LayoutMetaSEO title={`${playlist.name} `} />
+          <TrackListWrapper playlist={playlist} />
+        </>
+      );
+    }
     return (
       <>
         <LayoutMetaSEO title={`${album.artists[0].name} - ${album.name}`} />

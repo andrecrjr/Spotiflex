@@ -1,3 +1,11 @@
+type ItemsPlaylist = {
+  primary_color: string;
+  album: ISpotifyAlbum;
+  video_thumbnail: [];
+};
+
+export type mergePlaylistItemTrack = ITracklist & ItemsPlaylist;
+
 export interface ISpotifyPlaylist {
   collaborative: boolean;
   description: string;
@@ -21,6 +29,7 @@ export interface ISpotifyPlaylist {
   tracks: {
     href: string;
     total: number;
+    items: mergePlaylistItemTrack[];
   };
   type: 'playlist';
   uri: string;

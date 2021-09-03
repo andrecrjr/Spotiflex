@@ -35,7 +35,7 @@ export const GeneralAlbum: React.FC<{
       className='block__pane--space'
       data-album={album.id}
       key={album.id}
-      onClick={() => router.push(`/album/${album.id}`)}
+      onClick={() => router.push(`/${album.type}/${album.id}`)}
     >
       <div className='block__pane--genre'>
         <Image
