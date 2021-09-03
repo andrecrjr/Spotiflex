@@ -13,9 +13,15 @@
   color: $green-main-font;
 }
 
-.pane--pic:hover{
-	transform: scale(1.4);
-	transition: 400ms transform;
+.pane--pic:hover {
+  transform: scale(1.4);
+  transition: 400ms transform;
+}
+.button {
+  &--play {
+    width: 30px;
+    fill: white;
+  }
 }
 
 @media (min-width: 661px) {

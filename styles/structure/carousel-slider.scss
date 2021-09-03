@@ -23,9 +23,13 @@
       .slider__button {
         background: transparent;
         border: none;
+        cursor: pointer;
         svg {
           width: 25px;
           fill: white;
+        }
+        &:disabled {
+          cursor: none;
         }
         &[data-control='next'] {
           svg {

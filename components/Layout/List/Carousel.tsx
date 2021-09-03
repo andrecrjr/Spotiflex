@@ -47,10 +47,12 @@ const Carousel: React.FC<{
         if (Math.abs(newWidth) >= scrollWidth - windowPane) {
           nextStep.current.style.opacity = '0.4';
           nextStep.current.style.pointerEvents = 'none';
+          nextStep.current.style.cursor = 'unset';
           previousStep.current.style.opacity = '1';
         } else {
           previousStep.current.style.opacity = '1';
           nextStep.current.style.pointerEvents = 'visible';
+          nextStep.current.style.cursor = 'pointer';
         }
       }
     });

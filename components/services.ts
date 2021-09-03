@@ -62,3 +62,25 @@ export const getOnlyCategories = async (): Promise<{
   const { categories } = await data.json();
   return categories;
 };
+
+export const getTrackListContent = async (
+  trackContent: 'albums' | 'playlists',
+  id: string | string[]
+): Promise<ISpotifyAlbum> => {
+  try {
+    const auth = await getPublicAuth();
+    const data = await fetch(
+      `https://api.spotify.com/v1/${trackContent}/${id}`,
+      {
+        headers: {
+          Authorization: `${auth.token_type} ${auth.access_token}`,
+        },
+      }
+    );
+    const songContent = await data.json();
+
+    return songContent;
+  } catch (error) {
+    console.error('Problem to get album');
+  }
+};
