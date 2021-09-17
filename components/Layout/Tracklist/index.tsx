@@ -6,7 +6,6 @@ const Tracklist: React.FC<{
   albumList?: ISpotifyAlbum;
   playList?: ISpotifyPlaylist;
 }> = ({ albumList, playList }) => {
-  console.log(playList);
   return (
     <ul className='tracklist__wrapper'>
       {playList?.tracks.items.map((item) => {
