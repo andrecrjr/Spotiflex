@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { ISpotifyPlaylist, PropsGenre } from '../../types/spotifyTypes';
+import { PropsGenre } from '../../types/spotifyTypes';
 import { GeneralAlbum } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 import { getOnlyCategories, getOnlyGenry } from '../../components/services';

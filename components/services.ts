@@ -78,7 +78,6 @@ export const getTrackListContent = async (
       }
     );
     const songContent = await data.json();
-
     return songContent;
   } catch (error) {
     console.error('Problem to get album');

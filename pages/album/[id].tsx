@@ -1,7 +1,7 @@
 import React from 'react';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 import { GetServerSideProps } from 'next';
-import { getPublicAuth } from '../../helper';
+
 import { ISpotifyAlbum, ISpotifyPlaylist } from '../../types';
 
 import TrackListWrapper from '../../components/Layout/Tracklist/wrapper';
@@ -9,6 +9,7 @@ import { getTrackListContent } from '../../components/services';
 
 const Album: React.FC<{ album?: ISpotifyAlbum; playlist?: ISpotifyPlaylist }> =
   ({ album, playlist }) => {
+    console.log('pl', album);
     if (playlist) {
       return (
         <>

@@ -4,7 +4,59 @@ type ItemsPlaylist = {
   video_thumbnail: [];
 };
 
-export type mergePlaylistItemTrack = ITracklist & ItemsPlaylist;
+type ImageObject = {
+  height: 64;
+  url: 'https://i.scdn.co/image/ab67616d000048511bfa23b13d0504fb90c37b39';
+  width: 64;
+};
+
+type Track = {
+  album?: ISpotifyAlbum;
+  available_markets?: any[];
+  disc_number?: number;
+  duration_ms?: number;
+  episode?: boolean;
+  explicit?: boolean;
+  href?: string;
+  id?: string;
+  is_local?: boolean;
+  name?: string;
+  popularity?: number;
+  preview_url?: string;
+  track?: Track;
+  track_number?: number;
+  type?: string;
+  uri?: string;
+};
+
+export interface ITrackPlaylist {
+  added_at?: string;
+  track?: Track;
+  id?: string;
+  items?: Track[] & {
+    limit: 100;
+    next: null;
+    offset: 0;
+    previous: null;
+    total: 52;
+  };
+  public?: boolean;
+  description?: string;
+  followers?: {
+    href: null;
+    total: 15201;
+  };
+  owner?: {
+    display_name: 'Spotify';
+    external_urls: {
+      spotify: 'https://open.spotify.com/user/spotify';
+    };
+    href: 'https://api.spotify.com/v1/users/spotify';
+    id: 'spotify';
+    type: 'user';
+    uri: 'spotify:user:spotify';
+  };
+}
 
 export interface ISpotifyPlaylist {
   collaborative: boolean;
@@ -14,7 +66,7 @@ export interface ISpotifyPlaylist {
   };
   href: string;
   id: string;
-  images: [{ url: string; width?: number; height?: number }];
+  images: ImageObject[];
   name: string;
   owner: {
     display_name: string;
@@ -26,11 +78,7 @@ export interface ISpotifyPlaylist {
   primary_color?: string;
   public?: boolean;
   snapshot_id: string;
-  tracks: {
-    href: string;
-    total: number;
-    items: mergePlaylistItemTrack[];
-  };
+  tracks?: ITrackPlaylist;
   type: 'playlist';
   uri: string;
 }
@@ -53,22 +101,18 @@ export interface ISpotifyAlbum {
   external_urls: {
     spotify: 'https://open.spotify.com/album/7KSf6p0G0mZd7j60etVTwT';
   };
-  href: 'https://api.spotify.com/v1/albums/7KSf6p0G0mZd7j60etVTwT';
-  id: '7KSf6p0G0mZd7j60etVTwT';
-  images: [
-    {
-      height: 640;
-      url: 'https://i.scdn.co/image/ab67616d0000b273a493e05c99d8ec5e8020ff2b';
-      width: 640;
-    }
-  ];
+  href: string;
+  id: string;
+  images: ImageObject[];
   name: 'Hall of Fame';
   release_date: '2021-06-11';
   release_date_precision: 'day';
   total_tracks: 20;
   tracks: {
     href: string;
-    items: ITracklist[];
+    items: ITrackPlaylist[];
+    id: '';
+    added_at: string;
   };
   type: 'album';
   uri: 'spotify:album:7KSf6p0G0mZd7j60etVTwT';

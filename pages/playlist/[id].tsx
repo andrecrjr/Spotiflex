@@ -2,10 +2,11 @@ import React from 'react';
 import { GetServerSideProps } from 'next';
 import Album from '../album/[id]';
 import { getTrackListContent } from '../../components/services';
+import { ISpotifyPlaylist } from '../../types';
 
-function Playlist({ playlist }) {
+const Playlist: React.FC<{ playlist: ISpotifyPlaylist }> = ({ playlist }) => {
   return <Album playlist={playlist} />;
-}
+};
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   try {
@@ -14,6 +15,9 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     };
   } catch (error) {
     console.log(error);
+    return {
+      props: { playlist: [] },
+    };
   }
 };
 
