@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-export const TrackPlayer = ({ trackUrl }: { trackUrl: string }) => {
+export const TrackPlayer: React.FC<{ trackUrl: string }> = ({ trackUrl }) => {
   const playerChild = useRef<HTMLAudioElement | undefined>(
     typeof Audio !== 'undefined' ? new Audio(trackUrl) : undefined
   );
