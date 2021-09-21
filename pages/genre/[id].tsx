@@ -8,7 +8,9 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
     <>
       <LayoutMetaSEO title={title} />
-      {title && <h1 className='block__page--title'>{title}</h1>}
+      {title && (
+        <h1 className='block__page--title'>{title.replace('-', ' ')}</h1>
+      )}
       <ul className='block__page--wrapper'>
         {items &&
           items.map((item) => (
@@ -36,6 +38,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
     const items = await getOnlyGenry(params.id);
+
     return {
       props: { items: items, title: params.id },
       revalidate: 5,

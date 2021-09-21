@@ -9,7 +9,6 @@ import { getTrackListContent } from '../../components/services';
 
 const Album: React.FC<{ album?: ISpotifyAlbum; playlist?: ISpotifyPlaylist }> =
   ({ album, playlist }) => {
-    console.log('pl', album);
     if (playlist) {
       return (
         <>

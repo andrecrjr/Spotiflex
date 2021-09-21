@@ -46,6 +46,7 @@ export const getOnlyGenry = async (
   const {
     playlists: { items },
   } = await data.json();
+
   return items;
 };
 

@@ -4,6 +4,9 @@
   transition: width 300ms linear;
   flex-direction: column;
   background: $black-background;
+  &.subpage {
+    width: 0;
+  }
   h1 {
     font-size: 1.3rem;
     margin-left: 25px;
@@ -11,21 +14,21 @@
   .menu,
   .logo {
     margin-top: 0.9375rem;
-		z-index:99;
+    z-index: 99;
   }
   .menu {
     transition: all 200ms;
     align-self: flex-start;
     margin-left: calc(#{$header-close} / 6);
   }
-	svg{
-		width:100%;
-	}
+  svg {
+    width: 100%;
+  }
   .logo {
     position: absolute;
     right: 1.5625rem;
     font-weight: bold;
-		text-shadow: 1px 3px 7px #14d143;
+    text-shadow: 1px 3px 7px #14d143;
   }
   &__menu {
     display: flex;
