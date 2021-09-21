@@ -9,7 +9,7 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
     <>
       <LayoutMetaSEO title={title} />
       {title && (
-        <h1 className='block__page--title'>{title.replace('-', ' ')}</h1>
+        <h1 className='block__page--title'>{title.replace(/\-|\_/g, ' ')}</h1>
       )}
       <ul className='block__page--wrapper'>
         {items &&

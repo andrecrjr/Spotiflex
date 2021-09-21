@@ -6,11 +6,31 @@ const TrackListHeader: React.FC<{
   album?: ISpotifyAlbum;
   playlist?: ISpotifyPlaylist;
 }> = ({ album, playlist }) => {
+  console.log(playlist);
   if (playlist) {
     return (
       <section className='header__album--wrapper'>
-        <div className='header__album--name'>
-          <h2 className='header__album--title'>{playlist.name}</h2>
+        <div className='header__album--pic'>
+          <Image
+            src={playlist.images[0].url}
+            layout='fill'
+            alt={playlist.name}
+          />
+        </div>
+        <div className='header__album--meta'>
+          <h2 className='header__album--title'>
+            {playlist.name}{' '}
+            {playlist.public ? (
+              <span style={{ fontSize: '0.8rem' }} title='public playlist'>
+                🔓
+              </span>
+            ) : (
+              <span style={{ fontSize: '0.8rem' }} title='private playlist'>
+                🔐
+              </span>
+            )}
+          </h2>
+          <p>{playlist.description}</p>
         </div>
       </section>
     );
