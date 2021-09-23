@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import { QueuePlaylistTrack } from './Tracklist/QueuePlaylistTrack';
 
 const Layout: React.FC<{
   children: React.ReactNode;
@@ -11,6 +12,7 @@ const Layout: React.FC<{
         <section className='main--wrapper'>
           <main className={`main--block`}>{children}</main>
         </section>
+        <QueuePlaylistTrack />
       </section>
     </>
   );

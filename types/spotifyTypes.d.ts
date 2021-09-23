@@ -22,7 +22,7 @@ type Track = {
   is_local?: boolean;
   name?: string;
   popularity?: number;
-  preview_url?: string;
+  preview_url: string;
   track?: Track;
   track_number?: number;
   type?: string;

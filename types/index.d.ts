@@ -1,4 +1,4 @@
-import type { ISpotifyAlbum, ISpotifyPlaylist } from './spotifyTypes';
+import type { ISpotifyAlbum, ISpotifyPlaylist, Track } from './spotifyTypes';
 export interface TokenSpotify {
   access_token: string;
   token_type: string;
@@ -20,4 +20,12 @@ export interface PlaylistItems {
   ];
 }
 
-export { ISpotifyAlbum, ISpotifyPlaylist };
+interface QueueList {
+  nowPlaying: boolean;
+}
+
+export interface IPlaylistContext {
+  userPlaylist?: (Track & QueueList)[];
+}
+
+export { ISpotifyAlbum, ISpotifyPlaylist, IPlaylistContext };

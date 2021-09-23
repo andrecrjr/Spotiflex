@@ -1,24 +1,37 @@
-import React, { useRef, useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { Track } from '../../../types/spotifyTypes';
+import { UserQueuePlaylist } from '../../context';
 
-export const TrackPlayer: React.FC<{ trackUrl: string }> = ({ trackUrl }) => {
-  const playerChild = useRef<HTMLAudioElement | undefined>(
-    typeof Audio !== 'undefined' ? new Audio(trackUrl) : undefined
-  );
-  const [isPlay, setPlaySong] = useState(false);
+export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
+  // const playerChild = useRef<HTMLAudioElement | undefined>(
+  //   typeof Audio !== 'undefined' ? new Audio(track.preview_url) : undefined
+  // );
+  // const { albumList, playList } = useContext(AlbumPlaylistContext);
+  const { dispatchPlaylist } = useContext(UserQueuePlaylist);
+  const [isPlay] = useState(false);
+
   const playTrack = async (e: React.MouseEvent) => {
     e.preventDefault();
-    if (!playerChild.current?.paused) {
-      playerChild?.current.pause();
-      setPlaySong(false);
-    } else {
-      await playerChild.current.play();
-      setPlaySong(true);
-    }
+    dispatchPlaylist({
+      type: 'ADD_PLAYLIST',
+      payload: track,
+    });
+    // if (!playerChild.current?.paused) {
+    //   playerChild?.current.pause();
+    //   setPlaySong(false);
+    // } else {
+    //   await playerChild.current.play();
+    //   setPlaySong(true);
+    // }
   };
   return (
     <>
       <section className='player--wrapper'>
-        <span className='player--control' onClick={playTrack}>
+        <span
+          className='player--control'
+          style={{ cursor: 'pointer' }}
+          onClick={playTrack}
+        >
           {!isPlay ? (
             <svg
               xmlns='http://www.w3.org/2000/svg'

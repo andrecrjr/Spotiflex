@@ -6,7 +6,6 @@ const TrackListHeader: React.FC<{
   album?: ISpotifyAlbum;
   playlist?: ISpotifyPlaylist;
 }> = ({ album, playlist }) => {
-  console.log(playlist);
   if (playlist) {
     return (
       <section className='header__album--wrapper'>
