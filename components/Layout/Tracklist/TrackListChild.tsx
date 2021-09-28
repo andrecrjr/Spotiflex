@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { ISpotifyPlaylist, Track } from '../../../types/spotifyTypes';
+import { Track } from '../../../types/spotifyTypes';
 import { msToTime } from '../../utils';
 import { TrackPlayer } from './TrackPlayer';
 

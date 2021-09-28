@@ -25,7 +25,11 @@ export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
   return (
     <>
       <section className='player--wrapper'>
-        <span className='player--control' style={{ cursor: 'pointer' }}>
+        <span
+          className='player--control'
+          style={{ cursor: 'pointer' }}
+          onClick={playTrack}
+        >
           {!isPlay ? (
             <svg
               xmlns='http://www.w3.org/2000/svg'
