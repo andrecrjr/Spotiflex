@@ -1,28 +1,21 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useRef } from 'react';
 import { Track } from '../../../types/spotifyTypes';
-import { UserQueuePlaylist } from '../../context';
 
 export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
-  // const playerChild = useRef<HTMLAudioElement | undefined>(
-  //   typeof Audio !== 'undefined' ? new Audio(track.preview_url) : undefined
-  // );
-  // const { albumList, playList } = useContext(AlbumPlaylistContext);
-  const { dispatchPlaylist } = useContext(UserQueuePlaylist);
-  const [isPlay] = useState(false);
+  const playerChild = useRef<HTMLAudioElement | undefined>(
+    typeof Audio !== 'undefined' ? new Audio(track.preview_url) : undefined
+  );
+
+  const [isPlay, setPlaySong] = useState(false);
 
   const playTrack = async (e: React.MouseEvent) => {
-    e.preventDefault();
-    dispatchPlaylist({
-      type: 'ADD_PLAYLIST',
-      payload: track,
-    });
-    // if (!playerChild.current?.paused) {
-    //   playerChild?.current.pause();
-    //   setPlaySong(false);
-    // } else {
-    //   await playerChild.current.play();
-    //   setPlaySong(true);
-    // }
+    if (!playerChild.current?.paused) {
+      playerChild?.current.pause();
+      setPlaySong(false);
+    } else {
+      await playerChild.current.play();
+      setPlaySong(true);
+    }
   };
   return (
     <>
