@@ -9,6 +9,7 @@ export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
   const [isPlay, setPlaySong] = useState(false);
 
   const playTrack = async (e: React.MouseEvent) => {
+    e.preventDefault();
     if (!playerChild.current?.paused) {
       playerChild?.current.pause();
       setPlaySong(false);

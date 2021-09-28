@@ -22,41 +22,21 @@ type Track = {
   is_local?: boolean;
   name?: string;
   popularity?: number;
-  preview_url: string;
+  preview_url?: string;
   track?: Track;
   track_number?: number;
   type?: string;
   uri?: string;
 };
 
-export interface ITrackPlaylist {
-  added_at?: string;
-  track?: Track;
-  id?: string;
-  items?: Track[] & {
-    limit: 100;
-    next: null;
-    offset: 0;
-    previous: null;
-    total: 52;
-  };
-  public?: boolean;
-  description?: string;
-  followers?: {
-    href: null;
-    total: 15201;
-  };
-  owner?: {
-    display_name: 'Spotify';
-    external_urls: {
-      spotify: 'https://open.spotify.com/user/spotify';
-    };
-    href: 'https://api.spotify.com/v1/users/spotify';
-    id: 'spotify';
-    type: 'user';
-    uri: 'spotify:user:spotify';
-  };
-}
+type PlaylistTracks = {
+  items: Track[];
+  limit: 100;
+  next: null;
+  offset: 0;
+  previous: null;
+  total: 52;
+};
 
 export interface ISpotifyPlaylist {
   collaborative: boolean;
@@ -78,7 +58,7 @@ export interface ISpotifyPlaylist {
   primary_color?: string;
   public?: boolean;
   snapshot_id: string;
-  tracks?: ITrackPlaylist;
+  tracks?: PlaylistTracks;
   type: 'playlist';
   uri: string;
 }

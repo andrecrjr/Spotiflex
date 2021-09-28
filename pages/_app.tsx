@@ -6,13 +6,11 @@ import { UserPlaylistWrapper } from '../components/contextWrappers/UserPlaylist'
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
-    <UserPlaylistWrapper>
-      <Layout>
-        <TransactionPage>
-          <Component {...pageProps} />
-        </TransactionPage>
-      </Layout>
-    </UserPlaylistWrapper>
+    <Layout>
+      <TransactionPage>
+        <Component {...pageProps} />
+      </TransactionPage>
+    </Layout>
   );
 }
 
