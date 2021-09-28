@@ -1,14 +1,11 @@
 import React, { memo } from 'react';
-import { ITrackPlaylist, Track } from '../../../types/spotifyTypes';
+import { ISpotifyPlaylist, Track } from '../../../types/spotifyTypes';
 import { msToTime } from '../../utils';
 import { TrackPlayer } from './TrackPlayer';
 
 const TrackListChild: React.FC<{
-  track?: ITrackPlaylist & Track;
-  playlist?: ITrackPlaylist;
-  isPlaylist?: boolean;
-}> = memo(({ track, isPlaylist = false, playlist }) => {
-  if (isPlaylist) return <TrackChild track={playlist.track} />;
+  track?: Track;
+}> = memo(({ track }) => {
   return <TrackChild track={track} />;
 });
 

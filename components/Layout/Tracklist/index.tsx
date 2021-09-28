@@ -13,7 +13,7 @@ const Tracklist: React.FC<{
         {playList?.tracks.items.map((item) => {
           return (
             <li className='tracklist__item' key={item.track.id}>
-              <TrackListChild playlist={item} isPlaylist={true} />
+              <TrackListChild track={item.track} />
             </li>
           );
         })}

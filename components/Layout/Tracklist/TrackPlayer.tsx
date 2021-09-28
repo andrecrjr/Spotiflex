@@ -3,13 +3,12 @@ import { Track } from '../../../types/spotifyTypes';
 
 export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
   const playerChild = useRef<HTMLAudioElement | undefined>(
-    typeof Audio !== 'undefined' ? new Audio(track.preview_url) : undefined
+    typeof Audio !== 'undefined' && new Audio(track.preview_url)
   );
 
   const [isPlay, setPlaySong] = useState(false);
 
-  const playTrack = async (e: React.MouseEvent) => {
-    e.preventDefault();
+  async function playSong() {
     if (!playerChild.current?.paused) {
       playerChild?.current.pause();
       setPlaySong(false);
@@ -17,15 +16,16 @@ export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
       await playerChild.current.play();
       setPlaySong(true);
     }
+  }
+
+  const playTrack = (e: React.MouseEvent) => {
+    e.preventDefault();
+    playSong();
   };
   return (
     <>
       <section className='player--wrapper'>
-        <span
-          className='player--control'
-          style={{ cursor: 'pointer' }}
-          onClick={playTrack}
-        >
+        <span className='player--control' style={{ cursor: 'pointer' }}>
           {!isPlay ? (
             <svg
               xmlns='http://www.w3.org/2000/svg'
