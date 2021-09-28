@@ -6,7 +6,7 @@ function Menu(): JSX.Element {
     <nav className='header__menu'>
       <ul className='header__menu--wrapper'>
         <li className='header__menu--item'>
-          <Link href='#'>
+          <Link href='/explorer'>
             <a className='menu--item'>
               <span className='menu--icon'>
                 <svg
