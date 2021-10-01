@@ -1,10 +1,14 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Track } from '../../../types/spotifyTypes';
 
 export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
-  const playerChild = useRef<HTMLAudioElement | undefined>(
-    typeof Audio !== 'undefined' && new Audio(track.preview_url)
-  );
+  const playerChild = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    if (track.preview_url) {
+      playerChild.current = new Audio(track.preview_url);
+    }
+  }, [track.preview_url]);
 
   const [isPlay, setPlaySong] = useState(false);
 

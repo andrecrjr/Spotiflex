@@ -10,15 +10,17 @@ const TrackListHeader: React.FC<{
     return (
       <section className='header__album--wrapper'>
         <div className='header__album--pic'>
-          <Image
-            src={playlist.images[0].url}
-            layout='fill'
-            alt={playlist.name}
-          />
+          {playlist?.images?.length > 0 && (
+            <Image
+              src={playlist.images[0].url}
+              layout='fill'
+              alt={playlist.name}
+            />
+          )}
         </div>
         <div className='header__album--meta'>
           <h2 className='header__album--title'>
-            {playlist.name}{' '}
+            {playlist.name}
             {playlist.public ? (
               <span style={{ fontSize: '0.8rem' }} title='public playlist'>
                 🔓

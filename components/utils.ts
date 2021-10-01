@@ -1,3 +1,7 @@
+import getConfig from 'next/config';
+
+const { serverRuntimeConfig } = getConfig();
+
 export const spotifyAuth = async (): Promise<void> => {
   const body = 'grant_type=client_credentials';
   const response = await fetch('https://accounts.spotify.com/api/token', {
@@ -5,7 +9,7 @@ export const spotifyAuth = async (): Promise<void> => {
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
       Authorization: `Basic ${Buffer.from(
-        `09cc6d07722546fdbb6f06e4e9161f90:${process.env.SPOTIFY_SECRET_KEY}`
+        `09cc6d07722546fdbb6f06e4e9161f90:${serverRuntimeConfig.spotifyKey}`
       ).toString('base64')}`,
     },
     body: body,
