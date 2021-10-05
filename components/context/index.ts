@@ -8,7 +8,10 @@ import { IPlaylistContext } from '../../types';
 
 export const UserQueuePlaylist = createContext<{
   state: IPlaylistContext;
-  dispatchPlaylist: React.Dispatch<{ type: string; payload: Track }>;
+  dispatchPlaylist: React.Dispatch<{
+    type: string;
+    payload: { track: Track; playlist: ISpotifyAlbum | ISpotifyPlaylist };
+  }>;
 }>({
   state: {
     userPlaylist: [],
@@ -17,6 +20,6 @@ export const UserQueuePlaylist = createContext<{
 });
 
 export const AlbumPlaylistContext = createContext<{
-  albumList?: ISpotifyAlbum | Record<string, unknown>;
-  playList?: ISpotifyPlaylist | Record<string, unknown>;
-}>({ albumList: {}, playList: {} });
+  albumList?: ISpotifyAlbum;
+  playList?: ISpotifyPlaylist;
+}>({});

@@ -29,14 +29,14 @@ type Track = {
   uri?: string;
 };
 
-type PlaylistTracks = {
+interface PlaylistTracks {
   items: Track[];
   limit: 100;
   next: null;
   offset: 0;
   previous: null;
   total: 52;
-};
+}
 
 export interface ISpotifyPlaylist {
   collaborative: boolean;
@@ -58,7 +58,7 @@ export interface ISpotifyPlaylist {
   primary_color?: string;
   public?: boolean;
   snapshot_id: string;
-  tracks?: PlaylistTracks;
+  tracks: PlaylistTracks;
   type: 'playlist';
   uri: string;
 }

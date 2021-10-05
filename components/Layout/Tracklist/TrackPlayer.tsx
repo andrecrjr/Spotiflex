@@ -1,30 +1,60 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, {
+  useState,
+  useRef,
+  useEffect,
+  useContext,
+  useLayoutEffect,
+} from 'react';
 import { Track } from '../../../types/spotifyTypes';
+import { AlbumPlaylistContext, UserQueuePlaylist } from '../../context';
 
-export const TrackPlayer: React.FC<{ track: Track }> = ({ track }) => {
+export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
+  track,
+  isFooter = false,
+}) => {
   const playerChild = useRef<HTMLAudioElement | null>(null);
+  const { albumList, playList } = useContext(AlbumPlaylistContext);
+  const { dispatchPlaylist } = useContext(UserQueuePlaylist);
 
   useEffect(() => {
+    console.log(track);
     if (track.preview_url) {
       playerChild.current = new Audio(track.preview_url);
     }
-  }, [track.preview_url]);
+  }, [track]);
+
+  useEffect(() => {
+    if (isFooter) {
+      if (track) {
+        playSong();
+      }
+    }
+  }, [track]);
 
   const [isPlay, setPlaySong] = useState(false);
 
   async function playSong() {
-    if (!playerChild.current?.paused) {
-      playerChild?.current.pause();
-      setPlaySong(false);
-    } else {
-      await playerChild.current.play();
-      setPlaySong(true);
+    if (playerChild) {
+      if (!playerChild.current?.paused && isPlay) {
+        playerChild?.current.pause();
+        setPlaySong(false);
+      } else {
+        await playerChild.current.play();
+        setPlaySong(true);
+      }
     }
   }
 
   const playTrack = (e: React.MouseEvent) => {
     e.preventDefault();
-    playSong();
+    if (isFooter) {
+      playSong();
+    } else {
+      dispatchPlaylist({
+        type: 'ADD_PLAYLIST',
+        payload: { track, playlist: playList || albumList },
+      });
+    }
   };
   return (
     <>

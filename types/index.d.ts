@@ -21,11 +21,13 @@ export interface PlaylistItems {
 }
 
 interface QueueList {
-  nowPlaying: boolean;
+  nowPlaying?: boolean;
 }
 
+export type QueuePlaylist = (Track & QueueList)[];
 export interface IPlaylistContext {
-  userPlaylist?: (Track & QueueList)[];
+  userPlaylist?: QueuePlaylist;
+  nowPlayTrack?: Track;
 }
 
 export { ISpotifyAlbum, ISpotifyPlaylist, IPlaylistContext };
