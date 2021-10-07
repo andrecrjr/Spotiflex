@@ -26,7 +26,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         await playerChild.current.play();
         setStatus(true);
         setNowPlaying(track);
-      } catch (e) {
+      } catch {
         dispatchPlaylist({
           type: 'NEXT_TRACK',
         });
@@ -49,14 +49,14 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
 
   useEffect(() => {
     if (statusPlayer) {
-      playerChild.current.addEventListener('ended', (e) => {
+      playerChild.current.addEventListener('ended', () => {
         if (track)
           dispatchPlaylist({
             type: 'NEXT_TRACK',
           });
       });
     }
-  }, [statusPlayer]);
+  }, [statusPlayer, dispatchPlaylist, track]);
 
   const pauseSong = () => {
     playerChild?.current.pause();
