@@ -45,7 +45,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         setStatus(false);
       }
     };
-  }, [track, isFooter, playSong, albumList]);
+  }, [track, isFooter, playSong]);
 
   useEffect(() => {
     if (statusPlayer) {
@@ -73,6 +73,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
       }
     } else {
       const trackList = playList || albumList;
+
       dispatchPlaylist({
         type: 'ADD_PLAYLIST',
         payload: {

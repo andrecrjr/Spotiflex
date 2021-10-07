@@ -30,6 +30,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     return { props: { album: await getTrackListContent('albums', params.id) } };
   } catch (error) {
     console.log(error);
+    return { notFound: true };
   }
 };
 

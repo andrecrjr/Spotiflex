@@ -38,18 +38,25 @@ export const playlistReducer = (
       const nextIdSong = state.userPlaylist.findIndex(
         (item) => item.nowPlaying === true
       );
+
       if (!(nextIdSong + 1 > state.userPlaylist.length - 1)) {
         const nextPlaylistData = nextTrackPlaylistData(
           state.userPlaylist,
-          state.queueType === 'album'
-            ? state.userPlaylist[nextIdSong + 1]
-            : state.userPlaylist[nextIdSong + 1].track,
+          getExactlyTrackForPlaylistOrAlbum(
+            state.userPlaylist,
+            state.queueType,
+            nextIdSong
+          ),
           state.queueType
         );
         return {
           ...state,
           userPlaylist: nextPlaylistData,
-          nowPlayTrack: state.userPlaylist[nextIdSong + 1].track,
+          nowPlayTrack: getExactlyTrackForPlaylistOrAlbum(
+            state.userPlaylist,
+            state.queueType,
+            nextIdSong
+          ),
         };
       } else {
         return {
@@ -63,30 +70,55 @@ export const playlistReducer = (
   }
 };
 
+const getExactlyTrackForPlaylistOrAlbum = (
+  playlist: QueuePlaylist,
+  type: typeOfTracklist,
+  id: number
+) => {
+  switch (type) {
+    case 'album':
+      return playlist[id + 1];
+    case 'playlist':
+      return playlist[id + 1].track;
+  }
+};
+
 const nextTrackPlaylistData = (
   playlist: QueuePlaylist,
   track: Track,
   type?: typeOfTracklist
 ): QueuePlaylist => {
-  if (type === 'album') {
-    const data = playlist.map((item) => {
-      if (item.id === track.id) {
-        return { ...item, nowPlaying: true };
-      } else {
-        return { ...item, nowPlaying: false };
-      }
-    });
-    return data;
+  switch (type) {
+    case 'album':
+      const data = playlist.map((item) => {
+        if (item.id === track.id) {
+          return { ...item, nowPlaying: true };
+        } else {
+          return { ...item, nowPlaying: false };
+        }
+      });
+      return data;
+    case 'playlist':
+      const dataPlaylist = playlist.map((item) => {
+        if (item.track.id === track.id) {
+          return { ...item, nowPlaying: true };
+        } else {
+          return { ...item, nowPlaying: false };
+        }
+      });
+      return dataPlaylist;
+    default:
+      const dataDefault = playlist.map((item) => {
+        if (item.track.id === track.id) {
+          return { ...item, nowPlaying: true };
+        } else {
+          return { ...item, nowPlaying: false };
+        }
+      });
+      return dataDefault;
   }
-  const data = playlist.map((item) => {
-    if (item.track.id === track.id) {
-      return { ...item, nowPlaying: true };
-    } else {
-      return { ...item, nowPlaying: false };
-    }
-  });
-  return data;
 };
+
 const rearrangePlaylistData = (
   playlist: ISpotifyPlaylist | ISpotifyAlbum,
   track?: Track
