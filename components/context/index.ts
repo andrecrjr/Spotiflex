@@ -10,7 +10,7 @@ export const UserQueuePlaylist = createContext<{
   state: IPlaylistContext;
   dispatchPlaylist: React.Dispatch<{
     type: string;
-    payload: { track: Track; playlist: ISpotifyAlbum | ISpotifyPlaylist };
+    payload?: { track: Track; playlist: ISpotifyAlbum | ISpotifyPlaylist };
   }>;
 }>({
   state: {

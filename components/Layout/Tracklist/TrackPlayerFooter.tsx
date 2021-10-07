@@ -17,10 +17,12 @@ export const TrackPlayerFooter = (props: Props) => {
   }, [state.nowPlayTrack]);
 
   return (
-    <div className='track--footer'>
+    <>
       {Object.keys(nowPlaying).length > 0 ? (
-        <TrackPlayer track={state.nowPlayTrack} isFooter={true} />
+        <div className='track--footer'>
+          <TrackPlayer track={state.nowPlayTrack} isFooter={true} />
+        </div>
       ) : null}
-    </div>
+    </>
   );
 };

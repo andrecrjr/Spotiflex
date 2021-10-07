@@ -5,13 +5,13 @@ export const initialPlaylist: IPlaylistContext = {
   userPlaylist: [],
 };
 
-type controlPlaylist = 'ADD_PLAYLIST' | 'REMOVE_PLAYLIST';
+type controlPlaylist = 'ADD_PLAYLIST' | 'REMOVE_PLAYLIST' | 'NEXT_TRACK';
 
 export const playlistReducer = (
   state = initialPlaylist,
   action: {
     type: controlPlaylist;
-    payload: {
+    payload?: {
       track: Track & QueuePlaylist;
       playlist: ISpotifyPlaylist | ISpotifyAlbum;
     };
@@ -19,20 +19,43 @@ export const playlistReducer = (
 ): IPlaylistContext => {
   switch (action.type) {
     case 'ADD_PLAYLIST':
-      const data = action.payload.playlist.tracks.items.map((item) => {
-        if (item.track.id === action.payload.track.id) {
-          return { ...item, nowPlaying: true };
-        } else {
-          return { ...item, nowPlaying: false };
-        }
-      });
-
+      const data = rearrangePlaylistData(
+        action.payload.playlist.tracks.items,
+        action.payload.track
+      );
+      console.log(data);
       return {
         ...state,
         userPlaylist: data,
         nowPlayTrack: action.payload.track,
       };
+    case 'NEXT_TRACK':
+      const nextIdSong = state.userPlaylist.findIndex(
+        (item) => item.nowPlaying === true
+      );
+
+      const nextPlaylistData = rearrangePlaylistData(
+        state.userPlaylist,
+        state.userPlaylist[nextIdSong + 1].track
+      );
+
+      return {
+        ...state,
+        userPlaylist: nextPlaylistData,
+        nowPlayTrack: state.userPlaylist[nextIdSong + 1].track,
+      };
     default:
       return state;
   }
+};
+
+const rearrangePlaylistData = (playlist, track?: Track) => {
+  const data = playlist.map((item) => {
+    if (item.track.id === track.id) {
+      return { ...item, nowPlaying: true };
+    } else {
+      return { ...item, nowPlaying: false };
+    }
+  });
+  return data;
 };

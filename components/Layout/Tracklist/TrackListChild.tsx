@@ -13,7 +13,7 @@ const TrackChild: React.FC<{ track: Track }> = ({ track }) => {
   return (
     <>
       <span className='tracklist__item--play'>
-        <TrackPlayer track={track} />
+        <TrackPlayer track={track} isFooter={false} />
       </span>
       <div className={`tracklist__item--child`}>
         <h4 className={`track--name ${'big-title'}`}>{track.name}</h4>

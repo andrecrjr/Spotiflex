@@ -90,7 +90,7 @@ export interface ISpotifyAlbum {
   total_tracks: 20;
   tracks: {
     href: string;
-    items: ITrackPlaylist[];
+    items: Track[];
     id: '';
     added_at: string;
   };

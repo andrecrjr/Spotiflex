@@ -11,11 +11,12 @@ const Tracklist: React.FC<{
     <AlbumPlaylistContext.Provider value={{ albumList, playList }}>
       <ul className='tracklist__wrapper'>
         {playList?.tracks?.items.map((item) => {
-          return (
-            <li className='tracklist__item' key={item.track.id}>
-              <TrackListChild track={item.track} />
-            </li>
-          );
+          if (item.track.preview_url !== null)
+            return (
+              <li className='tracklist__item' key={item.track.id}>
+                <TrackListChild track={item.track} />
+              </li>
+            );
         })}
         {albumList?.tracks.items.map((item) => {
           return (
