@@ -19,11 +19,13 @@ const Tracklist: React.FC<{
             );
         })}
         {albumList?.tracks.items.map((item) => {
-          return (
-            <li className='tracklist__item' key={item.id}>
-              <TrackListChild track={item} />
-            </li>
-          );
+          if (item.preview_url !== null)
+            return (
+              <li className='tracklist__item' key={item.id}>
+                <TrackListChild track={item} />
+              </li>
+            );
+          return <p>Don't have preview song</p>;
         })}
       </ul>
     </AlbumPlaylistContext.Provider>

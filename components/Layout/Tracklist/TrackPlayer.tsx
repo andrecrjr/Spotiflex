@@ -14,6 +14,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
 }) => {
   const playerChild = useRef<HTMLAudioElement | null>(null);
   const { albumList, playList } = useContext(AlbumPlaylistContext);
+
   const { dispatchPlaylist } = useContext(UserQueuePlaylist);
   const [statusPlayer, setStatus] = useState(false);
   const [nowTrack, setNowPlaying] = useState<Track | null>(null);
@@ -26,16 +27,17 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         setStatus(true);
         setNowPlaying(track);
       } catch (e) {
-        dispatchPlaylist({ type: 'NEXT_TRACK' });
+        dispatchPlaylist({
+          type: 'NEXT_TRACK',
+        });
       }
     },
     [dispatchPlaylist]
   );
+
   useEffect(() => {
-    if (isFooter) {
-      if (track) {
-        playSong(track);
-      }
+    if (isFooter && track) {
+      playSong(track);
     }
     return () => {
       if (isFooter) {
@@ -43,13 +45,15 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         setStatus(false);
       }
     };
-  }, [track, isFooter, playSong]);
+  }, [track, isFooter, playSong, albumList]);
 
   useEffect(() => {
     if (statusPlayer) {
       playerChild.current.addEventListener('ended', (e) => {
-        console.log('ended track go to next');
-        dispatchPlaylist({ type: 'NEXT_TRACK' });
+        if (track)
+          dispatchPlaylist({
+            type: 'NEXT_TRACK',
+          });
       });
     }
   }, [statusPlayer]);
@@ -60,7 +64,6 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
 
   const playTrack = (e: React.MouseEvent) => {
     e.preventDefault();
-    console.log(playerChild.current);
     if (isFooter) {
       if (playerChild.current !== null && statusPlayer) {
         pauseSong();
@@ -69,9 +72,14 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         playSong(track);
       }
     } else {
+      const trackList = playList || albumList;
       dispatchPlaylist({
         type: 'ADD_PLAYLIST',
-        payload: { track, playlist: playList || albumList },
+        payload: {
+          track,
+          playlist: trackList,
+          type: trackList.type,
+        },
       });
     }
   };

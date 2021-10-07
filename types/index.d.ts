@@ -1,3 +1,4 @@
+import { typeOfTrack } from './spotifyTypes.d';
 import type { ISpotifyAlbum, ISpotifyPlaylist, Track } from './spotifyTypes';
 export interface TokenSpotify {
   access_token: string;
@@ -28,6 +29,7 @@ export type QueuePlaylist = (Track & QueueList)[];
 export interface IPlaylistContext {
   userPlaylist?: QueuePlaylist;
   nowPlayTrack?: Track;
+  queueType?: typeOfTrack;
 }
 
 export { ISpotifyAlbum, ISpotifyPlaylist, IPlaylistContext };

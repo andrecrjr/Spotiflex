@@ -10,6 +10,13 @@ type ImageObject = {
   width: 64;
 };
 
+export type typeOfTracklist =
+  | 'album'
+  | 'playlist'
+  | 'single'
+  | 'podcast'
+  | 'track';
+
 type Track = {
   album?: ISpotifyAlbum;
   available_markets?: any[];
@@ -25,7 +32,7 @@ type Track = {
   preview_url?: string;
   track?: Track;
   track_number?: number;
-  type?: string;
+  type?: typeOfTrack;
   uri?: string;
 };
 
