@@ -33,17 +33,24 @@ export const playlistReducer = (
       const nextIdSong = state.userPlaylist.findIndex(
         (item) => item.nowPlaying === true
       );
-
-      const nextPlaylistData = rearrangePlaylistData(
-        state.userPlaylist,
-        state.userPlaylist[nextIdSong + 1].track
-      );
-
-      return {
-        ...state,
-        userPlaylist: nextPlaylistData,
-        nowPlayTrack: state.userPlaylist[nextIdSong + 1].track,
-      };
+      //todo - parar no ultimo numero, criar repeat
+      if (nextIdSong !== -1) {
+        const nextPlaylistData = rearrangePlaylistData(
+          state.userPlaylist,
+          state.userPlaylist[nextIdSong + 1].track
+        );
+        return {
+          ...state,
+          userPlaylist: nextPlaylistData,
+          nowPlayTrack: state.userPlaylist[nextIdSong + 1].track,
+        };
+      } else {
+        return {
+          ...state,
+          userPlaylist: [],
+          nowPlayTrack: null,
+        };
+      }
     default:
       return state;
   }

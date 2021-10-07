@@ -1,15 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { ISpotifyAlbum, ISpotifyPlaylist } from '../../../types';
+import { Track } from '../../../types/spotifyTypes';
 import { UserQueuePlaylist } from '../../context';
 import { TrackPlayer } from './TrackPlayer';
 
-interface Props {}
-
-export const TrackPlayerFooter = (props: Props) => {
+export const TrackPlayerFooter: React.FC = () => {
   const { state } = useContext(UserQueuePlaylist);
-  const [nowPlaying, setNowPlaying] = useState<
-    ISpotifyPlaylist | ISpotifyAlbum | {}
-  >({});
+  const [nowPlaying, setNowPlaying] = useState<Track>(null);
   useEffect(() => {
     if (state.nowPlayTrack) {
       setNowPlaying(state.nowPlayTrack);
@@ -18,7 +14,7 @@ export const TrackPlayerFooter = (props: Props) => {
 
   return (
     <>
-      {Object.keys(nowPlaying).length > 0 ? (
+      {nowPlaying ? (
         <div className='track--footer'>
           <TrackPlayer track={state.nowPlayTrack} isFooter={true} />
         </div>

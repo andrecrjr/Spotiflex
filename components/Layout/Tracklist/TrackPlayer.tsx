@@ -3,7 +3,7 @@ import React, {
   useRef,
   useEffect,
   useContext,
-  useLayoutEffect,
+  useCallback,
 } from 'react';
 import { Track } from '../../../types/spotifyTypes';
 import { AlbumPlaylistContext, UserQueuePlaylist } from '../../context';
@@ -16,12 +16,25 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
   const { albumList, playList } = useContext(AlbumPlaylistContext);
   const { dispatchPlaylist } = useContext(UserQueuePlaylist);
   const [statusPlayer, setStatus] = useState(false);
+  const [nowTrack, setNowPlaying] = useState<Track | null>(null);
 
+  const playSong = useCallback(
+    async (track) => {
+      try {
+        playerChild.current = new Audio(track.preview_url);
+        await playerChild.current.play();
+        setStatus(true);
+        setNowPlaying(track);
+      } catch (e) {
+        dispatchPlaylist({ type: 'NEXT_TRACK' });
+      }
+    },
+    [dispatchPlaylist]
+  );
   useEffect(() => {
     if (isFooter) {
       if (track) {
-        playSong();
-        setStatus(true);
+        playSong(track);
       }
     }
     return () => {
@@ -30,29 +43,19 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         setStatus(false);
       }
     };
-  }, [track]);
+  }, [track, isFooter, playSong]);
 
   useEffect(() => {
     if (statusPlayer) {
-      console.log('aaaaaa', playerChild.current);
       playerChild.current.addEventListener('ended', (e) => {
         console.log('ended track go to next');
-        //dispatchPlaylist({type:"NEXT_TRACK"})
+        dispatchPlaylist({ type: 'NEXT_TRACK' });
       });
     }
   }, [statusPlayer]);
 
   const pauseSong = () => {
     playerChild?.current.pause();
-    console.log('Pause');
-  };
-  const playSong = async () => {
-    try {
-      playerChild.current = new Audio(track.preview_url);
-      await playerChild.current.play();
-    } catch (e) {
-      console.log('Problema para tocar a musica');
-    }
   };
 
   const playTrack = (e: React.MouseEvent) => {
@@ -63,8 +66,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         pauseSong();
         setStatus(false);
       } else {
-        playSong();
-        setStatus(true);
+        playSong(track);
       }
     } else {
       dispatchPlaylist({
@@ -86,7 +88,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         </span>
         {isFooter && (
           <button
-            onClick={(e) => {
+            onClick={() => {
               dispatchPlaylist({
                 type: 'NEXT_TRACK',
               });
@@ -95,6 +97,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
             Next
           </button>
         )}
+        {isFooter && nowTrack && <h3>{nowTrack.name}</h3>}
       </section>
     </>
   );
