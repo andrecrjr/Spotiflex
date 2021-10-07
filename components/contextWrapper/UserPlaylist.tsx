@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { UserQueuePlaylist } from '../context/';
+import { UserQueuePlaylist } from '../context';
 import { initialPlaylist, playlistReducer } from '../reducer/PlaylistReducer';
 
 //not using yet

@@ -25,11 +25,12 @@ interface QueueList {
   nowPlaying?: boolean;
 }
 
-export type QueuePlaylist = (Track & QueueList)[];
-export interface IPlaylistContext {
+type QueuePlaylist = (Track & QueueList)[];
+
+interface IPlaylistContext {
   userPlaylist?: QueuePlaylist;
   nowPlayTrack?: Track;
   queueType?: typeOfTrack;
 }
 
-export { ISpotifyAlbum, ISpotifyPlaylist, IPlaylistContext };
+export { ISpotifyAlbum, ISpotifyPlaylist, IPlaylistContext, QueuePlaylist };
