@@ -1,7 +1,72 @@
+.player--wrapper,
+.player--control {
+  cursor: pointer;
+  transition: all 200ms linear;
+  &:hover {
+    stroke: $green-opacity-font;
+  }
+}
+
 .track--footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 100px;
   background-color: $black-background;
+  .player--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    .player--control {
+      width: 40px;
+      margin-left: 10px;
+      cursor: pointer;
+      &:hover {
+        stroke: $green-main-font;
+      }
+      &[data-control='next'],
+      &[data-control='previous'] {
+        width: 30px;
+        fill: white;
+        &:hover {
+          fill: $green-opacity-font;
+        }
+      }
+      &[data-control='previous'] {
+        transform: rotate(180deg);
+        padding-top: 6px;
+      }
+      .button--play {
+        width: 100%;
+      }
+    }
+  }
+  &__track-info {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    min-width: 55%;
+    margin: 0 15px;
+  }
+  &__track-title {
+    white-space: nowrap;
+    overflow: scroll;
+    h3 {
+      font-size: 0.88rem;
+    }
+  }
+  &__track-artist {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 661px) {
+  .track--footer {
+    &__track-title {
+      white-space: nowrap;
+      overflow: initial;
+    }
+  }
 }

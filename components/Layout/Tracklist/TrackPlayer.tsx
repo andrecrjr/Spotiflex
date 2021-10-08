@@ -49,14 +49,15 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
 
   useEffect(() => {
     if (statusPlayer) {
-      playerChild.current.addEventListener('ended', () => {
-        if (track)
-          dispatchPlaylist({
-            type: 'NEXT_TRACK',
-          });
+      playerChild.current.addEventListener('ended', (e) => {
+        e.preventDefault();
+
+        dispatchPlaylist({
+          type: 'NEXT_TRACK',
+        });
       });
     }
-  }, [statusPlayer, dispatchPlaylist, track]);
+  }, [statusPlayer, dispatchPlaylist]);
 
   const pauseSong = () => {
     playerChild?.current.pause();
@@ -88,25 +89,66 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
   return (
     <>
       <section className='player--wrapper'>
-        <span
-          className='player--control'
-          style={{ cursor: 'pointer' }}
-          onClick={playTrack}
-        >
-          <PlayPauseSongButton {...{ statusPlayer }} />
-        </span>
         {isFooter && (
-          <button
+          <span
             onClick={() => {
               dispatchPlaylist({
                 type: 'NEXT_TRACK',
               });
             }}
+            className='player--control'
+            data-control='previous'
           >
-            Next
-          </button>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              xmlSpace='preserve'
+              viewBox='0 0 408.221 408.221'
+            >
+              <path d='M204.11 0C91.388 0 0 91.388 0 204.111c0 112.725 91.388 204.11 204.11 204.11 112.729 0 204.11-91.385 204.11-204.11C408.221 91.388 316.839 0 204.11 0zm-31.542 218.325-79.405 45.536c-13.683 7.835-24.778 1.419-24.778-14.351v-90.792c0-15.77 11.095-22.191 24.778-14.349l79.405 45.546c13.683 7.836 13.683 20.56 0 28.41zm151.62 29.086c0 15.761-8.672 28.549-19.355 28.549-10.688 0-19.344-12.788-19.344-28.549v-24.994l-72.27 41.444c-13.678 7.835-24.765 1.411-24.765-14.358v-90.784c0-15.77 11.087-22.191 24.765-14.349l72.27 41.449v-25.012c0-15.761 8.656-28.549 19.344-28.549 10.684 0 19.355 12.788 19.355 28.549v86.604z' />
+            </svg>
+          </span>
         )}
-        {isFooter && nowTrack && <h3>{nowTrack.name}</h3>}
+        <span
+          className='player--control'
+          data-control='play'
+          onClick={playTrack}
+        >
+          <PlayPauseSongButton {...{ statusPlayer }} />
+        </span>
+        {isFooter && (
+          <span
+            onClick={() => {
+              dispatchPlaylist({
+                type: 'NEXT_TRACK',
+              });
+            }}
+            className='player--control'
+            data-control='next'
+          >
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              xmlSpace='preserve'
+              viewBox='0 0 408.221 408.221'
+            >
+              <path d='M204.11 0C91.388 0 0 91.388 0 204.111c0 112.725 91.388 204.11 204.11 204.11 112.729 0 204.11-91.385 204.11-204.11C408.221 91.388 316.839 0 204.11 0zm-31.542 218.325-79.405 45.536c-13.683 7.835-24.778 1.419-24.778-14.351v-90.792c0-15.77 11.095-22.191 24.778-14.349l79.405 45.546c13.683 7.836 13.683 20.56 0 28.41zm151.62 29.086c0 15.761-8.672 28.549-19.355 28.549-10.688 0-19.344-12.788-19.344-28.549v-24.994l-72.27 41.444c-13.678 7.835-24.765 1.411-24.765-14.358v-90.784c0-15.77 11.087-22.191 24.765-14.349l72.27 41.449v-25.012c0-15.761 8.656-28.549 19.344-28.549 10.684 0 19.355 12.788 19.355 28.549v86.604z' />
+            </svg>
+          </span>
+        )}
+        {isFooter && nowTrack && (
+          <div className='track--footer__track-info'>
+            <div className='track--footer__track-title'>
+              <h3>{nowTrack.name}</h3>
+            </div>
+            <div>
+              {nowTrack.album.artists.map((artist, index) => (
+                <span className='track--footer__track-artist' key={artist.id}>
+                  {artist.name}
+                  {nowTrack.album.artists.length === index + 1 ? '' : ', '}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
     </>
   );
