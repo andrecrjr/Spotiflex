@@ -6,6 +6,7 @@ import { TrackPlayer } from './TrackPlayer';
 export const TrackPlayerFooter: React.FC = () => {
   const { state } = useContext(UserQueuePlaylist);
   const [nowPlaying, setNowPlaying] = useState<Track>(null);
+
   useEffect(() => {
     if (state.nowPlayTrack) {
       setNowPlaying(state.nowPlayTrack);

@@ -51,7 +51,6 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
     if (statusPlayer) {
       playerChild.current.addEventListener('ended', (e) => {
         e.preventDefault();
-
         dispatchPlaylist({
           type: 'NEXT_TRACK',
         });
@@ -74,7 +73,6 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
       }
     } else {
       const trackList = playList || albumList;
-      console.log(trackList);
       dispatchPlaylist({
         type: 'ADD_PLAYLIST',
         payload: {

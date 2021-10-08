@@ -84,7 +84,6 @@ export const playlistReducer = (
           ),
           state.queueType
         );
-        console.log(previousPlaylist);
         return {
           ...state,
           userPlaylist: previousPlaylist,
