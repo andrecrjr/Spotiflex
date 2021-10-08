@@ -74,7 +74,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
       }
     } else {
       const trackList = playList || albumList;
-
+      console.log(trackList);
       dispatchPlaylist({
         type: 'ADD_PLAYLIST',
         payload: {
@@ -93,7 +93,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
           <span
             onClick={() => {
               dispatchPlaylist({
-                type: 'NEXT_TRACK',
+                type: 'PREVIOUS_TRACK',
               });
             }}
             className='player--control'

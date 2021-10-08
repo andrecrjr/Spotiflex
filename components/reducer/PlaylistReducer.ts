@@ -9,7 +9,11 @@ export const initialPlaylist: IPlaylistContext = {
   userPlaylist: [],
 };
 
-type controlPlaylist = 'ADD_PLAYLIST' | 'REMOVE_PLAYLIST' | 'NEXT_TRACK';
+type controlPlaylist =
+  | 'ADD_PLAYLIST'
+  | 'REMOVE_PLAYLIST'
+  | 'NEXT_TRACK'
+  | 'PREVIOUS_TRACK';
 
 export const playlistReducer = (
   state = initialPlaylist,
@@ -27,7 +31,7 @@ export const playlistReducer = (
       const data = rearrangePlaylistData(
         action.payload.playlist,
         action.payload.track
-      );
+      ).filter((playlist) => playlist.track.preview_url !== null);
       return {
         ...state,
         userPlaylist: data,
@@ -65,6 +69,39 @@ export const playlistReducer = (
           nowPlayTrack: null,
         };
       }
+    case 'PREVIOUS_TRACK':
+      const nowTrackId = state.userPlaylist.findIndex(
+        (item) => item.nowPlaying === true
+      );
+      if (nowTrackId >= 1) {
+        const previousPlaylist = nextTrackPlaylistData(
+          state.userPlaylist,
+          getExactlyTrackForPlaylistOrAlbum(
+            state.userPlaylist,
+            state.queueType,
+            nowTrackId,
+            'previous'
+          ),
+          state.queueType
+        );
+        console.log(previousPlaylist);
+        return {
+          ...state,
+          userPlaylist: previousPlaylist,
+          nowPlayTrack: getExactlyTrackForPlaylistOrAlbum(
+            state.userPlaylist,
+            state.queueType,
+            nowTrackId,
+            'previous'
+          ),
+        };
+      } else {
+        return {
+          ...state,
+          userPlaylist: [],
+          nowPlayTrack: null,
+        };
+      }
     default:
       return state;
   }
@@ -73,13 +110,16 @@ export const playlistReducer = (
 const getExactlyTrackForPlaylistOrAlbum = (
   playlist: QueuePlaylist,
   type: typeOfTracklist,
-  id: number
+  id: number,
+  nextOrPrevious: 'next' | 'previous' = 'next'
 ) => {
   switch (type) {
     case 'album':
-      return playlist[id + 1];
+      if (nextOrPrevious === 'next') return playlist[id + 1];
+      return playlist[id - 1];
     case 'playlist':
-      return playlist[id + 1].track;
+      if (nextOrPrevious === 'next') return playlist[id + 1].track;
+      return playlist[id - 1].track;
   }
 };
 
