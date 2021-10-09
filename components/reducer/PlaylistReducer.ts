@@ -31,7 +31,9 @@ export const playlistReducer = (
       const data = rearrangePlaylistData(
         action.payload.playlist,
         action.payload.track
-      ).filter((playlist) => playlist.track.preview_url !== null);
+      );
+      console.log(data);
+
       return {
         ...state,
         userPlaylist: data,

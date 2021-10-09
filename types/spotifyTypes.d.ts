@@ -34,6 +34,18 @@ type Track = {
   track_number?: number;
   type?: typeOfTrack;
   uri?: string;
+  artists: [
+    {
+      external_urls: {
+        spotify: 'https://open.spotify.com/artist/4BYxqVkZyFjtik7crYLg5Q';
+      };
+      href: 'https://api.spotify.com/v1/artists/4BYxqVkZyFjtik7crYLg5Q';
+      id: '4BYxqVkZyFjtik7crYLg5Q';
+      name: 'Chris Young';
+      type: 'artist';
+      uri: 'spotify:artist:4BYxqVkZyFjtik7crYLg5Q';
+    }
+  ];
 };
 
 interface PlaylistTracks {

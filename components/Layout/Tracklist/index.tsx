@@ -10,7 +10,7 @@ const Tracklist: React.FC<{
   return (
     <AlbumPlaylistContext.Provider value={{ albumList, playList }}>
       <ul className='tracklist__wrapper'>
-        {playList?.tracks?.items.map((item) => {
+        {playList?.tracks.items.map((item) => {
           if (item.track.preview_url !== null)
             return (
               <li className='tracklist__item' key={item.track.id}>
