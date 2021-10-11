@@ -32,8 +32,6 @@ export const playlistReducer = (
         action.payload.playlist,
         action.payload.track
       );
-      console.log(data);
-
       return {
         ...state,
         userPlaylist: data,
