@@ -5,40 +5,43 @@ import { getDataSpotify } from '../../components/services';
 import Carousel from '../../components/Layout/List/Carousel';
 import SongList from '../../components/Layout/List';
 
-const Search: React.FC<{ resp: ISearchSpotify; query: string }> = ({
+const Search: React.FC<{ resp: ISearchSpotify; query: string; notFound }> = ({
   resp,
   query,
 }) => {
   const [autoComplete, setAutoComplete] = useState<ISearchSpotify>({});
 
   useEffect(() => {
-    redirectSearch(resp);
+    redirectSearch();
   }, [resp]);
-  const redirectSearch = async (query: ISearchSpotify) => {
+  const redirectSearch = () => {
     setAutoComplete(resp);
   };
-
+  if (query.length > 0)
+    return (
+      <div className='block' id='explorer'>
+        {Object.keys(autoComplete).length > 0 && (
+          <>
+            {autoComplete.artists.items.length > 0 && (
+              <SongList
+                listType={{ artists: autoComplete.artists.items }}
+                iconsWithTitle={true}
+                name={`Artists found with "${query}"`}
+              />
+            )}
+            {autoComplete.albums.items.length > 0 && (
+              <SongList
+                listType={{ albums: autoComplete.albums.items }}
+                iconsWithTitle={true}
+                name={`Albums found with "${query}"`}
+              />
+            )}
+          </>
+        )}
+      </div>
+    );
   return (
-    <>
-      {Object.keys(autoComplete).length > 0 && (
-        <>
-          {autoComplete.artists.items.length > 0 && (
-            <SongList
-              listType={{ artists: autoComplete.artists.items }}
-              iconsWithTitle={true}
-              name={`Artists found with "${query}"`}
-            />
-          )}
-          {autoComplete.albums.items.length > 0 && (
-            <SongList
-              listType={{ albums: autoComplete.albums.items }}
-              iconsWithTitle={true}
-              name={`Albums found with "${query}"`}
-            />
-          )}
-        </>
-      )}
-    </>
+    <p>No searchings, please search your favorite song, album or artist!</p>
   );
 };
 
@@ -55,7 +58,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
       props: { resp, query: newQuery },
     };
   } catch (e) {
-    return { notFound: true };
+    return { notFound: true, newQuery: '' };
   }
 };
 

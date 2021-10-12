@@ -106,13 +106,17 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
             </svg>
           </span>
         )}
-        <span
-          className='player--control'
-          data-control='play'
-          onClick={playTrack}
-        >
-          <PlayPauseSongButton {...{ statusPlayer }} />
-        </span>
+
+        {track.preview_url !== null && (
+          <span
+            className='player--control'
+            data-control='play'
+            onClick={playTrack}
+          >
+            <PlayPauseSongButton {...{ statusPlayer }} />
+          </span>
+        )}
+
         {isFooter && (
           <span
             onClick={() => {

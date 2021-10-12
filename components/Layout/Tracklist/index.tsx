@@ -10,26 +10,21 @@ const Tracklist: React.FC<{
   return (
     <AlbumPlaylistContext.Provider value={{ albumList, playList }}>
       <ul className='tracklist__wrapper'>
-        {playList?.tracks.items.map((item) => {
-          if (item.track.preview_url !== null)
-            return (
-              <li
-                className='tracklist__item'
-                id={item.track.id}
-                key={item.track.id}
-              >
-                <TrackListChild track={item.track} />
-              </li>
-            );
-        })}
+        {playList?.tracks.items.map((item) => (
+          <li
+            className='tracklist__item'
+            id={item.track.id}
+            key={item.track.id}
+          >
+            <TrackListChild track={item.track} />
+          </li>
+        ))}
         {albumList?.tracks.items.map((item) => {
-          if (item.preview_url !== null)
-            return (
-              <li className='tracklist__item' id={item.id} key={item.id}>
-                <TrackListChild track={item} />
-              </li>
-            );
-          return <p key={item.id}>Don't have preview song</p>;
+          return (
+            <li className='tracklist__item' id={item.id} key={item.id}>
+              <TrackListChild track={item} />
+            </li>
+          );
         })}
       </ul>
     </AlbumPlaylistContext.Provider>

@@ -10,13 +10,13 @@ const TrackListHeader: React.FC<{
     return (
       <section className='header__album--wrapper'>
         <div className='header__album--pic'>
-          {playlist?.images?.length > 0 && (
+          {playlist?.images?.length > 0 || album.images.length > 0 ? (
             <Image
               src={playlist.images[0].url}
               layout='fill'
               alt={playlist.name}
             />
-          )}
+          ) : null}
         </div>
         <div className='header__album--meta'>
           <h2 className='header__album--title'>
