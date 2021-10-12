@@ -1,10 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
+import { SearchInput } from './SearchInput';
 
 function Menu(): JSX.Element {
   return (
     <nav className='header__menu'>
       <ul className='header__menu--wrapper'>
+        <li className='header__menu--item'>
+          <span className='menu--item'>
+            <SearchInput />
+          </span>
+        </li>
         <li className='header__menu--item'>
           <Link href='/explorer'>
             <a className='menu--item'>

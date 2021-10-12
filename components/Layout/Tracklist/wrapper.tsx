@@ -8,8 +8,8 @@ const TrackListWrapper: React.FC<{
   playlist?: ISpotifyPlaylist;
 }> = ({ album, playlist }) => {
   const [trackIsNull] = useState(
-    playlist?.tracks.items.filter((item) => item.track !== null) ||
-      album?.tracks.items.filter((item) => item.track !== null)
+    playlist?.tracks?.items.filter((item) => item.track !== null) ||
+      album?.tracks?.items.filter((item) => item.track !== null)
   );
 
   return (

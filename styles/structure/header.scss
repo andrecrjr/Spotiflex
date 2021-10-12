@@ -4,6 +4,7 @@
   transition: width 300ms linear;
   flex-direction: column;
   background: $black-background;
+
   &.subpage {
     width: 0;
   }
@@ -16,6 +17,7 @@
     margin-top: 0.9375rem;
     z-index: 99;
   }
+
   .menu {
     transition: all 200ms;
     align-self: flex-start;
@@ -25,10 +27,11 @@
     width: 100%;
   }
   .logo {
+    display: flex;
     position: absolute;
     right: 1.5625rem;
     font-weight: bold;
-    text-shadow: 1px 3px 7px #14d143;
+    text-shadow: 1px 3px 7px #0c0e0c;
   }
   &__menu {
     display: flex;
@@ -74,3 +77,5 @@
 .open-menu {
   z-index: 2;
 }
+
+@import './search-box.scss';

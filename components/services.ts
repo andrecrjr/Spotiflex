@@ -1,5 +1,9 @@
 import { PlaylistItems } from './../types/index.d';
-import { ISpotifyAlbum, ISpotifyPlaylist } from './../types/spotifyTypes.d';
+import {
+  ISpotifyAlbum,
+  ISpotifyPlaylist,
+  ISearchSpotify,
+} from './../types/spotifyTypes.d';
 import { getPublicAuth } from '../helper';
 
 export const getLatestAndGenres = async (): Promise<{
@@ -29,6 +33,20 @@ export const getLatestAndGenres = async (): Promise<{
   return {
     props: { playlistsGenre, latestReleases },
   };
+};
+
+export const getDataSpotify = async <T>(uri: string): Promise<T> => {
+  const auth = await getPublicAuth(true);
+
+  const response = await fetch(uri, {
+    headers: {
+      Authorization: `${auth.token_type} ${auth.access_token}`,
+    },
+  });
+
+  const body = await response.json();
+
+  return body;
 };
 
 export const getOnlyGenry = async (

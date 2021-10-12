@@ -1,6 +1,6 @@
 .block--herobanner {
   width: 100%;
-  background: url('/images/young-man-song.jpg');
+  background: url('/images/girl-listening.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -8,6 +8,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+
   &__wrapper {
     width: 21rem;
     padding: 2rem;

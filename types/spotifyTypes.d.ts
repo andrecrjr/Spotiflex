@@ -117,6 +117,30 @@ export interface ISpotifyAlbum {
   uri: 'spotify:album:7KSf6p0G0mZd7j60etVTwT';
 }
 
+export interface IArtistSpotify {
+  external_urls?: string[];
+  genres?: string[];
+  href?: string;
+  id: string;
+  images: ImageObject[];
+  name: string;
+  popularity?: number;
+  type: string;
+  uri?: string;
+}
+
+export interface ISearchSpotify {
+  albums?: {
+    items: ISpotifyAlbum[];
+  };
+  artists?: {
+    items: IArtistSpotify[];
+  };
+  tracks?: {
+    items: Track[];
+  };
+}
+
 export interface ITracklist {
   artists: [
     {

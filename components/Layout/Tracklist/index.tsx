@@ -13,7 +13,11 @@ const Tracklist: React.FC<{
         {playList?.tracks.items.map((item) => {
           if (item.track.preview_url !== null)
             return (
-              <li className='tracklist__item' key={item.track.id}>
+              <li
+                className='tracklist__item'
+                id={item.track.id}
+                key={item.track.id}
+              >
                 <TrackListChild track={item.track} />
               </li>
             );
@@ -21,7 +25,7 @@ const Tracklist: React.FC<{
         {albumList?.tracks.items.map((item) => {
           if (item.preview_url !== null)
             return (
-              <li className='tracklist__item' key={item.id}>
+              <li className='tracklist__item' id={item.id} key={item.id}>
                 <TrackListChild track={item} />
               </li>
             );

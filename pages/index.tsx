@@ -13,11 +13,11 @@ const Home: React.FC<{
     <>
       <LayoutMetaSEO title='Spotiflex - The web coolest client ever' />
       <Herobanner />
-      <Explorer
+      {/* <Explorer
         isChild={true}
         playlistsGenre={playlistsGenre}
         latestReleases={latestReleases}
-      />
+      /> */}
     </>
   );
 };
