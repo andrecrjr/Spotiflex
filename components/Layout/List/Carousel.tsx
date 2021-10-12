@@ -16,7 +16,6 @@ const Carousel: React.FC<{
   listType: { playlists = [], albums = [], artists = [], slugName },
   iconsWithTitle,
 }) => {
-  console.log(artists);
   const block_pane = useRef<HTMLUListElement>();
   const nextStep = useRef<HTMLButtonElement>();
   const previousStep = useRef<HTMLButtonElement>();
@@ -118,10 +117,9 @@ const Carousel: React.FC<{
             <div className='block__pane' data-carousel={`carousel-${slugName}`}>
               {iconsWithTitle &&
                 artists &&
-                artists.map((item, index) => {
-                  console.log(item);
-                  return <GeneralAlbum key={index} album={item} />;
-                })}
+                artists.map((item, index) => (
+                  <GeneralAlbum key={index} album={item} />
+                ))}
             </div>
           </ul>
           <div className='slider__wrapper--controls'>
