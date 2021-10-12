@@ -30,7 +30,6 @@ export const GeneralAlbum: React.FC<{
   album: ISpotifyAlbum | ISpotifyPlaylist | IArtistSpotify;
   slugName?: string;
 }> = ({ album }) => {
-  console.log(album);
   const router = useRouter();
   return (
     <div
@@ -40,12 +39,14 @@ export const GeneralAlbum: React.FC<{
       onClick={() => router.push(`/${album.type}/${album.id}`)}
     >
       <div className='block__pane--genre'>
-        <Image
-          src={album.images[0].url}
-          className='pane--pic'
-          alt={album.name}
-          layout='fill'
-        />
+        {album.images.length > 0 && (
+          <Image
+            src={album.images[0].url}
+            className='pane--pic'
+            alt={album.name}
+            layout='fill'
+          />
+        )}
       </div>
       <section className='block__pane--item-description'>
         <h2 className='block__pane--item-title'>{album.name}</h2>

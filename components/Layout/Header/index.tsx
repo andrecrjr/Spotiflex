@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Menu from './Menu';
+import { SearchInput } from './SearchInput';
 
 const Header: React.FC = () => {
   const router = useRouter();
@@ -55,6 +56,7 @@ const Header: React.FC = () => {
           )}
         </div>
         <div className='logo'>
+          <SearchInput />
           <Link href='/'>Spotiflex</Link>
         </div>
         <Menu />

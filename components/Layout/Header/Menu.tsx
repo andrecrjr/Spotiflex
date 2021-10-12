@@ -7,11 +7,6 @@ function Menu(): JSX.Element {
     <nav className='header__menu'>
       <ul className='header__menu--wrapper'>
         <li className='header__menu--item'>
-          <span className='menu--item'>
-            <SearchInput />
-          </span>
-        </li>
-        <li className='header__menu--item'>
           <Link href='/explorer'>
             <a className='menu--item'>
               <span className='menu--icon'>

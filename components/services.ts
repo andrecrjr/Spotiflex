@@ -35,8 +35,11 @@ export const getLatestAndGenres = async (): Promise<{
   };
 };
 
-export const getDataSpotify = async <T>(uri: string): Promise<T> => {
-  const auth = await getPublicAuth(true);
+export const getDataSpotify = async <T>(
+  uri: string,
+  isFrontEnd: boolean = false
+): Promise<T> => {
+  const auth = await getPublicAuth(isFrontEnd);
 
   const response = await fetch(uri, {
     headers: {

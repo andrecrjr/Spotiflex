@@ -12,21 +12,25 @@ const SongList: React.FC<{
   };
   name: string;
   iconsWithTitle: boolean;
-}> = ({ listType: { playlists = [], albums = [], artists = [] }, name }) => {
+}> = ({
+  listType: { playlists = [], albums = [], artists = [] },
+  name,
+  iconsWithTitle,
+}) => {
   return (
     <section className='block--horizontal-list'>
       <h1 className='block--title'>{name}</h1>
       <Carousel
-        listType={{ playlists, slugName: 'top' }}
-        iconsWithTitle={true}
+        listType={{ playlists, slugName: 'playlists' }}
+        iconsWithTitle={iconsWithTitle}
       />
       <Carousel
-        listType={{ artists, slugName: 'latestAlbums' }}
-        iconsWithTitle={false}
+        listType={{ artists, slugName: 'artists' }}
+        iconsWithTitle={iconsWithTitle}
       />
       <Carousel
-        listType={{ albums, slugName: 'latestAlbums' }}
-        iconsWithTitle={false}
+        listType={{ albums, slugName: 'albums' }}
+        iconsWithTitle={iconsWithTitle}
       />
     </section>
   );
