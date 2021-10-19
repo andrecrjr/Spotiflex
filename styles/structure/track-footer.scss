@@ -20,26 +20,18 @@
     height: 100%;
     cursor: pointer;
     .player--control {
-      width: 40px;
-      margin-left: 10px;
+      width: 55px;
       cursor: pointer;
-      &:hover {
-        stroke: $green-main-font;
+      display: flex;
+      .player--control__icon {
+        margin: 0 auto;
+        width: 65%;
+        height: auto;
       }
-      &[data-control='next'],
-      &[data-control='previous'] {
-        width: 30px;
-        fill: white;
-        &:hover {
-          fill: $green-opacity-font;
-        }
-      }
-      &[data-control='previous'] {
-        transform: rotate(180deg);
-        padding-top: 6px;
-      }
+
       .button--play {
         width: 100%;
+        height: auto;
       }
     }
   }

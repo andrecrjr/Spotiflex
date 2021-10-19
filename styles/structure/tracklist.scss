@@ -9,18 +9,31 @@
   &__item {
     display: inline-flex;
     padding: 20px 5%;
-
+    &--play {
+      .player--wrapper {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        .button--play {
+          width: 85%;
+          height: 100%;
+          margin-right: 15px;
+        }
+      }
+    }
     &--child {
       display: inline-flex;
       align-items: center;
-      width: 100%;
-      justify-content: space-between;
+      width: 80%;
+      margin-left: 15px;
+
       .track--name {
-        padding-left: 20px;
         white-space: nowrap;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        width: 70%;
         &.big-title {
-          font-size: 0.6rem;
+          font-size: 0.8rem;
+          overflow: scroll;
         }
       }
       h5 {

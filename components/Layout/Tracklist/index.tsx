@@ -10,7 +10,7 @@ const Tracklist: React.FC<{
   return (
     <AlbumPlaylistContext.Provider value={{ albumList, playList }}>
       <ul className='tracklist__wrapper'>
-        {playList?.tracks.items.map((item) => (
+        {playList?.tracks?.items.map((item) => (
           <li
             className='tracklist__item'
             id={item.track.id}
@@ -19,7 +19,7 @@ const Tracklist: React.FC<{
             <TrackListChild track={item.track} />
           </li>
         ))}
-        {albumList?.tracks.items.map((item) => {
+        {albumList?.tracks?.items.map((item) => {
           return (
             <li className='tracklist__item' id={item.id} key={item.id}>
               <TrackListChild track={item} />
