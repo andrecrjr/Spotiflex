@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { SearchInput } from './SearchInput';
 
 function Menu(): JSX.Element {
   return (

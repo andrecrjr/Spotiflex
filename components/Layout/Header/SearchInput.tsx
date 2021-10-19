@@ -1,10 +1,9 @@
-import router, { useRouter } from 'next/router';
-import React, { useState, useEffect } from 'react';
+import router from 'next/router';
+import React from 'react';
 
 import debounce from 'lodash.debounce';
 
 export const SearchInput: React.FC = () => {
-  const [searchMode, setSearchMode] = useState(false);
   const redirectSearch = async (e: React.ChangeEvent<HTMLInputElement>) => {
     router.push(`/search/${e.target.value}`);
   };
@@ -12,11 +11,14 @@ export const SearchInput: React.FC = () => {
     <>
       <span className='menu--icon'>🔍</span>
 
-      <form className='menu--option search--box'>
+      <form
+        className='menu--option search--box'
+        onSubmit={(e) => e.preventDefault()}
+      >
         <input
           type='text'
           placeholder='Search your favorite band, song, whatever'
-          onChange={debounce(redirectSearch, 600)}
+          onChange={debounce(redirectSearch, 500)}
         />
       </form>
     </>

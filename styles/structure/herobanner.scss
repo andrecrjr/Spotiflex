@@ -1,6 +1,6 @@
 .block--herobanner {
   width: 100%;
-  background: url('/images/girl-listening.jpg');
+  background: black;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -8,7 +8,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-
+  animation: changeFrame 30s linear infinite;
   &__wrapper {
     width: 21rem;
     padding: 2rem;
@@ -38,5 +38,20 @@
         padding: 10px;
       }
     }
+  }
+}
+
+@keyframes changeFrame {
+  0% {
+    background-image: url('/images/dj.jpg');
+  }
+  35% {
+    background-image: url('/images/girl-listening.jpg');
+  }
+  70% {
+    background-image: url('/images/gorgeous-girl-listen-song.jpg');
+  }
+  95% {
+    background-image: url('/images/young-man-song.jpg');
   }
 }

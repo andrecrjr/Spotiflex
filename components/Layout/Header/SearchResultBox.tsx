@@ -5,17 +5,11 @@ import {
   Track,
 } from '../../../types/spotifyTypes';
 import Image from 'next/image';
-import { relative } from 'path';
 
-interface Props {}
-
-export const SearchResultBox = ({
-  searchName,
-  type,
-}: {
+export const SearchResultBox: React.FC<{
   searchName?: ISpotifyAlbum[] | Track[] | IArtistSpotify[];
   type?: string;
-}) => {
+}> = ({ searchName, type }) => {
   return (
     <div className='search--results-box'>
       <details open={true}>

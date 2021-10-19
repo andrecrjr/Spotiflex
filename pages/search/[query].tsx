@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { GetServerSideProps } from 'next';
 import { ISearchSpotify } from '../../types/spotifyTypes';
 import { getDataSpotify } from '../../components/services';
-import Carousel from '../../components/Layout/List/Carousel';
 import SongList from '../../components/Layout/List';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 
@@ -12,12 +11,14 @@ const Search: React.FC<{ resp: ISearchSpotify; query: string; notFound }> = ({
 }) => {
   const [autoComplete, setAutoComplete] = useState<ISearchSpotify>({});
 
-  useEffect(() => {
-    redirectSearch();
-  }, [resp]);
-  const redirectSearch = () => {
+  const redirectSearch = (resp) => {
     setAutoComplete(resp);
   };
+
+  useEffect(() => {
+    redirectSearch(resp);
+  }, [resp]);
+
   if (query.length > 0)
     return (
       <>
@@ -51,12 +52,11 @@ const Search: React.FC<{ resp: ISearchSpotify; query: string; notFound }> = ({
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   try {
-    let newQuery = params.query as string;
+    const newQuery = params.query as string;
     const resp = await getDataSpotify<ISearchSpotify>(
       `https://api.spotify.com/v1/search?q=${encodeURIComponent(
         newQuery
-      )}&type=artist%2Ctrack%2Calbum&limit=20&offset=0`,
-      false
+      )}&type=artist%2Ctrack%2Calbum&limit=20&offset=0`
     );
     return {
       props: { resp, query: newQuery },

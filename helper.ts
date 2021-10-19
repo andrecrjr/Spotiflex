@@ -2,16 +2,11 @@ import { TokenSpotify } from './types';
 
 export const getPublicAuth = async (client = false): Promise<TokenSpotify> => {
   try {
-    let data;
-    if (client) {
-      let body = await fetch('/api/getAuthKey');
-      data = await body.json();
-    } else {
-      data = await spotifyAuth();
-    }
+    let data = await spotifyAuth();
     const publicAuth: TokenSpotify = data;
     return publicAuth;
   } catch (error) {
+    console.log(error);
     return {
       access_token: '',
       token_type: '',
