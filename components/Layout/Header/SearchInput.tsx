@@ -1,5 +1,6 @@
 import router from 'next/router';
 import React from 'react';
+import { CgSearch } from 'react-icons/cg';
 
 import debounce from 'lodash.debounce';
 
@@ -9,7 +10,9 @@ export const SearchInput: React.FC = () => {
   };
   return (
     <>
-      <span className='menu--icon'>🔍</span>
+      <span className='menu--icon'>
+        <CgSearch />
+      </span>
 
       <form
         className='menu--option search--box'

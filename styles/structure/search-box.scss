@@ -1,3 +1,8 @@
+.menu--icon {
+  display: flex;
+  align-items: center;
+}
+
 .search {
   &--box {
     display: flex;
@@ -7,8 +12,8 @@
       padding: 4px;
       width: 165px;
       background: none;
-      color: white;
-      border-bottom: white 2px solid;
+      color: $light-gray;
+      border-bottom: $light-gray 2px solid;
       margin-right: 10px;
       &:focus-visible {
         outline: none;

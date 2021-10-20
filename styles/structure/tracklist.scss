@@ -8,7 +8,8 @@
   }
   &__item {
     display: inline-flex;
-    padding: 20px 5%;
+    margin: 20px 5%;
+    justify-content: center;
     &--play {
       .player--wrapper {
         width: 40px;
@@ -25,7 +26,7 @@
       display: inline-flex;
       align-items: center;
       width: 80%;
-      margin-left: 15px;
+      justify-content: center;
 
       .track--name {
         white-space: nowrap;
@@ -48,11 +49,15 @@
 @media (min-width: 661px) {
   .tracklist {
     &__item {
+      justify-content: space-between;
       &--child {
+        width: 95%;
         .track--name {
           font-size: 1.3rem;
           &.big-title {
             font-size: inherit;
+            overflow: auto;
+            width: 100%;
           }
         }
         h5 {
