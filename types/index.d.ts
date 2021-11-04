@@ -1,5 +1,10 @@
 import { typeOfTrack } from './spotifyTypes.d';
-import type { ISpotifyAlbum, ISpotifyPlaylist, Track } from './spotifyTypes';
+import type {
+  ISpotifyAlbum,
+  ISpotifyPlaylist,
+  Track,
+  ISpotifyArtist,
+} from './spotifyTypes';
 export interface TokenSpotify {
   access_token: string;
   token_type: string;
@@ -33,4 +38,10 @@ interface IPlaylistContext {
   queueType?: typeOfTrack;
 }
 
-export { ISpotifyAlbum, ISpotifyPlaylist, IPlaylistContext, QueuePlaylist };
+export {
+  ISpotifyAlbum,
+  ISpotifyPlaylist,
+  IPlaylistContext,
+  QueuePlaylist,
+  ISpotifyArtist,
+};

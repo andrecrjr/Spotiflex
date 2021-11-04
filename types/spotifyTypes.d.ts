@@ -17,7 +17,7 @@ export type typeOfTracklist =
   | 'podcast'
   | 'track';
 
-type Track = {
+export type Track = {
   album?: ISpotifyAlbum;
   available_markets?: any[];
   disc_number?: number;
@@ -117,7 +117,7 @@ export interface ISpotifyAlbum {
   uri: 'spotify:album:7KSf6p0G0mZd7j60etVTwT';
 }
 
-export interface IArtistSpotify {
+export interface ISpotifyArtist {
   external_urls?: string[];
   genres?: string[];
   href?: string;
@@ -175,3 +175,7 @@ type PropsGenre = {
   items: ISpotifyPlaylist[];
   title?: string;
 };
+
+export interface ISpotifyTopTrack {
+  tracks: ITracklist[];
+}

@@ -16,7 +16,9 @@ const TrackListWrapper: React.FC<{
     <>
       <TrackListHeader album={album} playlist={playlist} />
       {trackIsNull?.length === 0 ? (
-        <p>This page has no preview urls so it'll not work, sorry for that.</p>
+        <p style={{ alignItems: 'center' }}>
+          This page has no preview urls so it'll not work, sorry for that.
+        </p>
       ) : (
         <Tracklist albumList={album} playList={playlist} />
       )}

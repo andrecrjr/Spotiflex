@@ -1,11 +1,16 @@
 import React from 'react';
-import { ISpotifyAlbum, ISpotifyPlaylist } from '../../../types';
+import {
+  ISpotifyAlbum,
+  ISpotifyArtist,
+  ISpotifyPlaylist,
+} from '../../../types';
 import Image from 'next/image';
 
 const TrackListHeader: React.FC<{
   album?: ISpotifyAlbum;
   playlist?: ISpotifyPlaylist;
-}> = ({ album, playlist }) => {
+  artist?: ISpotifyArtist;
+}> = ({ album, playlist, artist }) => {
   if (playlist) {
     return (
       <section className='header__album--wrapper'>
@@ -32,6 +37,27 @@ const TrackListHeader: React.FC<{
             )}
           </h2>
           <p>{playlist.description}</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (artist) {
+    return (
+      <section className='header__album--wrapper'>
+        <div className='header__album--pic'>
+          {artist?.images?.length > 0 || album?.images?.length > 0 ? (
+            <Image src={artist.images[0].url} layout='fill' alt={artist.name} />
+          ) : null}
+        </div>
+        <div className='header__album--meta'>
+          <h2 className='header__album--title'>{artist.name}</h2>
+          <p>
+            {artist.genres.map(
+              (item, index, array) =>
+                `${item}${index + 1 === array.length ? '' : ', '} `
+            )}
+          </p>
         </div>
       </section>
     );

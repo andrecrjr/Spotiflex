@@ -1,7 +1,11 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import { PlaylistItems, ISpotifyAlbum, ISpotifyPlaylist } from '../../../types';
-import { IArtistSpotify } from '../../../types/spotifyTypes';
+import {
+  PlaylistItems,
+  ISpotifyAlbum,
+  ISpotifyPlaylist,
+  ISpotifyArtist,
+} from '../../../types';
 
 export const GeneralPlaylist: React.FC<{
   album: PlaylistItems;
@@ -27,7 +31,7 @@ export const GeneralPlaylist: React.FC<{
 };
 
 export const GeneralAlbum: React.FC<{
-  album: ISpotifyAlbum | ISpotifyPlaylist | IArtistSpotify;
+  album: ISpotifyAlbum | ISpotifyPlaylist | ISpotifyArtist;
   slugName?: string;
 }> = ({ album }) => {
   const router = useRouter();

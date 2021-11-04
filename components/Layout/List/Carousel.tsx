@@ -1,14 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
-import { IArtistSpotify } from '../../../types/spotifyTypes';
+import { ISpotifyArtist, Track } from '../../../types/spotifyTypes';
 import CarouselButton from './CarouselButton';
 import { GeneralPlaylist, GeneralAlbum } from './Playlist';
 import { CgArrowLeftO, CgArrowRightO } from 'react-icons/cg';
 const Carousel: React.FC<{
   listType: {
-    playlists?: PlaylistItems[];
+    playlists?: PlaylistItems[] | Track[];
     albums?: ISpotifyAlbum[];
-    artists?: IArtistSpotify[];
+    artists?: ISpotifyArtist[];
     slugName?: string;
   };
   iconsWithTitle: boolean;

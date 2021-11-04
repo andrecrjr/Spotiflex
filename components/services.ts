@@ -1,5 +1,10 @@
 import { PlaylistItems } from './../types/index.d';
-import { ISpotifyAlbum, ISpotifyPlaylist } from './../types/spotifyTypes.d';
+import {
+  ISpotifyAlbum,
+  ISpotifyPlaylist,
+  ISpotifyArtist,
+  ISpotifyTopTrack,
+} from './../types/spotifyTypes.d';
 import { getPublicAuth } from '../helper';
 
 export const getLatestAndGenres = async (): Promise<{
@@ -100,6 +105,45 @@ export const getTrackListContent = async (
   } catch (error) {
     console.error('Problem to get album');
 
+    return null;
+  }
+};
+
+export const getArtistOrBandContent = async (
+  id: string | string[]
+): Promise<ISpotifyArtist> => {
+  try {
+    const auth = await getPublicAuth();
+    const data = await fetch(`https://api.spotify.com/v1/artists/${id}`, {
+      headers: {
+        Authorization: `${auth.token_type} ${auth.access_token}`,
+      },
+    });
+    const artistProfile: ISpotifyArtist = await data.json();
+    return artistProfile;
+  } catch (error) {
+    console.error('Problem to get artist profile');
+    return null;
+  }
+};
+
+export const getTopArtistTrack = async (
+  id: string | string[]
+): Promise<ISpotifyTopTrack> => {
+  try {
+    const auth = await getPublicAuth();
+    const data = await fetch(
+      `https://api.spotify.com/v1/artists/${id}/top-tracks?market=${'us'}`,
+      {
+        headers: {
+          Authorization: `${auth.token_type} ${auth.access_token}`,
+        },
+      }
+    );
+    const artistTopTracks: ISpotifyTopTrack = await data.json();
+    return artistTopTracks;
+  } catch (error) {
+    console.error('Problem to get TOP TRACK artist');
     return null;
   }
 };
