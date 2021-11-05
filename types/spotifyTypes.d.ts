@@ -15,7 +15,8 @@ export type typeOfTracklist =
   | 'playlist'
   | 'single'
   | 'podcast'
-  | 'track';
+  | 'track'
+  | 'tracklist';
 
 export type Track = {
   album?: ISpotifyAlbum;
@@ -174,6 +175,7 @@ export interface ITracklist {
   name: 'Raised on Country';
   preview_url: 'https://p.scdn.co/mp3-preview/b701335497d8bb45ea6b79e2d5a16c541789240c?cid=774b29d4f13844c495f206cafdad9c86';
   track_number: 1;
+  items?: Track[];
   type: 'track';
   uri: 'spotify:track:5fBCiTK3cN8RJb7AlfwXfB';
 }
@@ -185,4 +187,5 @@ type PropsGenre = {
 
 export interface ISpotifyTopTrack {
   tracks: ITracklist[];
+  type?: 'tracklist';
 }

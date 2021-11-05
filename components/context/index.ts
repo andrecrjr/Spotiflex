@@ -3,6 +3,7 @@ import {
   ISpotifyPlaylist,
   Track,
   typeOfTracklist,
+  ISpotifyTopTrack,
 } from './../../types/spotifyTypes.d';
 import React, { createContext } from 'react';
 import { IPlaylistContext } from '../../types';
@@ -13,7 +14,7 @@ export const UserQueuePlaylist = createContext<{
     type: string;
     payload?: {
       track?: Track;
-      playlist?: ISpotifyAlbum | ISpotifyPlaylist;
+      playlist?: ISpotifyAlbum | ISpotifyPlaylist | ISpotifyTopTrack;
       type?: typeOfTracklist;
     };
   }>;
@@ -27,4 +28,5 @@ export const UserQueuePlaylist = createContext<{
 export const AlbumPlaylistContext = createContext<{
   albumList?: ISpotifyAlbum;
   playList?: ISpotifyPlaylist;
+  trackList?: ISpotifyTopTrack;
 }>({});

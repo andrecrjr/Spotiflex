@@ -22,9 +22,13 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
     const artistProfile = await getDataSpotify<ISpotifyArtist>(
       `artists/${params.id}`
     );
-    const artistTopTrack = await getDataSpotify<ISpotifyTopTrack>(
+    const artistTopTrackList = await getDataSpotify<ISpotifyTopTrack>(
       `artists/${params.id}/top-tracks?market=${'us'}`
     );
+    const artistTopTrack = {
+      ...{ type: 'tracklist' },
+      ...artistTopTrackList,
+    };
     return { props: { artistProfile, artistTopTrack } };
   } catch (error) {}
 };

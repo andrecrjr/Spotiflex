@@ -7,10 +7,10 @@ import { ISpotifyTopTrack } from '../../../types/spotifyTypes';
 const Tracklist: React.FC<{
   albumList?: ISpotifyAlbum;
   playList?: ISpotifyPlaylist;
-  trackSongs?: ISpotifyTopTrack;
-}> = ({ albumList, playList, trackSongs }) => {
+  trackList?: ISpotifyTopTrack;
+}> = ({ albumList, playList, trackList }) => {
   return (
-    <AlbumPlaylistContext.Provider value={{ albumList, playList }}>
+    <AlbumPlaylistContext.Provider value={{ albumList, playList, trackList }}>
       <ul className='tracklist__wrapper'>
         {playList?.tracks?.items.map((item) => (
           <li
@@ -28,7 +28,7 @@ const Tracklist: React.FC<{
             </li>
           );
         })}
-        {trackSongs?.tracks?.map((item) => {
+        {trackList?.tracks?.map((item) => {
           return (
             <li className='tracklist__item' id={item.id} key={item.id}>
               <TrackListChild track={item} />

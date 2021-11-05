@@ -15,7 +15,7 @@ const ArtistPage: React.FC<{
       <TrackListHeader artist={profile} />
       <div>
         <h1>Top Artist Track:</h1>
-        <Tracklist trackSongs={topTracks} />
+        <Tracklist trackList={topTracks} />
       </div>
     </>
   );

@@ -19,7 +19,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
   isFooter = false,
 }) => {
   const playerChild = useRef<HTMLAudioElement | null>(null);
-  const { albumList, playList } = useContext(AlbumPlaylistContext);
+  const { albumList, playList, trackList } = useContext(AlbumPlaylistContext);
 
   const { dispatchPlaylist } = useContext(UserQueuePlaylist);
   const [statusPlayer, setStatus] = useState(false);
@@ -78,13 +78,13 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         playSong(track);
       }
     } else {
-      const trackList = playList || albumList;
+      const trackPlayList = playList || albumList || trackList;
       dispatchPlaylist({
         type: 'ADD_PLAYLIST',
         payload: {
           track,
-          playlist: trackList,
-          type: trackList.type,
+          playlist: trackPlayList,
+          type: trackPlayList.type,
         },
       });
     }

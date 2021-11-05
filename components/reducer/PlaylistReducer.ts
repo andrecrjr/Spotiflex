@@ -2,6 +2,7 @@ import {
   ISpotifyAlbum,
   ISpotifyPlaylist,
   typeOfTracklist,
+  ISpotifyTopTrack,
 } from './../../types/spotifyTypes.d';
 import { IPlaylistContext, QueuePlaylist } from '../../types';
 import { Track } from '../../types/spotifyTypes';
@@ -21,13 +22,14 @@ export const playlistReducer = (
     type: controlPlaylist;
     payload?: {
       track: Track & QueuePlaylist;
-      playlist: ISpotifyPlaylist | ISpotifyAlbum;
+      playlist: ISpotifyPlaylist | ISpotifyAlbum | ISpotifyTopTrack;
       type?: typeOfTracklist;
     };
   }
 ): IPlaylistContext => {
   switch (action.type) {
     case 'ADD_PLAYLIST':
+      console.log(action.payload.playlist);
       const data = rearrangePlaylistData(
         action.payload.playlist,
         action.payload.track
@@ -162,7 +164,7 @@ const rearrangePlaylistData = (
   playlist: ISpotifyPlaylist | ISpotifyAlbum,
   track?: Track
 ) => {
-  const data = playlist.tracks.items.map((item) => {
+  const data = playlist.tracks.items.map((item: Track) => {
     if (playlist.type === 'album') {
       if (item.id === track.id) {
         return { ...item, nowPlaying: true };

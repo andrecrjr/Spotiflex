@@ -12,7 +12,6 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   try {
     if (params.id !== null) {
       const songContent = await getTrackListContent('playlists', params.id);
-
       return {
         props: { playlist: songContent },
       };
