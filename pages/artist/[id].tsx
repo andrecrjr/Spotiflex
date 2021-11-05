@@ -1,9 +1,6 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
-import {
-  getArtistOrBandContent,
-  getTopArtistTrack,
-} from '../../components/services';
+import { getDataSpotify } from '../../components/services';
 import { ISpotifyArtist, ISpotifyTopTrack } from '../../types/spotifyTypes';
 import ArtistPage from '../../components/Layout/ArtistList';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
@@ -22,8 +19,12 @@ const Artist: React.FC<{
 
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   try {
-    const artistProfile = await getArtistOrBandContent(params?.id);
-    const artistTopTrack = await getTopArtistTrack(params?.id);
+    const artistProfile = await getDataSpotify<ISpotifyArtist>(
+      `artists/${params.id}`
+    );
+    const artistTopTrack = await getDataSpotify<ISpotifyTopTrack>(
+      `artists/${params.id}/top-tracks?market=${'us'}`
+    );
     return { props: { artistProfile, artistTopTrack } };
   } catch (error) {}
 };

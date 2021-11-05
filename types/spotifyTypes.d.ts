@@ -57,6 +57,13 @@ interface PlaylistTracks {
   total: 52;
 }
 
+export type ISpotifyPlaylistWrapper = {
+  playlists: {
+    href: string;
+    items: ISpotifyPlaylist[];
+  };
+};
+
 export interface ISpotifyPlaylist {
   collaborative: boolean;
   description: string;

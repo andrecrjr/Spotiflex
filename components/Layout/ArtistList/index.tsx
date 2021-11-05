@@ -10,8 +10,6 @@ const ArtistPage: React.FC<{
   profile: ISpotifyArtist;
   topTracks: ISpotifyTopTrack;
 }> = ({ profile, topTracks }) => {
-  console.log(profile);
-  console.log(topTracks);
   return (
     <>
       <TrackListHeader artist={profile} />

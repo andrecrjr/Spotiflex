@@ -54,7 +54,7 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   try {
     const newQuery = params.query as string;
     const resp = await getDataSpotify<ISearchSpotify>(
-      `https://api.spotify.com/v1/search?q=${encodeURIComponent(
+      `search?q=${encodeURIComponent(
         newQuery
       )}&type=artist%2Ctrack%2Calbum&limit=20&offset=0`
     );

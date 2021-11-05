@@ -1,8 +1,8 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { PropsGenre } from '../../types/spotifyTypes';
+import { PropsGenre, ISpotifyPlaylistWrapper } from '../../types/spotifyTypes';
 import { GeneralAlbum } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
-import { getOnlyCategories, getOnlyGenry } from '../../components/services';
+import { getDataSpotify } from '../../components/services';
 
 const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
@@ -28,7 +28,9 @@ export default Genre;
 export const getStaticPaths: GetStaticPaths = async () => {
   let paths = [{ params: { id: 'rock' } }];
 
-  const categories = await getOnlyCategories();
+  const categories = await getDataSpotify<{
+    items: [{ href: string; id: string; icons: []; name: string }];
+  }>('browse/categories');
   paths = categories?.items.map((genres) => ({
     params: { id: genres.id },
   }));
@@ -37,10 +39,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
-    const items = await getOnlyGenry(params.id);
-
+    const data = await getDataSpotify<ISpotifyPlaylistWrapper>(
+      `browse/categories/${params.id}/playlists`
+    );
     return {
-      props: { items: items, title: params.id },
+      props: { items: data.playlists.items, title: params.id },
       revalidate: 5,
     };
   } catch (error) {
