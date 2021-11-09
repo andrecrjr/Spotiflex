@@ -1,3 +1,10 @@
+import {
+  ISpotifyPlaylist,
+  ISpotifyArtist,
+  ISpotifyAlbum,
+  ISpotifyTopTrack,
+  typeOfTracklist,
+} from './../types/spotifyTypes.d';
 import getConfig from 'next/config';
 
 const { serverRuntimeConfig } = getConfig();
@@ -27,3 +34,17 @@ export function msToTime(duration: number): string {
 
   return newMinutes + ':' + newSeconds;
 }
+
+export const getOrMountPlaylist = (
+  playlist: ISpotifyPlaylist | ISpotifyTopTrack | ISpotifyAlbum
+): ISpotifyAlbum | ISpotifyPlaylist => {
+  switch (playlist.type) {
+    case 'tracklist':
+      return {
+        ...playlist,
+        ...{ tracks: { items: playlist.tracks } },
+      } as unknown as ISpotifyAlbum;
+    default:
+      return playlist as ISpotifyAlbum | ISpotifyPlaylist;
+  }
+};

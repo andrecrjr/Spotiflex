@@ -1,3 +1,8 @@
+import {
+  ISpotifyAlbum,
+  ISpotifyPlaylist,
+  ISpotifyTopTrack,
+} from './spotifyTypes.d';
 type ItemsPlaylist = {
   primary_color: string;
   album: ISpotifyAlbum;
@@ -66,16 +71,16 @@ export type ISpotifyPlaylistWrapper = {
 };
 
 export interface ISpotifyPlaylist {
-  collaborative: boolean;
-  description: string;
-  external_urls: {
+  collaborative?: boolean;
+  description?: string;
+  external_urls?: {
     spotify: string;
   };
-  href: string;
-  id: string;
-  images: ImageObject[];
-  name: string;
-  owner: {
+  href?: string;
+  id?: string;
+  images?: ImageObject[];
+  name?: string;
+  owner?: {
     display_name: string;
     href: string;
     id: string;
@@ -84,15 +89,20 @@ export interface ISpotifyPlaylist {
   };
   primary_color?: string;
   public?: boolean;
-  snapshot_id: string;
+  snapshot_id?: string;
   tracks: PlaylistTracks;
-  type: 'playlist';
-  uri: string;
+  type?: 'playlist' | 'tracklist';
+  uri?: string;
 }
 
+export type ISpotifyAllTrackList =
+  | ISpotifyAlbum
+  | ISpotifyPlaylist
+  | ISpotifyTopTrack;
+
 export interface ISpotifyAlbum {
-  album_type: 'album';
-  artists: [
+  album_type?: 'album';
+  artists?: [
     {
       external_urls: {
         spotify: 'https://open.spotify.com/artist/6AgTAQt8XS6jRWi4sX7w49';
@@ -104,25 +114,25 @@ export interface ISpotifyAlbum {
       uri: 'spotify:artist:6AgTAQt8XS6jRWi4sX7w49';
     }
   ];
-  available_markets: [];
-  external_urls: {
+  available_markets?: [];
+  external_urls?: {
     spotify: 'https://open.spotify.com/album/7KSf6p0G0mZd7j60etVTwT';
   };
-  href: string;
-  id: string;
-  images: ImageObject[];
-  name: 'Hall of Fame';
-  release_date: '2021-06-11';
-  release_date_precision: 'day';
-  total_tracks: 20;
+  href?: string;
+  id?: string;
+  images?: ImageObject[];
+  name?: 'Hall of Fame';
+  release_date?: '2021-06-11';
+  release_date_precision?: 'day';
+  total_tracks?: 20;
   tracks: {
-    href: string;
+    href?: string;
     items: Track[];
-    id: '';
-    added_at: string;
+    id?: '';
+    added_at?: string;
   };
   type: 'album';
-  uri: 'spotify:album:7KSf6p0G0mZd7j60etVTwT';
+  uri?: 'spotify:album:7KSf6p0G0mZd7j60etVTwT';
 }
 
 export interface ISpotifyArtist {
@@ -186,6 +196,7 @@ type PropsGenre = {
 };
 
 export interface ISpotifyTopTrack {
-  tracks: ITracklist[];
+  tracks: Track[];
+  items?: [];
   type?: 'tracklist';
 }

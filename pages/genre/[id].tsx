@@ -28,10 +28,12 @@ export default Genre;
 export const getStaticPaths: GetStaticPaths = async () => {
   let paths = [{ params: { id: 'rock' } }];
 
-  const categories = await getDataSpotify<{
-    items: [{ href: string; id: string; icons: []; name: string }];
-  }>('browse/categories');
-  paths = categories?.items.map((genres) => ({
+  const { categories } = await getDataSpotify<{
+    categories: {
+      items: [{ href: string; id: string; icons: []; name: string }];
+    };
+  }>('browse/categories?offset=0&limit=20');
+  paths = categories.items.map((genres) => ({
     params: { id: genres.id },
   }));
   return { paths, fallback: true };
