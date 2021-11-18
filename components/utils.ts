@@ -1,9 +1,7 @@
 import {
   ISpotifyPlaylist,
-  ISpotifyArtist,
   ISpotifyAlbum,
   ISpotifyTopTrack,
-  typeOfTracklist,
 } from './../types/spotifyTypes.d';
 import getConfig from 'next/config';
 

@@ -2,7 +2,6 @@ import {
   ISpotifyAlbum,
   ISpotifyPlaylist,
   typeOfTracklist,
-  ISpotifyTopTrack,
   ISpotifyAllTrackList,
 } from './../../types/spotifyTypes.d';
 import { IPlaylistContext, QueuePlaylist } from '../../types';
@@ -104,7 +103,7 @@ const goToNextOrPrevTrack = (
   tracklist: QueuePlaylist,
   id: number,
   nextOrPrevious: 'next' | 'previous' = 'next',
-  isTracklist: boolean = false
+  isTracklist: boolean
 ) => {
   if (nextOrPrevious === 'next') {
     if (id > tracklist.length - 2) {
