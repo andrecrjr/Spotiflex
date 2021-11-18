@@ -130,9 +130,9 @@ const getExactlyTrackForPlaylistOrAlbum = (
 ) => {
   switch (type) {
     case 'album':
-      return goToNextOrPrevTrack(playlist, id, nextOrPrevious);
+      return goToNextOrPrevTrack(playlist, id, nextOrPrevious, false);
     case 'tracklist':
-      return goToNextOrPrevTrack(playlist, id, nextOrPrevious);
+      return goToNextOrPrevTrack(playlist, id, nextOrPrevious, false);
     case 'playlist':
       return goToNextOrPrevTrack(playlist, id, nextOrPrevious, true);
   }

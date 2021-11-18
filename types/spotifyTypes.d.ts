@@ -25,7 +25,7 @@ export type typeOfTracklist =
 
 export type Track = {
   album?: ISpotifyAlbum;
-  available_markets?: any[];
+  available_markets?: string[];
   disc_number?: number;
   duration_ms?: number;
   episode?: boolean;
@@ -152,7 +152,7 @@ export interface ISearchSpotify {
     items: ISpotifyAlbum[];
   };
   artists?: {
-    items: IArtistSpotify[];
+    items: ISpotifyArtist[];
   };
   tracks?: {
     items: Track[];

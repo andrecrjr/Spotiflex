@@ -1,6 +1,6 @@
 import React from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
-import { IArtistSpotify } from '../../../types/spotifyTypes';
+import { ISpotifyArtist } from '../../../types/spotifyTypes';
 
 import Carousel from './Carousel';
 
@@ -8,7 +8,7 @@ const SongList: React.FC<{
   listType: {
     playlists?: PlaylistItems[];
     albums?: ISpotifyAlbum[];
-    artists?: IArtistSpotify[];
+    artists?: ISpotifyArtist[];
   };
   name: string;
   iconsWithTitle: boolean;

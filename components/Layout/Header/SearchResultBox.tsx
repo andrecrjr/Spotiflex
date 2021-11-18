@@ -1,13 +1,13 @@
 import React from 'react';
 import {
   ISpotifyAlbum,
-  IArtistSpotify,
+  ISpotifyArtist,
   Track,
 } from '../../../types/spotifyTypes';
 import Image from 'next/image';
 
 export const SearchResultBox: React.FC<{
-  searchName?: ISpotifyAlbum[] | Track[] | IArtistSpotify[];
+  searchName?: ISpotifyAlbum[] | Track[] | ISpotifyArtist[];
   type?: string;
 }> = ({ searchName, type }) => {
   return (
