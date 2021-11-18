@@ -1,8 +1,8 @@
 import { TokenSpotify } from './types';
 
-export const getPublicAuth = async (client = false): Promise<TokenSpotify> => {
+export const getPublicAuth = async (): Promise<TokenSpotify> => {
   try {
-    let data = await spotifyAuth();
+    const data = await spotifyAuth();
     const publicAuth: TokenSpotify = data;
     return publicAuth;
   } catch (error) {

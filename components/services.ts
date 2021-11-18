@@ -18,10 +18,10 @@ export const getLatestAndGenres = async (): Promise<{
       },
     }),
   ]);
+
   const {
     categories: { items: playlistsGenre },
   } = await fetchPlaylists[0].json();
-
   const {
     albums: { items: latestReleases },
   } = await fetchPlaylists[1].json();

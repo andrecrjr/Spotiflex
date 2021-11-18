@@ -31,7 +31,17 @@ const Explorer: React.FC<{
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  return await getLatestAndGenres();
+  try {
+    return await getLatestAndGenres();
+  } catch (error) {
+    console.log(error);
+    return {
+      redirect: {
+        statusCode: 301,
+        destination: '/',
+      },
+    };
+  }
 };
 
 export default Explorer;

@@ -14,7 +14,8 @@ const Header: React.FC = () => {
     return (
       router.asPath.includes('album') ||
       router.asPath.includes('playlist') ||
-      router.asPath.includes('genre')
+      router.asPath.includes('genre') ||
+      router.asPath.includes('artist')
     );
   };
 
