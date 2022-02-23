@@ -25,6 +25,15 @@
 }
 
 @media (min-width: 661px) {
+  //menu header effect
+  .main--grid {
+    display: flex;
+    &.open--menu {
+      header {
+        width: 11rem;
+      }
+    }
+  }
   .block {
     &__pane {
       &--image {

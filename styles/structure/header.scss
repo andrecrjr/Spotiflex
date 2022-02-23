@@ -1,10 +1,4 @@
 .header {
-  display: flex;
-  width: $header-close;
-  transition: width 300ms linear;
-  flex-direction: column;
-  background: $black-background;
-
   &.subpage {
     width: 0;
   }
@@ -19,10 +13,9 @@
   }
 
   .menu {
-    transition: all 200ms;
-    align-self: flex-start;
-    margin-left: calc(#{$header-close} / 6);
+    display: none;
   }
+
   svg {
     width: 100%;
   }
@@ -34,48 +27,70 @@
     text-shadow: 1px 3px 7px #0c0e0c;
   }
   &__menu {
-    display: flex;
-    justify-content: flex-end;
-    transition: all 1s;
-    overflow: hidden;
-    &--wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      width: 100%;
-      margin-top: 50px;
-    }
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: 55px;
     &--item {
       &:not(:first-child) {
+        display: $open-menu;
         margin-top: 35px;
       }
-      .menu {
-        &--item {
-          display: grid;
-          grid-template-columns: $header-close 1fr;
-        }
-        &--icon {
-          width: 40%;
-          fill: $green-main-font;
-          justify-self: center;
-        }
-      }
-    }
-  }
-}
-
-//menu header effect
-.main--grid {
-  display: flex;
-  &.open--menu {
-    header {
-      width: 11rem;
     }
   }
 }
 
 .open-menu {
   z-index: 2;
+}
+
+@media (min-width: 661px) {
+  .header {
+    display: flex;
+    width: $header-close;
+    transition: width 300ms linear;
+    flex-direction: column;
+    background: $black-background;
+    .menu {
+      display: block;
+      transition: all 200ms;
+      align-self: flex-start;
+      margin-left: calc(#{$header-close} / 6);
+    }
+    &__menu {
+      position: static;
+      display: flex;
+      justify-content: flex-end;
+      transition: all 1s;
+      overflow: hidden;
+      &--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 50px;
+      }
+      &--item {
+        &:not(:first-child) {
+          display: $open-menu;
+          margin-top: 35px;
+        }
+        .menu {
+          &--item {
+            display: grid;
+            grid-template-columns: $header-close 1fr;
+          }
+          &--icon {
+            width: 40%;
+            fill: $green-main-font;
+            justify-self: center;
+          }
+        }
+      }
+    }
+  }
 }
 
 @import './search-box.scss';
