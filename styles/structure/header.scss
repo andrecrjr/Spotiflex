@@ -1,7 +1,4 @@
 .header {
-  &.subpage {
-    width: 0;
-  }
   h1 {
     font-size: 1.3rem;
     margin-left: 25px;
@@ -17,7 +14,7 @@
   }
 
   svg {
-    width: 100%;
+    width: auto;
   }
   .logo {
     display: flex;
@@ -36,7 +33,7 @@
     &--wrapper {
       display: flex;
       justify-content: center;
-      background: black;
+      background: $black-background;
     }
     &--item {
       &:not(:first-child) {
@@ -58,23 +55,26 @@
   }
 }
 
+.arrowMenu {
+  display: none;
+}
+
 .open-menu {
   z-index: 2;
 }
 
 @media (min-width: 661px) {
+  .arrowMenu {
+    display: block;
+  }
+
   .header {
     display: flex;
-    width: $header-close;
+    width: 30%;
     transition: width 300ms linear;
     flex-direction: column;
     background: $black-background;
-    .menu {
-      display: block;
-      transition: all 200ms;
-      align-self: flex-start;
-      margin-left: calc(#{$header-close} / 6);
-    }
+    border-right: $border-black-opacity;
     &__menu {
       position: static;
       display: flex;
@@ -91,17 +91,33 @@
       &--item {
         .menu {
           &--item {
-            display: grid;
-            grid-template-columns: $header-close 1fr;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: 26px;
           }
           &--icon {
-            width: 40%;
+            width: auto;
             fill: $green-main-font;
             justify-self: center;
+          }
+          &--option {
+            margin-left: 24px;
+            min-height: 20px;
+            transition: color 400ms;
+            &:hover {
+              color: $green-main-font;
+            }
           }
         }
       }
     }
+  }
+}
+
+@media (min-width: 967px) {
+  .header {
+    width: 16%;
   }
 }
 

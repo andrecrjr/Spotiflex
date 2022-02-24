@@ -11,8 +11,8 @@ const Layout: React.FC<{
         <Header />
         <section className='main--wrapper'>
           <main className={`main--block`}>{children}</main>
-          <TrackPlayerFooter />
         </section>
+        <TrackPlayerFooter />
       </section>
     </>
   );

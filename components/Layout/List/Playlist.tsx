@@ -48,7 +48,9 @@ export const GeneralAlbum: React.FC<{
             src={album.images[0].url}
             className='pane--pic'
             alt={album.name}
-            layout='fill'
+            layout='fixed'
+            width='140px'
+            height='140px'
           />
         )}
       </div>

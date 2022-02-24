@@ -2,6 +2,7 @@
   .subpage {
     padding-top: 4.5rem;
     padding-bottom: $padding-below-window;
+    margin-left: 18px;
   }
 }
 .main--wrapper {
@@ -29,12 +30,13 @@
   //menu header effect
   .main--grid {
     display: flex;
-    &.open--menu {
-      header {
-        width: 11rem;
-      }
+  }
+  .main--block {
+    .subpage {
+      margin-left: 50px;
     }
   }
+
   .block {
     &__pane {
       &--image {

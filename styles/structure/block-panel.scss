@@ -3,9 +3,7 @@
 .block {
   min-height: 100vh;
   overflow: hidden;
-  &#explorer {
-    margin-left: 15px;
-  }
+
   &--title {
     margin-bottom: 20px;
   }
@@ -18,12 +16,23 @@
   }
 
   &__pane {
+    &--space {
+      &[data-album] {
+        .block__pane {
+          &--genre {
+            min-width: auto;
+            height: auto;
+          }
+        }
+      }
+    }
     display: inline-flex;
     align-items: center;
     transition: 200ms all;
 
     &--genre {
       cursor: pointer;
+
       min-width: 180px;
       height: 180px;
       border-radius: 10%;
@@ -72,9 +81,15 @@
   .block--horizontal-list {
     .block__pane {
       overflow-x: hidden;
-      &--genre {
-        width: 170px;
-        height: 170px;
+      &--space {
+        &[data-album] {
+          .block__pane {
+            &--genre {
+              min-width: auto;
+              height: auto;
+            }
+          }
+        }
       }
     }
   }
