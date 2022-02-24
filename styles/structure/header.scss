@@ -31,12 +31,28 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: black;
-    height: 55px;
+    height: auto;
+    z-index: 999;
+    &--wrapper {
+      display: flex;
+      justify-content: center;
+      background: black;
+    }
     &--item {
       &:not(:first-child) {
         display: $open-menu;
         margin-top: 35px;
+      }
+      min-width: 25%;
+      .menu--item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        .menu--option {
+          font-size: 0.78rem;
+        }
       }
     }
   }
@@ -73,10 +89,6 @@
         margin-top: 50px;
       }
       &--item {
-        &:not(:first-child) {
-          display: $open-menu;
-          margin-top: 35px;
-        }
         .menu {
           &--item {
             display: grid;
