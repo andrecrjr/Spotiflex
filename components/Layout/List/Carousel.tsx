@@ -3,7 +3,8 @@ import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import { ISpotifyArtist, Track } from '../../../types/spotifyTypes';
 import CarouselButton from './CarouselButton';
 import { GeneralPlaylist, GeneralAlbum } from './Playlist';
-import { CgArrowLeftO, CgArrowRightO } from 'react-icons/cg';
+import { BsChevronRight, BsChevronLeft } from 'react-icons/bs';
+
 const Carousel: React.FC<{
   listType: {
     playlists?: PlaylistItems[] | Track[];
@@ -36,7 +37,7 @@ const Carousel: React.FC<{
     const blockPane = divCarousel?.children as HTMLCollectionOf<HTMLElement>;
 
     if (previousStep.current && width.current === 0) {
-      previousStep.current.style.opacity = '0.4';
+      previousStep.current.style.opacity = '0.1';
     }
 
     nextStep.current?.addEventListener('click', (e) => {
@@ -46,7 +47,7 @@ const Carousel: React.FC<{
         blockPane[0].style.transform = `translateX(${newWidth}px)`;
         width.current = newWidth;
         if (Math.abs(newWidth) >= scrollWidth - windowPane) {
-          nextStep.current.style.opacity = '0.4';
+          nextStep.current.style.opacity = '0.1';
           nextStep.current.style.pointerEvents = 'none';
           nextStep.current.style.cursor = 'unset';
           previousStep.current.style.opacity = '1';
@@ -67,9 +68,10 @@ const Carousel: React.FC<{
           previousStep.current.style.opacity = '1';
           nextStep.current.style.opacity = '1';
           nextStep.current.style.pointerEvents = 'visible';
+          nextStep.current.style.cursor = 'pointer';
         } else {
           nextStep.current.style.opacity = '1';
-          previousStep.current.style.opacity = '0.4';
+          previousStep.current.style.opacity = '0.1';
         }
       }
     });
@@ -90,10 +92,10 @@ const Carousel: React.FC<{
           </ul>
           <div className='slider__wrapper--controls'>
             <CarouselButton ref={nextStep} controlSide={'next'}>
-              <CgArrowRightO />
+              <BsChevronRight className='slider__arrow' />
             </CarouselButton>
             <CarouselButton ref={previousStep} controlSide={'previous'}>
-              <CgArrowLeftO />
+              <BsChevronLeft className='slider__arrow' />
             </CarouselButton>
           </div>
         </>
@@ -112,10 +114,10 @@ const Carousel: React.FC<{
           </ul>
           <div className='slider__wrapper--controls'>
             <CarouselButton ref={nextStep} controlSide={'next'}>
-              <CgArrowRightO />
+              <BsChevronRight className='slider__arrow' />
             </CarouselButton>
             <CarouselButton ref={previousStep} controlSide={'previous'}>
-              <CgArrowLeftO />
+              <BsChevronLeft className='slider__arrow' />
             </CarouselButton>
           </div>
         </>
@@ -134,10 +136,10 @@ const Carousel: React.FC<{
           </ul>
           <div className='slider__wrapper--controls'>
             <CarouselButton ref={nextStep} controlSide={'next'}>
-              <CgArrowRightO />
+              <BsChevronRight className='slider__arrow' />
             </CarouselButton>
             <CarouselButton ref={previousStep} controlSide={'previous'}>
-              <CgArrowLeftO />
+              <BsChevronLeft className='slider__arrow' />
             </CarouselButton>
           </div>
         </>

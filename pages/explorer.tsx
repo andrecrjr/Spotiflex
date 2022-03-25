@@ -8,22 +8,33 @@ import LayoutMetaSEO from '../components/Layout/LayoutMetaSEO';
 const Explorer: React.FC<{
   playlistsGenre?: PlaylistItems[];
   latestReleases?: ISpotifyAlbum[];
+  featuredPlaylists?: ISpotifyAlbum[];
   isChild?: boolean;
-}> = ({ playlistsGenre, latestReleases, isChild = false }) => {
+}> = ({
+  playlistsGenre,
+  latestReleases,
+  isChild = false,
+  featuredPlaylists,
+}) => {
   return (
     <>
       {!isChild && <LayoutMetaSEO title='Spotiflex Explorer' />}
       <section className='block' id='explorer'>
         <h1 className='block--title'>Explorer</h1>
         <SongList
-          listType={{ playlists: playlistsGenre }}
-          name={'Genres'}
+          listType={{ albums: latestReleases }}
+          name={'New Releases'}
+          iconsWithTitle={false}
+        />
+        <SongList
+          listType={{ albums: featuredPlaylists }}
+          name={'Featured Playlists'}
           iconsWithTitle={true}
         />
         <SongList
-          listType={{ albums: latestReleases }}
-          name={'Latest Album Releases'}
-          iconsWithTitle={false}
+          listType={{ playlists: playlistsGenre }}
+          name={'Playlists by Genre'}
+          iconsWithTitle={true}
         />
       </section>
     </>

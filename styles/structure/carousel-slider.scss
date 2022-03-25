@@ -8,6 +8,18 @@
       display: none;
     }
   }
+  &__arrow {
+    width: 20px;
+    height: 100%;
+    fill: rgb(219, 219, 219);
+    cursor: pointer;
+    transition: fill 100ms ease-in;
+    background: transparent;
+
+    &:hover {
+      fill: rgba(133, 133, 133, 0.822);
+    }
+  }
 }
 @media (min-width: 661px) {
   .slider__wrapper {
@@ -24,11 +36,6 @@
         background: transparent;
         border: none;
         cursor: pointer;
-        svg {
-          width: 35px;
-          height: 100%;
-          color: white;
-        }
         &:disabled {
           cursor: none;
         }

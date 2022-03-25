@@ -3,7 +3,11 @@ import { ISpotifyAlbum } from './../types/spotifyTypes.d';
 import { getPublicAuth } from '../helper';
 
 export const getLatestAndGenres = async (): Promise<{
-  props: { playlistsGenre: PlaylistItems[]; latestReleases: ISpotifyAlbum[] };
+  props: {
+    playlistsGenre: PlaylistItems[];
+    latestReleases: ISpotifyAlbum[];
+    featuredPlaylists: ISpotifyAlbum[];
+  };
 }> => {
   const auth = await getPublicAuth();
   const fetchPlaylists = await Promise.all([
@@ -12,11 +16,19 @@ export const getLatestAndGenres = async (): Promise<{
         Authorization: `${auth.token_type} ${auth.access_token}`,
       },
     }),
-    fetch('https://api.spotify.com/v1/browse/new-releases?offset=0&limit=20', {
+    fetch('https://api.spotify.com/v1/browse/new-releases?offset=0&limit=35', {
       headers: {
         Authorization: `${auth.token_type} ${auth.access_token}`,
       },
     }),
+    fetch(
+      'https://api.spotify.com/v1/browse/featured-playlists?offset=0&limit=45',
+      {
+        headers: {
+          Authorization: `${auth.token_type} ${auth.access_token}`,
+        },
+      }
+    ),
   ]);
 
   const {
@@ -25,9 +37,12 @@ export const getLatestAndGenres = async (): Promise<{
   const {
     albums: { items: latestReleases },
   } = await fetchPlaylists[1].json();
+  const {
+    playlists: { items: featuredPlaylists },
+  } = await fetchPlaylists[2].json();
 
   return {
-    props: { playlistsGenre, latestReleases },
+    props: { playlistsGenre, latestReleases, featuredPlaylists },
   };
 };
 
