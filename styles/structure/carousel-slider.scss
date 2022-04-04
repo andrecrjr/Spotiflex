@@ -13,11 +13,11 @@
     height: 100%;
     fill: rgb(219, 219, 219);
     cursor: pointer;
-    transition: fill 100ms ease-in;
+    transition: opacity 200ms ease-in;
     background: transparent;
 
     &:hover {
-      fill: rgba(133, 133, 133, 0.822);
+      opacity: 0.6;
     }
   }
 }

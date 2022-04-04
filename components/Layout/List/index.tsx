@@ -1,6 +1,7 @@
 import React from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import { ISpotifyArtist } from '../../../types/spotifyTypes';
+import { RiArrowRightSLine } from 'react-icons/ri';
 
 import Carousel from './Carousel';
 
@@ -19,7 +20,9 @@ const SongList: React.FC<{
 }) => {
   return (
     <section className='block--horizontal-list'>
-      <h1 className='block--title'>{name}</h1>
+      <h1 className='block--title'>
+        {name} <RiArrowRightSLine className='block--arrow' />
+      </h1>
       <Carousel
         listType={{ playlists, slugName: 'playlists' }}
         iconsWithTitle={iconsWithTitle}

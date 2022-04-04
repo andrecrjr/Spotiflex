@@ -6,12 +6,25 @@
 
   &--title {
     margin-bottom: 20px;
+    transition: color 200ms ease-in-out;
+    &:hover {
+      color: $green-main-font;
+    }
   }
   &--horizontal-list {
     position: relative;
     margin-top: 2rem;
     &:not(:first-of-type) {
       margin-top: 2.5rem;
+    }
+  }
+  &--arrow {
+    width: auto;
+    height: 22px;
+    position: absolute;
+    margin-left: 5px;
+    &:hover {
+      margin-left: 10px;
     }
   }
 

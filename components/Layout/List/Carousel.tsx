@@ -72,6 +72,7 @@ const Carousel: React.FC<{
         } else {
           nextStep.current.style.opacity = '1';
           previousStep.current.style.opacity = '0.1';
+          nextStep.current.style.pointerEvents = 'visible';
         }
       }
     });
