@@ -9,10 +9,10 @@ const Header: React.FC = () => {
 
   const changeMenuRoute = () => {
     return (
-      router.asPath.includes('album') ||
-      router.asPath.includes('playlist') ||
-      router.asPath.includes('genre') ||
-      router.asPath.includes('artist')
+      router?.asPath.includes('album') ||
+      router?.asPath.includes('playlist') ||
+      router?.asPath.includes('genre') ||
+      router?.asPath.includes('artist')
     );
   };
 

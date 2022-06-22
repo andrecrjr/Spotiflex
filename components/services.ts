@@ -59,6 +59,7 @@ export const getDataSpotify = async <T>(query: string): Promise<T> => {
     return body;
   } catch (error) {
     console.error(error);
+    return error;
   }
 };
 

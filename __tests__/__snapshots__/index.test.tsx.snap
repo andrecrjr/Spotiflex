@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page should render home 1`] = `
+<section
+  class="main--grid"
+>
+  <header
+    class="header "
+  >
+    <div
+      class="logo"
+    >
+      <span
+        class="menu--icon"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      <form
+        class="menu--option search--box"
+      >
+        <input
+          placeholder="Search your favorite band, song, whatever"
+          type="text"
+        />
+      </form>
+      <a
+        href="/"
+      >
+        Spotiflex
+      </a>
+    </div>
+    <nav
+      class="header__menu"
+    >
+      <ul
+        class="header__menu--wrapper"
+      >
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/explorer"
+          >
+            <span
+              class="menu--icon"
+            >
+              <svg
+                color="rgb(148, 230, 26)"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                style="color: rgb(148, 230, 26);"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z"
+                />
+              </svg>
+            </span>
+            <span
+              class="menu--option"
+            >
+              Explore
+            </span>
+          </a>
+        </li>
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/#"
+            style="color: rgb(22, 22, 22);"
+          >
+            <svg
+              color="#161616"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(22, 22, 22);"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                musics
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"
+              />
+            </svg>
+            <span
+              class="menu--option"
+            >
+              Songs
+            </span>
+          </a>
+        </li>
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/#"
+            style="color: rgb(22, 22, 22);"
+          >
+            <span
+              class="menu--icon"
+            >
+              <svg
+                color="#161616"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                style="color: rgb(22, 22, 22);"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  podcast
+                </title>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+                />
+              </svg>
+            </span>
+            <span
+              class="menu--option"
+            >
+              Podcast
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section
+    class="main--wrapper"
+  >
+    <main
+      class="main--block"
+    >
+      <div
+        class="content fadeIn subpage"
+      >
+        <section
+          class="block--herobanner"
+        >
+          <div
+            class="block--herobanner__wrapper"
+          >
+            <h2>
+              The best spotify client in the Web ever!
+            </h2>
+            <a
+              href="/explorer"
+            >
+              ACCESS
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </section>
+</section>
+`;

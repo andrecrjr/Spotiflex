@@ -10,15 +10,15 @@ const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
   const ref = useRef<HTMLDivElement>(null);
   const router = useRouter();
   useEffect(() => {
-    router.events.on('routeChangeComplete', () => {
+    router?.events.on('routeChangeComplete', () => {
       ref?.current?.scrollIntoView({ block: 'start' });
     });
     () => {
-      router.events.off('routeChangeComplete', () => {
+      router?.events.off('routeChangeComplete', () => {
         ref?.current?.scrollIntoView({ block: 'start' });
       });
     };
-  }, [router.events]);
+  }, [router?.events]);
 
   useEffect(() => {
     setTransitionStage('fadeIn');
@@ -33,7 +33,7 @@ const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
   return (
     <div
       className={`content ${transitionStage} ${
-        (router.pathname !== '/' && 'subpage') || ''
+        (router?.pathname !== '/' && 'subpage') || ''
       }`}
       ref={ref}
       onTransitionEnd={() => {
