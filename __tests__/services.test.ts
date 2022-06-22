@@ -1,7 +1,6 @@
 import { getTrackListContent } from '@/components/services';
 import { ISpotifyAlbum, ISpotifyPlaylist } from 'types';
 import playlistData from '@/mocks/playlistMock';
-import { Response } from 'node-fetch';
 
 describe('Services test', () => {
   beforeEach(() => {
@@ -21,5 +20,4 @@ describe('Services test', () => {
     expect(tracks).toStrictEqual<ISpotifyAlbum>(playlistData);
     expect(tracks).not.toStrictEqual(null);
   });
-  
 });
