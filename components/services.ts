@@ -2,7 +2,6 @@ import { PlaylistItems } from './../types/index.d';
 import { ISpotifyAlbum, ISpotifyPlaylist } from './../types/spotifyTypes.d';
 import { getPublicAuth } from '../helper';
 
-type fetchCategories = 'categories' | 'albums' | 'playlists';
 interface fetchData<T> {
   [data: string]: {
     items: T;
