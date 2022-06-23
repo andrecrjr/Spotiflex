@@ -1,0 +1,252 @@
+{
+    "categories": {
+      "href": "https://api.spotify.com/v1/browse/categories?offset=0&limit=20",
+      "items": [
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/toplists",
+          "icons": [
+            {
+              "height": 275,
+              "url": "https://t.scdn.co/media/derived/toplists_11160599e6a04ac5d6f2757f5511778f_0_0_275_275.jpg",
+              "width": 275
+            }
+          ],
+          "id": "toplists",
+          "name": "Top Lists"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFKGQWi5egawY",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/131fcbdd35ab418ca6df1fdb3038812f.jpeg",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFKGQWi5egawY",
+          "name": "Brasil"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFJCTDO6ndZMP",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/8e6eaf8b5c9449fdbb689a4fdace1f25.jpeg",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFJCTDO6ndZMP",
+          "name": "Sertanejo"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/at_home",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/04da469dd7be4dab96659aa1fa9f0ac9.jpeg",
+              "width": null
+            }
+          ],
+          "id": "at_home",
+          "name": "Em casa"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/pride",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/c5495b9f0f694ffcb39c9217d4ed4375",
+              "width": null
+            }
+          ],
+          "id": "pride",
+          "name": "LGBTQ+"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/in_the_car",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/57017d435c344bb28efba325b7c9e7c6.jpeg",
+              "width": null
+            }
+          ],
+          "id": "in_the_car",
+          "name": "No carro"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFPw634sFwguI",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/084155aeaa724ea1bd393a017d67b709",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFPw634sFwguI",
+          "name": "EQUAL"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/pop",
+          "icons": [
+            {
+              "height": 274,
+              "url": "https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg",
+              "width": 274
+            }
+          ],
+          "id": "pop",
+          "name": "Pop"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFARvdmw6EIef",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/b6d29a00a0254560bdc2dbff2234fcf5.jpeg",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFARvdmw6EIef",
+          "name": "Samba & Pagode"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/wellness",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/3710b68657574bc79df14bd74629e5ac",
+              "width": null
+            }
+          ],
+          "id": "wellness",
+          "name": "Bem-estar"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/rock",
+          "icons": [
+            {
+              "height": 274,
+              "url": "https://t.scdn.co/media/derived/rock_9ce79e0a4ef901bbd10494f5b855d3cc_0_0_274_274.jpg",
+              "width": 274
+            }
+          ],
+          "id": "rock",
+          "name": "Rock"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/hiphop",
+          "icons": [
+            {
+              "height": 274,
+              "url": "https://t.scdn.co/media/original/hip-274_0a661854d61e29eace5fe63f73495e68_274x274.jpg",
+              "width": 274
+            }
+          ],
+          "id": "hiphop",
+          "name": "Hip hop"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/inspirational",
+          "icons": [
+            {
+              "height": 274,
+              "url": "https://t.scdn.co/media/derived/icon-274x274_5ce6e0f681f0a76f9dcf9270dfd18489_0_0_274_274.jpg",
+              "width": 274
+            }
+          ],
+          "id": "inspirational",
+          "name": "Cristã"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFM6qDjp13Rui",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/4254738a4b384c9e8b3cb197a8263523",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFM6qDjp13Rui",
+          "name": "AMPLIFIKA"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFHCaWrPJOoNF",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/8a57723010c549cfa8105c45ed2229f1.jpeg",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFHCaWrPJOoNF",
+          "name": "MPB"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLjmiZRss79w",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/9210c5a26e6a4b4da2c3ea8e5f87fff8",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFLjmiZRss79w",
+          "name": "Música ambiente"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFFoimhOqWzLB",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/664bb84f7a774e1eadb7c227aed98f3c",
+              "width": null
+            }
+          ],
+          "id": "0JQ5DAqbMKFFoimhOqWzLB",
+          "name": "Crianças e família"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/radar",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/c6677aa51acf4121b66b9d1f231bd427.png",
+              "width": null
+            }
+          ],
+          "id": "radar",
+          "name": "RADAR"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/edm_dance",
+          "icons": [
+            {
+              "height": 274,
+              "url": "https://t.scdn.co/media/derived/edm-274x274_0ef612604200a9c14995432994455a6d_0_0_274_274.jpg",
+              "width": 274
+            }
+          ],
+          "id": "edm_dance",
+          "name": "Dance/Eletrônica"
+        },
+        {
+          "href": "https://api.spotify.com/v1/browse/categories/indie_alt",
+          "icons": [
+            {
+              "height": null,
+              "url": "https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg",
+              "width": null
+            }
+          ],
+          "id": "indie_alt",
+          "name": "Indie"
+        }
+      ],
+      "limit": 20,
+      "next": "https://api.spotify.com/v1/browse/categories?offset=20&limit=20",
+      "offset": 0,
+      "previous": null,
+      "total": 58
+    }
+  }

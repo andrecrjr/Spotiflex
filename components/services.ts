@@ -1,6 +1,13 @@
 import { PlaylistItems } from './../types/index.d';
-import { ISpotifyAlbum } from './../types/spotifyTypes.d';
+import { ISpotifyAlbum, ISpotifyPlaylist } from './../types/spotifyTypes.d';
 import { getPublicAuth } from '../helper';
+
+type fetchCategories = 'categories' | 'albums' | 'playlists';
+interface fetchData<T> {
+  [data: string]: {
+    items: T;
+  };
+}
 
 export const getLatestAndGenres = async (): Promise<{
   props: {
@@ -9,38 +16,29 @@ export const getLatestAndGenres = async (): Promise<{
     featuredPlaylists: ISpotifyAlbum[];
   };
 }> => {
-  const auth = await getPublicAuth();
-  const fetchPlaylists = await Promise.all([
-    fetch('https://api.spotify.com/v1/browse/categories', {
-      headers: {
-        Authorization: `${auth.token_type} ${auth.access_token}`,
-      },
-    }),
-    fetch('https://api.spotify.com/v1/browse/new-releases?offset=0&limit=35', {
-      headers: {
-        Authorization: `${auth.token_type} ${auth.access_token}`,
-      },
-    }),
-    fetch(
-      'https://api.spotify.com/v1/browse/featured-playlists?offset=0&limit=45',
-      {
-        headers: {
-          Authorization: `${auth.token_type} ${auth.access_token}`,
-        },
-      }
+  const [categoriesData, albumsData, playlistsData]: [
+    playlistsGenre: fetchData<PlaylistItems[]>,
+    latestReleases: fetchData<ISpotifyAlbum[]>,
+    featuredPlaylists: fetchData<ISpotifyAlbum[]>
+  ] = await Promise.all([
+    getDataSpotify<fetchData<PlaylistItems[]>>('browse/categories'),
+    getDataSpotify<fetchData<ISpotifyAlbum[]>>(
+      'browse/new-releases?offset=0&limit=35'
+    ),
+    getDataSpotify<fetchData<ISpotifyAlbum[]>>(
+      'browse/featured-playlists?offset=0&limit=45'
     ),
   ]);
 
   const {
     categories: { items: playlistsGenre },
-  } = await fetchPlaylists[0].json();
+  } = categoriesData;
   const {
     albums: { items: latestReleases },
-  } = await fetchPlaylists[1].json();
+  } = albumsData;
   const {
     playlists: { items: featuredPlaylists },
-  } = await fetchPlaylists[2].json();
-
+  } = playlistsData;
   return {
     props: { playlistsGenre, latestReleases, featuredPlaylists },
   };
@@ -66,7 +64,7 @@ export const getDataSpotify = async <T>(query: string): Promise<T> => {
 export const getTrackListContent = async (
   trackContent: 'albums' | 'playlists',
   id: string | string[]
-): Promise<ISpotifyAlbum> => {
+): Promise<ISpotifyAlbum | ISpotifyPlaylist> => {
   try {
     const songContent: ISpotifyAlbum = await getDataSpotify(
       `${trackContent}/${id}`

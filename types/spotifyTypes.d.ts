@@ -3,6 +3,7 @@ import {
   ISpotifyPlaylist,
   ISpotifyTopTrack,
 } from './spotifyTypes.d';
+
 type ItemsPlaylist = {
   primary_color: string;
   album: ISpotifyAlbum;
@@ -11,7 +12,7 @@ type ItemsPlaylist = {
 
 type ImageObject = {
   height: 64;
-  url: 'https://i.scdn.co/image/ab67616d000048511bfa23b13d0504fb90c37b39';
+  url: string;
   width: 64;
 };
 
@@ -24,6 +25,18 @@ export type typeOfTracklist =
   | 'tracklist';
 
 export type Track = {
+  added_at: string;
+  added_by: {
+    external_urls: {
+      spotify: string;
+    };
+    href: string;
+    id: string;
+    type: string;
+    uri: string;
+  };
+  is_local: false;
+  primary_color: null;
   album?: ISpotifyAlbum;
   available_markets?: string[];
   disc_number?: number;
@@ -40,18 +53,16 @@ export type Track = {
   track_number?: number;
   type?: typeOfTrack;
   uri?: string;
-  artists: [
-    {
-      external_urls: {
-        spotify: 'https://open.spotify.com/artist/4BYxqVkZyFjtik7crYLg5Q';
-      };
-      href: 'https://api.spotify.com/v1/artists/4BYxqVkZyFjtik7crYLg5Q';
-      id: '4BYxqVkZyFjtik7crYLg5Q';
-      name: 'Chris Young';
-      type: 'artist';
-      uri: 'spotify:artist:4BYxqVkZyFjtik7crYLg5Q';
-    }
-  ];
+  artists: {
+    external_urls: {
+      spotify: string;
+    };
+    href: string;
+    id: string;
+    name: string;
+    type: string;
+    uri: string;
+  }[];
 };
 
 interface PlaylistTracks {
@@ -71,7 +82,7 @@ export type ISpotifyPlaylistWrapper = {
 };
 
 export interface ISpotifyPlaylist {
-  collaborative?: boolean;
+  collaborative: boolean;
   description?: string;
   external_urls?: {
     spotify: string;
@@ -102,28 +113,26 @@ export type ISpotifyAllTrackList =
 
 export interface ISpotifyAlbum {
   album_type?: 'album';
-  artists?: [
-    {
-      external_urls: {
-        spotify: 'https://open.spotify.com/artist/6AgTAQt8XS6jRWi4sX7w49';
-      };
-      href: 'https://api.spotify.com/v1/artists/6AgTAQt8XS6jRWi4sX7w49';
-      id: '6AgTAQt8XS6jRWi4sX7w49';
-      name: 'Polo G';
-      type: 'artist';
-      uri: 'spotify:artist:6AgTAQt8XS6jRWi4sX7w49';
-    }
-  ];
+  artists?: {
+    external_urls: {
+      spotify: string;
+    };
+    href: string;
+    id: string;
+    name: string;
+    type: string;
+    uri: string;
+  }[];
   available_markets?: [];
   external_urls?: {
-    spotify: 'https://open.spotify.com/album/7KSf6p0G0mZd7j60etVTwT';
+    spotify: string;
   };
   href?: string;
   id?: string;
   images?: ImageObject[];
-  name?: 'Hall of Fame';
-  release_date?: '2021-06-11';
-  release_date_precision?: 'day';
+  name?: string;
+  release_date?: string;
+  release_date_precision?: string;
   total_tracks?: 20;
   tracks: {
     href?: string;
@@ -131,8 +140,8 @@ export interface ISpotifyAlbum {
     id?: '';
     added_at?: string;
   };
-  type: 'album';
-  uri?: 'spotify:album:7KSf6p0G0mZd7j60etVTwT';
+  type: string;
+  uri?: string;
 }
 
 export interface ISpotifyArtist {
