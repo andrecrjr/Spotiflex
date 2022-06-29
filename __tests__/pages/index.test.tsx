@@ -1,6 +1,6 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import MyApp from '@/pages/_app';
-import Home from "@/pages/"
+import Home from "@/pages/index"
 import {  renderWithWrappers } from '../../utils/AllProviders';
 import userEvent from '@testing-library/user-event'
 
