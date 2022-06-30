@@ -11,9 +11,9 @@ type ItemsPlaylist = {
 };
 
 type ImageObject = {
-  height: 64;
+  height: number;
   url: string;
-  width: 64;
+  width: number;
 };
 
 export type typeOfTracklist =
@@ -25,8 +25,8 @@ export type typeOfTracklist =
   | 'tracklist';
 
 export type Track = {
-  added_at: string;
-  added_by: {
+  added_at?: string;
+  added_by?: {
     external_urls: {
       spotify: string;
     };
@@ -35,8 +35,8 @@ export type Track = {
     type: string;
     uri: string;
   };
-  is_local: false;
-  primary_color: null;
+  is_local: boolean;
+  primary_color?: string;
   album?: ISpotifyAlbum;
   available_markets?: string[];
   disc_number?: number;
@@ -67,11 +67,11 @@ export type Track = {
 
 interface PlaylistTracks {
   items: Track[];
-  limit: 100;
-  next: null;
+  limit: number;
+  next: number;
   offset: 0;
-  previous: null;
-  total: 52;
+  previous: number;
+  total: number;
 }
 
 export type ISpotifyPlaylistWrapper = {
@@ -112,7 +112,7 @@ export type ISpotifyAllTrackList =
   | ISpotifyTopTrack;
 
 export interface ISpotifyAlbum {
-  album_type?: 'album';
+  album_type?: string;
   artists?: {
     external_urls: {
       spotify: string;
@@ -123,7 +123,7 @@ export interface ISpotifyAlbum {
     type: string;
     uri: string;
   }[];
-  available_markets?: [];
+  available_markets?: string[];
   external_urls?: {
     spotify: string;
   };
@@ -133,14 +133,15 @@ export interface ISpotifyAlbum {
   name?: string;
   release_date?: string;
   release_date_precision?: string;
-  total_tracks?: 20;
-  tracks: {
+  total_tracks?: number;
+  tracks?: {
     href?: string;
-    items: Track[];
-    id?: '';
+    items?: Track[];
+    id?: string;
     added_at?: string;
   };
-  type: string;
+
+  type?: string;
   uri?: string;
 }
 
@@ -169,18 +170,16 @@ export interface ISearchSpotify {
 }
 
 export interface ITracklist {
-  artists: [
-    {
-      external_urls: {
-        spotify: 'https://open.spotify.com/artist/4BYxqVkZyFjtik7crYLg5Q';
-      };
-      href: 'https://api.spotify.com/v1/artists/4BYxqVkZyFjtik7crYLg5Q';
-      id: '4BYxqVkZyFjtik7crYLg5Q';
-      name: 'Chris Young';
-      type: 'artist';
-      uri: 'spotify:artist:4BYxqVkZyFjtik7crYLg5Q';
-    }
-  ];
+  artists: {
+    external_urls: {
+      spotify: 'https://open.spotify.com/artist/4BYxqVkZyFjtik7crYLg5Q';
+    };
+    href: 'https://api.spotify.com/v1/artists/4BYxqVkZyFjtik7crYLg5Q';
+    id: '4BYxqVkZyFjtik7crYLg5Q';
+    name: 'Chris Young';
+    type: 'artist';
+    uri: 'spotify:artist:4BYxqVkZyFjtik7crYLg5Q';
+  }[];
   available_markets: string[];
   disc_number: 1;
   duration_ms: 177346;

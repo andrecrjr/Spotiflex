@@ -13,17 +13,15 @@ export interface TokenSpotify {
 }
 
 export interface PlaylistItems {
-  name: '';
-  image: {};
-  href: '';
-  id: '';
-  icons: [
-    {
-      url: '';
-      height: number;
-      width: number;
-    }
-  ];
+  name: string;
+  image?: {};
+  href: string;
+  id: string;
+  icons: {
+    url: string;
+    height: number | unknown;
+    width: number | unknown;
+  }[];
 }
 
 interface QueueList {

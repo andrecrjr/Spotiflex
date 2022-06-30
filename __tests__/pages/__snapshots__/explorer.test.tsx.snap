@@ -1,0 +1,1911 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Album Page Test should render playlists, latest and featured on Explorer page 1`] = `
+<section
+  class="main--grid"
+>
+  <header
+    class="header "
+  >
+    <div
+      class="logo"
+    >
+      <span
+        class="menu--icon"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      <form
+        class="menu--option search--box"
+      >
+        <input
+          placeholder="Search your favorite band, song, whatever"
+          type="text"
+        />
+      </form>
+      <a
+        href="/"
+      >
+        Spotiflex
+      </a>
+    </div>
+    <nav
+      class="header__menu"
+    >
+      <ul
+        class="header__menu--wrapper"
+      >
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/explorer"
+          >
+            <span
+              class="menu--icon"
+            >
+              <svg
+                color="rgb(148, 230, 26)"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                style="color: rgb(148, 230, 26);"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z"
+                />
+              </svg>
+            </span>
+            <span
+              class="menu--option"
+            >
+              Explore
+            </span>
+          </a>
+        </li>
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/#"
+            style="color: rgb(22, 22, 22);"
+          >
+            <svg
+              color="#161616"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(22, 22, 22);"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                musics
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"
+              />
+            </svg>
+            <span
+              class="menu--option"
+            >
+              Songs
+            </span>
+          </a>
+        </li>
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/#"
+            style="color: rgb(22, 22, 22);"
+          >
+            <span
+              class="menu--icon"
+            >
+              <svg
+                color="#161616"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                style="color: rgb(22, 22, 22);"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  podcast
+                </title>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+                />
+              </svg>
+            </span>
+            <span
+              class="menu--option"
+            >
+              Podcast
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section
+    class="main--wrapper"
+  >
+    <main
+      class="main--block"
+    >
+      <div
+        class="content fadeIn subpage"
+      >
+        <section
+          class="block"
+          id="explorer"
+        >
+          <h1
+            class="block--title"
+          >
+            Explorer
+          </h1>
+          <section
+            class="block--horizontal-list"
+          >
+            <h1
+              class="block--title"
+            >
+              New Releases
+               
+              <svg
+                class="block--arrow"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                  />
+                </g>
+              </svg>
+            </h1>
+            <ul
+              class="slider__wrapper"
+            >
+              <div
+                class="block__pane"
+                data-carousel="carousel-albums"
+              >
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="3cf4iSSKd8ffTncbtKljXw"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Honestly, Nevermind"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Honestly, Nevermind
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="4BYCmmwbSU2bxcQEEI6RBU"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="killer"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        killer
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="5ob4kF4KkXFDqC5ysCdCV8"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Khaza"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Khaza
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="3pc9LMhg8lyfpPTyywABMd"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Mercury"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Mercury
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="16pHEysNz5Sp0iI9Aw7KXR"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Natural"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Natural
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="2q7cKHWIXtGBtEtARc5lyV"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Conceited"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Conceited
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="2u0L2wbAbJAw5cx00Wk6zE"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Giving Up"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Giving Up
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="3plMoBhvQ07H4itII2Qdeb"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="DON'T YOU WORRY"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        DON'T YOU WORRY
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="3kdPIjFwMkIBCIsUqt3SrV"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Summer Moon (feat. Kevin Kaarl)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Summer Moon (feat. Kevin Kaarl)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="53aYSRJmJeUO800GL3Wa1C"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="So Icy Gang: The ReUp"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        So Icy Gang: The ReUp
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="67b4tJxbnsJbbcTUjnlb3y"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Honey"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Honey
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="2C3rUs6GnKWT0c101eBiQb"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Surprise"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Surprise
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="0wgrKGnsLCq4tM0jIOBmkP"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="B4PINK"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        B4PINK
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="2apZoa0oXih4sM7dDMNi2a"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="The Highs & The Lows"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        The Highs & The Lows
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="0YmzktvGgOcjZCYjSdcG6n"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Puffer"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Puffer
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <div
+              class="slider__wrapper--controls"
+            >
+              <button
+                class="slider__button"
+                data-control="next"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider__button"
+                data-control="previous"
+                style="opacity: 0.1;"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
+          <section
+            class="block--horizontal-list"
+          >
+            <h1
+              class="block--title"
+            >
+              Featured Playlists
+               
+              <svg
+                class="block--arrow"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                  />
+                </g>
+              </svg>
+            </h1>
+            <ul
+              class="slider__wrapper"
+            >
+              <div
+                class="block__pane"
+                data-carousel="carousel-albums"
+              >
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DXbcPC6Vvqudd"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Night Rain"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Night Rain
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DX8Sz1gsYZdwj"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Classical Sleep"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Classical Sleep
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DX0QKpU3cGsyb"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Bedroom Jams"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Bedroom Jams
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DWVvXA824aCbn"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="The Piano Bar"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        The Piano Bar
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DWZd79rJ6a7lp"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Sleep"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Sleep
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DWX3387IZmjNa"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="B.A.E."
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        B.A.E.
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DX4sWSpwq3LiO"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Peaceful Piano"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Peaceful Piano
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DWYcDQ1hSjOpY"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Deep Sleep"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Deep Sleep
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DX2UgsUIg75Vg"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Chilled R&B"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Chilled R&B
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DXbZmKskFbVct"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="ASMR Sleep Whispers"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        ASMR Sleep Whispers
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DWWSads6V2oIk"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Sleep in the Rainforest"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Sleep in the Rainforest
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="37i9dQZF1DWUZ5bk6qqDSy"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="White Noise"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        White Noise
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <div
+              class="slider__wrapper--controls"
+            >
+              <button
+                class="slider__button"
+                data-control="next"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider__button"
+                data-control="previous"
+                style="opacity: 0.1;"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
+          <section
+            class="block--horizontal-list"
+          >
+            <h1
+              class="block--title"
+            >
+              Playlists by Genre
+               
+              <svg
+                class="block--arrow"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                  />
+                </g>
+              </svg>
+            </h1>
+            <ul
+              class="slider__wrapper"
+            >
+              <div
+                class="block__pane"
+                data-carousel="carousel-playlists"
+              >
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Top Lists"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Top Lists
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Brasil"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Brasil
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Sertanejo"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Sertanejo
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Em casa"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Em casa
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="LGBTQ+"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      LGBTQ+
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="No carro"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      No carro
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="EQUAL"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      EQUAL
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Pop"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Pop
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Samba & Pagode"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Samba & Pagode
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Bem-estar"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Bem-estar
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Rock"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Rock
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Hip hop"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Hip hop
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Cristã"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Cristã
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="AMPLIFIKA"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      AMPLIFIKA
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="MPB"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      MPB
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Música ambiente"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Música ambiente
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Crianças e família"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Crianças e família
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="RADAR"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      RADAR
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Dance/Eletrônica"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Dance/Eletrônica
+                    </h3>
+                  </div>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        alt="Indie"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                    <h3
+                      class="block__pane--title"
+                    >
+                      Indie
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <div
+              class="slider__wrapper--controls"
+            >
+              <button
+                class="slider__button"
+                data-control="next"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider__button"
+                data-control="previous"
+                style="opacity: 0.1;"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+  </section>
+</section>
+`;
