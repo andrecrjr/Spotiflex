@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Album Page Test should render playlists, latest and featured on Explorer page 1`] = `
+exports[`Explorer Page Test should render playlists, latest and featured on Explorer page 1`] = `
 <section
   class="main--grid"
 >

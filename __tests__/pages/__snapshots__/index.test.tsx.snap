@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Page should render Homepage 1`] = `
+exports[`Home Page test should render Homepage 1`] = `
 <section
   class="main--grid"
 >

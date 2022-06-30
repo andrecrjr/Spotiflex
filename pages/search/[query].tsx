@@ -5,7 +5,7 @@ import { getDataSpotify } from '../../components/services';
 import SongList from '../../components/Layout/List';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 
-const Search: React.FC<{ resp: ISearchSpotify; query: string; notFound }> = ({
+const Search: React.FC<{ resp: ISearchSpotify; query: string; }> = ({
   resp,
   query,
 }) => {
@@ -26,14 +26,14 @@ const Search: React.FC<{ resp: ISearchSpotify; query: string; notFound }> = ({
         <div className='block' id='explorer'>
           {Object.keys(autoComplete).length > 0 && (
             <>
-              {autoComplete.artists.items.length > 0 && (
+              {autoComplete.artists?.items.length > 0 && (
                 <SongList
                   listType={{ artists: autoComplete.artists.items }}
                   iconsWithTitle={true}
                   name={`Artists found with "${query}"`}
                 />
               )}
-              {autoComplete.albums.items.length > 0 && (
+              {autoComplete.albums?.items.length > 0 && (
                 <SongList
                   listType={{ albums: autoComplete.albums.items }}
                   iconsWithTitle={true}

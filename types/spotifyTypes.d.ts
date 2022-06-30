@@ -35,7 +35,7 @@ export type Track = {
     type: string;
     uri: string;
   };
-  is_local: boolean;
+  is_local?: boolean;
   primary_color?: string;
   album?: ISpotifyAlbum;
   available_markets?: string[];
@@ -49,11 +49,10 @@ export type Track = {
   name?: string;
   popularity?: number;
   preview_url?: string;
-  track?: Track;
   track_number?: number;
   type?: typeOfTrack;
   uri?: string;
-  artists: {
+  artists?: {
     external_urls: {
       spotify: string;
     };
@@ -69,7 +68,7 @@ interface PlaylistTracks {
   items: Track[];
   limit: number;
   next: number;
-  offset: 0;
+  offset: number;
   previous: number;
   total: number;
 }
@@ -102,7 +101,7 @@ export interface ISpotifyPlaylist {
   public?: boolean;
   snapshot_id?: string;
   tracks: PlaylistTracks;
-  type?: 'playlist' | 'tracklist';
+  type?: string;
   uri?: string;
 }
 
@@ -146,7 +145,9 @@ export interface ISpotifyAlbum {
 }
 
 export interface ISpotifyArtist {
-  external_urls?: string[];
+  external_urls?: {
+    spotify: string;
+  };
   genres?: string[];
   href?: string;
   id: string;
@@ -171,8 +172,8 @@ export interface ISearchSpotify {
 
 export interface ITracklist {
   artists: {
-    external_urls: {
-      spotify: 'https://open.spotify.com/artist/4BYxqVkZyFjtik7crYLg5Q';
+    external_urls?: {
+      spotify: string;
     };
     href: 'https://api.spotify.com/v1/artists/4BYxqVkZyFjtik7crYLg5Q';
     id: '4BYxqVkZyFjtik7crYLg5Q';
@@ -185,7 +186,7 @@ export interface ITracklist {
   duration_ms: 177346;
   explicit: false;
   external_urls: {
-    spotify: 'https://open.spotify.com/track/5fBCiTK3cN8RJb7AlfwXfB';
+    spotify: string;
   };
   href: 'https://api.spotify.com/v1/tracks/5fBCiTK3cN8RJb7AlfwXfB';
   id: '5fBCiTK3cN8RJb7AlfwXfB';

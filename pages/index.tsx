@@ -1,6 +1,6 @@
-import Herobanner from '../components/Herobanner';
+import Herobanner from '@/components/Herobanner';
 
-import LayoutMetaSEO from '../components/Layout/LayoutMetaSEO';
+import LayoutMetaSEO from '@/components/Layout/LayoutMetaSEO';
 
 const Home: React.FC = () => {
   return (

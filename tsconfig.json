@@ -19,7 +19,9 @@
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["styles/*"],
       "@/mocks/*": ["__mocks__/*"],
-      "@/helper":["helper.ts"]
+      "@/helper":["helper.ts"],
+      "@/utils/*":["utils/*"],
+      "@/types/*":["types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

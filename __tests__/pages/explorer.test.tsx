@@ -6,7 +6,7 @@ import playlistsGenre from '@/mocks/categoriesMock.json';
 import featuredPlaylists from '@/mocks/featuredPlaylistsMock.json';
 import latestReleases from '@/mocks/newReleasesMock.json';
 
-describe("Album Page Test",()=>{
+describe("Explorer Page Test",()=>{
 
     it("should render playlists, latest and featured on Explorer page", ()=>{
         const {container} = renderWithWrappers(<Explorer

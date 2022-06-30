@@ -1,0 +1,1649 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Page test should search taylor swift 1`] = `
+<section
+  class="main--grid"
+>
+  <header
+    class="header "
+  >
+    <div
+      class="logo"
+    >
+      <span
+        class="menu--icon"
+      >
+        <svg
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M18.319 14.4326C20.7628 11.2941 20.542 6.75347 17.6569 3.86829C14.5327 0.744098 9.46734 0.744098 6.34315 3.86829C3.21895 6.99249 3.21895 12.0578 6.34315 15.182C9.22833 18.0672 13.769 18.2879 16.9075 15.8442C16.921 15.8595 16.9351 15.8745 16.9497 15.8891L21.1924 20.1317C21.5829 20.5223 22.2161 20.5223 22.6066 20.1317C22.9971 19.7412 22.9971 19.1081 22.6066 18.7175L18.364 14.4749C18.3493 14.4603 18.3343 14.4462 18.319 14.4326ZM16.2426 5.28251C18.5858 7.62565 18.5858 11.4246 16.2426 13.7678C13.8995 16.1109 10.1005 16.1109 7.75736 13.7678C5.41421 11.4246 5.41421 7.62565 7.75736 5.28251C10.1005 2.93936 13.8995 2.93936 16.2426 5.28251Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
+      <form
+        class="menu--option search--box"
+      >
+        <input
+          placeholder="Search your favorite band, song, whatever"
+          type="text"
+        />
+      </form>
+      <a
+        href="/"
+      >
+        Spotiflex
+      </a>
+    </div>
+    <nav
+      class="header__menu"
+    >
+      <ul
+        class="header__menu--wrapper"
+      >
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/explorer"
+          >
+            <span
+              class="menu--icon"
+            >
+              <svg
+                color="rgb(148, 230, 26)"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                style="color: rgb(148, 230, 26);"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z"
+                />
+              </svg>
+            </span>
+            <span
+              class="menu--option"
+            >
+              Explore
+            </span>
+          </a>
+        </li>
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/#"
+            style="color: rgb(22, 22, 22);"
+          >
+            <svg
+              color="#161616"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(22, 22, 22);"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                musics
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"
+              />
+            </svg>
+            <span
+              class="menu--option"
+            >
+              Songs
+            </span>
+          </a>
+        </li>
+        <li
+          class="header__menu--item"
+        >
+          <a
+            class="menu--item"
+            href="/#"
+            style="color: rgb(22, 22, 22);"
+          >
+            <span
+              class="menu--icon"
+            >
+              <svg
+                color="#161616"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                style="color: rgb(22, 22, 22);"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  podcast
+                </title>
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+                />
+              </svg>
+            </span>
+            <span
+              class="menu--option"
+            >
+              Podcast
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section
+    class="main--wrapper"
+  >
+    <main
+      class="main--block"
+    >
+      <div
+        class="content fadeIn subpage"
+      >
+        <div
+          class="block"
+          id="explorer"
+        >
+          <section
+            class="block--horizontal-list"
+          >
+            <h1
+              class="block--title"
+            >
+              Artists found with "Taylor Swift"
+               
+              <svg
+                class="block--arrow"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                  />
+                </g>
+              </svg>
+            </h1>
+            <ul
+              class="slider__wrapper"
+            >
+              <div
+                class="block__pane"
+                data-carousel="carousel-artists"
+              >
+                <div
+                  class="block__pane--space"
+                  data-album="06HL4z0CvFAxyc27GXpf02"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor Swift"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor Swift
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="5WiLThuSBwqF7SMRrzQbG6"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor Swiftman"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor Swiftman
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="0IqjJsWlAPR2IafHTtnjPQ"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Minnz Piano"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Minnz Piano
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="49Cmx1Yp6lQrseq3v712Kc"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor Stephens"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor Stephens
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="7gXy60xRcwYujBFoYHnR2O"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Big Red Machine"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Big Red Machine
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="7xzdqdXfioPbZAVhbdrvG1"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="10do1iTg94csIWaWuEvIFb"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Keyrenity"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Keyrenity
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="49hOQR3mPgqpfbPcyaOiC6"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="4Xx6QMLTWppMwdABkN0Afj"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Piano Tribute Players"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Piano Tribute Players
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="5zcgTnL7jjir7HRsDfGgZM"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor*"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor*
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="4n79tc6TJlvs0oMdy307bR"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Guitar Dreamers"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Guitar Dreamers
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="1kAlxl4TvdIiOIFxRXk6fU"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor Sutton"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor Sutton
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="3CygdxquGHurS7f9LjNLkv"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Little Big Town"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Little Big Town
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="7FYjn4nNgjskhNaWoWl8uy"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="5ZsFI1h6hIdQRw2ti0hz81"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="ZAYN"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      ZAYN
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="421rU7C3pIsOliHiiC1242"
+                >
+                  <div
+                    class="block__pane--genre"
+                  />
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor (Rapper)
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="4AK6F7OLvEQ5QYCBNiQWHq"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="One Direction"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      One Direction
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="5kuWDLwVfSgL4RFPUVDdnG"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Taylor"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="0C8ZW7ezQVs4URX5aX7Kqx"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <div
+                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    >
+                      <img
+                        alt="Selena Gomez"
+                        class="pane--pic"
+                        data-nimg="fixed"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
+                  </div>
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Selena Gomez
+                    </h2>
+                  </section>
+                </div>
+                <div
+                  class="block__pane--space"
+                  data-album="1fFVQt5WdQyTBtFmKwGfdM"
+                >
+                  <div
+                    class="block__pane--genre"
+                  />
+                  <section
+                    class="block__pane--item-description"
+                  >
+                    <h2
+                      class="block__pane--item-title"
+                    >
+                      Taylor Swindells
+                    </h2>
+                  </section>
+                </div>
+              </div>
+            </ul>
+            <div
+              class="slider__wrapper--controls"
+            >
+              <button
+                class="slider__button"
+                data-control="next"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider__button"
+                data-control="previous"
+                style="opacity: 0.1;"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
+          <section
+            class="block--horizontal-list"
+          >
+            <h1
+              class="block--title"
+            >
+              Albums found with "Taylor Swift"
+               
+              <svg
+                class="block--arrow"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                  />
+                </g>
+              </svg>
+            </h1>
+            <ul
+              class="slider__wrapper"
+            >
+              <div
+                class="block__pane"
+                data-carousel="carousel-albums"
+              >
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="6DEjYFkNZh67HP7R9PSZvv"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="reputation"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        reputation
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="6kZ42qRrzov54LcAk4onW9"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Red (Taylor's Version)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Red (Taylor's Version)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="5eyZZoQEFQWRHkV2xgAeBw"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Taylor Swift"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Taylor Swift
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="1NAmidJlEaVgA3MpcPFYGq"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Lover"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Lover
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="2rU7u7C2v5i45MFVxx7xG1"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Taylor Swift (Big Machine Radio Release Special)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Taylor Swift (Big Machine Radio Release Special)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="1yGbNOtRIgdIiGHOEBaZWf"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="1989 (Deluxe)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        1989 (Deluxe)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="2fenSS68JI1h4Fo296JfGr"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="folklore"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        folklore
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="5fy0X0JmZRZnVa2UEicIOl"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="1989"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        1989
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="1pzvBxYgT6OVwJLtHkrdQK"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="folklore (deluxe version)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        folklore (deluxe version)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="4hDok0OAJd57SGIT8xuWJH"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Fearless (Taylor's Version)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Fearless (Taylor's Version)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="1jIp7CChnwdj9zUCvPxzQ7"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="ME! (Live From Paris)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        ME! (Live From Paris)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="6S6JQWzUrJVcJLK4fi74Fw"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Speak Now (Deluxe Package)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Speak Now (Deluxe Package)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="5Bwg2XxrjTlrNy6BC7KQZf"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Carolina (From The Motion Picture “Where The Crawdads Sing”)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Carolina (From The Motion Picture “Where The Crawdads Sing”)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="6fyR4wBPwLHKcRtxgd4sGh"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Speak Now World Tour Live"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Speak Now World Tour Live
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="2Xoteh7uEpea4TohMxjtaq"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="evermore"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        evermore
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="0bEySlRAkuPxV9KVWhXXBr"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Taylor Swift Karaoke: 1989 (Deluxe)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Taylor Swift Karaoke: 1989 (Deluxe)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="6AORtDjduMM3bupSWzbTSG"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="evermore (deluxe version)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        evermore (deluxe version)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="6Ar2o9KCqcyYF9J0aQP3au"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Speak Now"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Speak Now
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="3EzFY9Rg0PpbADMth746zi"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Fearless (Big Machine Radio Release Special)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Fearless (Big Machine Radio Release Special)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+                <div
+                  style="display: contents;"
+                >
+                  <div
+                    class="block__pane--space"
+                    data-album="5hxKw2PurC0i1VVJMAntDU"
+                  >
+                    <div
+                      class="block__pane--genre"
+                    >
+                      <div
+                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      >
+                        <img
+                          alt="Wildest Dreams (Taylor's Version)"
+                          class="pane--pic"
+                          data-nimg="fixed"
+                          decoding="async"
+                          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                        />
+                        <noscript />
+                      </div>
+                    </div>
+                    <section
+                      class="block__pane--item-description"
+                    >
+                      <h2
+                        class="block__pane--item-title"
+                      >
+                        Wildest Dreams (Taylor's Version)
+                      </h2>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </ul>
+            <div
+              class="slider__wrapper--controls"
+            >
+              <button
+                class="slider__button"
+                data-control="next"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider__button"
+                data-control="previous"
+                style="opacity: 0.1;"
+              >
+                <svg
+                  class="slider__arrow"
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </section>
+</section>
+`;
