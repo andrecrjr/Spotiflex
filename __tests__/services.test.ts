@@ -27,9 +27,10 @@ describe('Services test', () => {
   });
 
   it('it should return props when uses getLatestAndGenres', async () => {
-    fetchMock.mockResponseOnce(JSON.stringify(playlistsGenre));
-    fetchMock.mockResponseOnce(JSON.stringify(latestReleases));
-    fetchMock.mockResponseOnce(JSON.stringify(featuredPlaylists));
+    fetchMock
+      .mockResponseOnce(JSON.stringify(playlistsGenre))
+      .mockResponseOnce(JSON.stringify(latestReleases))
+      .mockResponseOnce(JSON.stringify(featuredPlaylists));
     const data = await getLatestAndGenres();
     expect(data.props.featuredPlaylists).toStrictEqual(
       featuredPlaylists.playlists.items

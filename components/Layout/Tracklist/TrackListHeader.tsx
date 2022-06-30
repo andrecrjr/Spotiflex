@@ -73,7 +73,7 @@ const TrackListHeader: React.FC<{
         <div className='header__album--artist'>
           {album.artists.map((artist, index, array) => {
             return (
-              <div style={{display:"contents"}} key={artist.name}>
+              <div style={{ display: 'contents' }} key={artist.name}>
                 {artist.name}
                 {index + 1 === array.length ? '' : ', '}
               </div>
