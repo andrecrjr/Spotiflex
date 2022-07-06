@@ -4,16 +4,10 @@ import {
   ISpotifyTopTrack,
 } from './spotifyTypes.d';
 
-type ItemsPlaylist = {
-  primary_color: string;
-  album: ISpotifyAlbum;
-  video_thumbnail: [];
-};
-
 type ImageObject = {
-  height: number;
+  height: number | unknown;
   url: string;
-  width: number;
+  width: number | unknown;
 };
 
 export type typeOfTracklist =
@@ -24,16 +18,27 @@ export type typeOfTracklist =
   | 'track'
   | 'tracklist';
 
-export type Track = {
+export interface Track {
+  artists?: {
+    external_urls?: {
+      spotify?: string;
+    };
+    href?: string;
+    id?: string;
+    name?: string;
+    type?: string;
+    uri?: string;
+  }[];
+  album?: {};
   added_at?: string;
   added_by?: {
-    external_urls: {
+    external_urls?: {
       spotify: string;
     };
-    href: string;
-    id: string;
-    type: string;
-    uri: string;
+    href?: string;
+    id?: string;
+    type?: string;
+    uri?: string;
   };
   is_local?: boolean;
   primary_color?: string;
@@ -50,27 +55,22 @@ export type Track = {
   popularity?: number;
   preview_url?: string;
   track_number?: number;
-  type?: typeOfTrack;
+  track?: Tracks;
+  type?: string;
   uri?: string;
-  artists?: {
-    external_urls: {
-      spotify: string;
-    };
-    href: string;
-    id: string;
-    name: string;
-    type: string;
-    uri: string;
-  }[];
-};
+}
+
+interface InfoTrack extends Track {
+  track?: boolean;
+}
 
 interface PlaylistTracks {
-  items: Track[];
-  limit: number;
-  next: number;
-  offset: number;
-  previous: number;
-  total: number;
+  items?: Track[];
+  limit?: number;
+  next?: number | unknown;
+  offset?: number | unknown;
+  previous?: number | unknown;
+  total?: number | unknown;
 }
 
 export type ISpotifyPlaylistWrapper = {
@@ -81,10 +81,10 @@ export type ISpotifyPlaylistWrapper = {
 };
 
 export interface ISpotifyPlaylist {
-  collaborative: boolean;
+  collaborative?: boolean;
   description?: string;
   external_urls?: {
-    spotify: string;
+    spotify?: string;
   };
   href?: string;
   id?: string;
@@ -100,9 +100,14 @@ export interface ISpotifyPlaylist {
   primary_color?: string;
   public?: boolean;
   snapshot_id?: string;
-  tracks: PlaylistTracks;
+  tracks?: PlaylistTracks;
   type?: string;
   uri?: string;
+  followers?: {
+    href: string | unknown;
+    total: number;
+  };
+  video_thumbnail?: {};
 }
 
 export type ISpotifyAllTrackList =
@@ -124,7 +129,7 @@ export interface ISpotifyAlbum {
   }[];
   available_markets?: string[];
   external_urls?: {
-    spotify: string;
+    spotify?: string;
   };
   href?: string;
   id?: string;
@@ -139,7 +144,6 @@ export interface ISpotifyAlbum {
     id?: string;
     added_at?: string;
   };
-
   type?: string;
   uri?: string;
 }
@@ -194,7 +198,7 @@ export interface ITracklist {
   name: 'Raised on Country';
   preview_url: 'https://p.scdn.co/mp3-preview/b701335497d8bb45ea6b79e2d5a16c541789240c?cid=774b29d4f13844c495f206cafdad9c86';
   track_number: 1;
-  items?: Track[];
+  items?: Tracks[];
   type: 'track';
   uri: 'spotify:track:5fBCiTK3cN8RJb7AlfwXfB';
 }
@@ -205,7 +209,7 @@ type PropsGenre = {
 };
 
 export interface ISpotifyTopTrack {
-  tracks: Track[];
+  tracks: Tracks[];
   items?: [];
   type?: 'tracklist';
 }

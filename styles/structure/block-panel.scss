@@ -7,6 +7,7 @@
   &--title {
     margin-bottom: 20px;
     transition: color 200ms ease-in-out;
+    font-size:1rem;
     &:hover {
       color: $green-main-font;
     }
@@ -91,6 +92,11 @@
 }
 
 @media (min-width: 661px) {
+  .block{
+    &--title{
+      font-size: 1.2rem;
+    }
+  }
   .block--horizontal-list {
     .block__pane {
       overflow-x: hidden;

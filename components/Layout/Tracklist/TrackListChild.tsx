@@ -1,15 +1,15 @@
 import React, { memo } from 'react';
-import { Track } from '../../../types/spotifyTypes';
+import { InfoTrack } from '../../../types/spotifyTypes';
 import { msToTime } from '../../utils';
 import { TrackPlayer } from './TrackPlayer';
 
 const TrackListChild: React.FC<{
-  track?: Track;
+  track?: InfoTrack;
 }> = memo(({ track }) => {
   return <TrackChild track={track} />;
 });
 
-const TrackChild: React.FC<{ track: Track }> = ({ track }) => {
+const TrackChild: React.FC<{ track: InfoTrack }> = ({ track }) => {
   return (
     <>
       <span className='tracklist__item--play'>
