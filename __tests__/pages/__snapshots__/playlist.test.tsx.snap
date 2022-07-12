@@ -231,6 +231,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -282,6 +283,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -333,6 +335,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -384,6 +387,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -435,6 +439,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -486,6 +491,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -537,6 +543,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -588,6 +595,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -639,6 +647,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -690,6 +699,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -741,6 +751,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -792,6 +803,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -843,6 +855,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 />
               </section>
             </span>
@@ -872,6 +885,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -923,6 +937,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -974,6 +989,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1025,6 +1041,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1076,6 +1093,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1127,6 +1145,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1178,6 +1197,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1229,6 +1249,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1280,6 +1301,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1331,6 +1353,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1382,6 +1405,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1433,6 +1457,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1484,6 +1509,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1535,6 +1561,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1586,6 +1613,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1637,6 +1665,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1688,6 +1717,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1739,6 +1769,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1790,6 +1821,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1841,6 +1873,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1892,6 +1925,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1943,6 +1977,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -1994,6 +2029,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2045,6 +2081,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2096,6 +2133,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2147,6 +2185,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2198,6 +2237,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2249,6 +2289,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2300,6 +2341,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2351,6 +2393,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2402,6 +2445,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2453,6 +2497,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2504,6 +2549,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2555,6 +2601,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2606,6 +2653,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -2657,6 +2705,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"

@@ -232,6 +232,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -283,6 +284,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -334,6 +336,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -385,6 +388,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -436,6 +440,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -487,6 +492,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -538,6 +544,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -589,6 +596,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -640,6 +648,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -691,6 +700,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -742,6 +752,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -793,6 +804,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -844,6 +856,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -895,6 +908,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -946,6 +960,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"
@@ -997,6 +1012,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 <span
                   class="player--control"
                   data-control="play"
+                  role="button"
                 >
                   <svg
                     class="button--play"

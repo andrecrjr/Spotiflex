@@ -111,6 +111,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
           className='player--control'
           data-control='play'
           onClick={playTrack}
+          role='button'
         >
           {track.preview_url !== null && (
             <PlayPauseSongButton {...{ statusPlayer }} />
@@ -126,6 +127,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
             }}
             className='player--control'
             data-control='next'
+            role='button'
           >
             <CgPlayTrackNextO className={'player--control__icon'} />
           </span>
