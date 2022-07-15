@@ -207,12 +207,8 @@ exports[`Album Page Test should render album in Album page 1`] = `
             <div
               class="header__album--artist"
             >
-              <div
-                style="display: contents;"
-              >
-                Red Hot Chili Peppers
-                
-              </div>
+              Red Hot Chili Peppers
+              
             </div>
           </div>
         </section>

@@ -70,16 +70,14 @@ const TrackListHeader: React.FC<{
       </div>
       <div className='header__album--name'>
         <h2 className='header__album--title'>{album.name}</h2>
-        <div className='header__album--artist'>
-          {album.artists.map((artist, index, array) => {
-            return (
-              <div style={{ display: 'contents' }} key={artist.name}>
-                {artist.name}
-                {index + 1 === array.length ? '' : ', '}
-              </div>
-            );
-          })}
-        </div>
+        {album.artists.map((artist, index, array) => {
+          return (
+            <div className='header__album--artist' key={artist.name}>
+              {artist.name}
+              {index + 1 === array.length ? '' : ', '}
+            </div>
+          );
+        })}
       </div>
     </section>
   );
