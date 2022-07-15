@@ -135,7 +135,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
         {isFooter && nowTrack && (
           <div className='track--footer__track-info'>
             <div className='track--footer__track-title'>
-              <h3>{nowTrack.name}</h3>
+              <h3 className='track--footer__title'>{nowTrack.name}</h3>
             </div>
             <div>
               {nowTrack.artists?.map((artist, index) => (

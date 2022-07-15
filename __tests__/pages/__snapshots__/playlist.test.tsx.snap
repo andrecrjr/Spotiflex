@@ -265,7 +265,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Into Dreams
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:04
               </h5>
             </div>
@@ -317,7 +319,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Super sleepy attention, close positive whispers, inaudible whispers Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:39
               </h5>
             </div>
@@ -369,7 +373,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Alphabet Revision, Pt. 1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:29
               </h5>
             </div>
@@ -421,7 +427,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Nase
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 02:01
               </h5>
             </div>
@@ -473,7 +481,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Fluffy Mic & Slow Whispering Around Your Head, Pt. 2
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:16
               </h5>
             </div>
@@ -525,7 +535,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 7 Terrific Triggers, Pt. 1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:36
               </h5>
             </div>
@@ -577,7 +589,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Showering You In Compliments Pt.2
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:31
               </h5>
             </div>
@@ -629,7 +643,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Reassuring Whispers Asmr
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:46
               </h5>
             </div>
@@ -681,7 +697,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Sleep Clinic Part 2
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:52
               </h5>
             </div>
@@ -733,7 +751,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Making Your Eyes Heavy
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:02
               </h5>
             </div>
@@ -785,7 +805,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Painting Your Lips
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 01:14
               </h5>
             </div>
@@ -837,7 +859,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Relaxing You HEAD to TOE Pt.5
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:05
               </h5>
             </div>
@@ -867,7 +891,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 It's Just You and Me
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:38
               </h5>
             </div>
@@ -919,7 +945,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Unintelligible Whispers Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 02:35
               </h5>
             </div>
@@ -971,7 +999,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 8D Mic Scratching with Spoolie and Slow Whispering, Pt. 4
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:26
               </h5>
             </div>
@@ -1023,7 +1053,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Close Ear to Ear Whispered Countdown to Sleep Pt.2
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:56
               </h5>
             </div>
@@ -1075,7 +1107,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Violet is BACK to help you fall sleep Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:37
               </h5>
             </div>
@@ -1127,7 +1161,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Do You Have Plans?
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:21
               </h5>
             </div>
@@ -1179,7 +1215,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Anticipatory Ear to Ear Whispers Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:22
               </h5>
             </div>
@@ -1231,7 +1269,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Identifying the Different Fantasy Coins
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:03
               </h5>
             </div>
@@ -1283,7 +1323,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Removing Negative Energy
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:54
               </h5>
             </div>
@@ -1335,7 +1377,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Brain Melting Sleep Treatment Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:29
               </h5>
             </div>
@@ -1387,7 +1431,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Extremely Sensitive ASMR Mic Scratching and Ear to Ear Whispering, Pt. 1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:12
               </h5>
             </div>
@@ -1439,7 +1485,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Sleep-Inducing Haircut Pt.3
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:13
               </h5>
             </div>
@@ -1491,7 +1539,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Whispers and Dry Ear Massage
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 09:44
               </h5>
             </div>
@@ -1543,7 +1593,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Unintelligble Sleep Whisper Dee Kaa
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:02
               </h5>
             </div>
@@ -1595,7 +1647,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Uplifting Mantra Pt One
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:53
               </h5>
             </div>
@@ -1647,7 +1701,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Audio on Spotify, Surfshark
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 10:42
               </h5>
             </div>
@@ -1699,7 +1755,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Triggers I'm Wearing Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:37
               </h5>
             </div>
@@ -1751,7 +1809,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 KKW Beauty Unboxing, Pt. 1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 01:54
               </h5>
             </div>
@@ -1803,7 +1863,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Milk Bath
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:44
               </h5>
             </div>
@@ -1855,7 +1917,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Positive Affirmations
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 14:44
               </h5>
             </div>
@@ -1907,7 +1971,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Okay, Good, Stipple
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 08:27
               </h5>
             </div>
@@ -1959,7 +2025,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Unintelligble Sleep Whisper Sayy Wayy
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 02:56
               </h5>
             </div>
@@ -2011,7 +2079,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Close Ear to Ear Whispered Countdown to Sleep Pt.4
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:39
               </h5>
             </div>
@@ -2063,7 +2133,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Sleepy Mindset
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:49
               </h5>
             </div>
@@ -2115,7 +2187,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Going Over Your Notes / Writing Sounds
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:01
               </h5>
             </div>
@@ -2167,7 +2241,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Intense Relaxation Pt.2
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 07:27
               </h5>
             </div>
@@ -2219,7 +2295,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 ROLEPLAY VENDEUSE DE CHAUSSURES, Pt. 1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:02
               </h5>
             </div>
@@ -2271,7 +2349,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Guided Meditation and Positive Affirmations, Pt. 1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 15:09
               </h5>
             </div>
@@ -2323,7 +2403,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Guided Visualization for Sleep, Pt. 1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 02:15
               </h5>
             </div>
@@ -2375,7 +2457,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Relax and Close Your Eyes
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 07:00
               </h5>
             </div>
@@ -2427,7 +2511,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Everything is Okay
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:07
               </h5>
             </div>
@@ -2479,7 +2565,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Whispers and Thrifty Tingles Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:11
               </h5>
             </div>
@@ -2531,7 +2619,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Reassuring Whispers 2 Asmr
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:07
               </h5>
             </div>
@@ -2583,7 +2673,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 The Invisible Man - Unintelligible Inaudible Whispered Reading, Pt. 6
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:59
               </h5>
             </div>
@@ -2635,7 +2727,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Blowing Air
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:24
               </h5>
             </div>
@@ -2687,7 +2781,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Personal Attention and Positive Affirmations Just For You Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:06
               </h5>
             </div>
@@ -2739,7 +2835,9 @@ exports[`Playlist Page test should show playlist songs 1`] = `
               >
                 Sending Tingle Sleep Vibes Pt.1
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:03
               </h5>
             </div>

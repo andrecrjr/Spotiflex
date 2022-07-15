@@ -266,7 +266,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Warped
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:04
               </h5>
             </div>
@@ -318,7 +320,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Aeroplane
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:45
               </h5>
             </div>
@@ -370,7 +374,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Deep Kick
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:33
               </h5>
             </div>
@@ -422,7 +428,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 My Friends
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:08
               </h5>
             </div>
@@ -474,7 +482,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Coffee Shop
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:08
               </h5>
             </div>
@@ -526,7 +536,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Pea
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 01:47
               </h5>
             </div>
@@ -578,7 +590,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 One Big Mob
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:02
               </h5>
             </div>
@@ -630,7 +644,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Walkabout
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:07
               </h5>
             </div>
@@ -682,7 +698,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Tearjerker
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:19
               </h5>
             </div>
@@ -734,7 +752,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 One Hot Minute
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:23
               </h5>
             </div>
@@ -786,7 +806,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Falling into Grace
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 03:48
               </h5>
             </div>
@@ -838,7 +860,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Shallow Be Thy Game
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 04:33
               </h5>
             </div>
@@ -890,7 +914,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Transcending
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:46
               </h5>
             </div>
@@ -942,7 +968,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Let's Make Evil - 2006 Remaster
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:17
               </h5>
             </div>
@@ -994,7 +1022,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Stretch You Out - 2006 Remaster
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 06:18
               </h5>
             </div>
@@ -1046,7 +1076,9 @@ exports[`Album Page Test should render album in Album page 1`] = `
               >
                 Bob - 2006 Remaster
               </h4>
-              <h5>
+              <h5
+                class="track--time"
+              >
                 05:43
               </h5>
             </div>

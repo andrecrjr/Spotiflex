@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import Home from '@/pages/index';
 import { renderWithWrappers } from '../../utils/AllProviders';
 
