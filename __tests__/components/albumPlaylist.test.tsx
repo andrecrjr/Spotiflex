@@ -1,9 +1,9 @@
 import { renderWithWrappers } from '@/utils/AllProviders';
-import onePlaylist from '@/mocks/onlyOnePlaylist.json';
 import { fireEvent } from '@testing-library/dom';
-import oneHotMinuteAlbum from '@/mocks/oneHotMinuteAlbumMock.json';
-import Album from '@/pages/album/[id]';
 import { act } from 'react-dom/test-utils';
+
+import oneHotMinuteAlbumMock from '@/mocks/oneHotMinuteAlbumMock.json';
+import Album from '@/pages/album/[id]';
 
 jest
   .spyOn(window.HTMLMediaElement.prototype, 'pause')
@@ -18,7 +18,7 @@ describe('Tracklist Album test', () => {
   let playTrack: HTMLElement;
   beforeEach(async () => {
     const { container } = renderWithWrappers(
-      <Album album={oneHotMinuteAlbum} />
+      <Album album={oneHotMinuteAlbumMock} />
     );
     wrapperContainer = container;
     playTrack = wrapperContainer.querySelector('.player--control');

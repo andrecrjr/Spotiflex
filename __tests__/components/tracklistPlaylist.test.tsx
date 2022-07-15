@@ -1,8 +1,9 @@
 import { renderWithWrappers } from '@/utils/AllProviders';
-import onePlaylist from '@/mocks/onlyOnePlaylist.json';
 import { fireEvent } from '@testing-library/dom';
-import Playlist from '@/pages/playlist/[id]';
 import { act } from 'react-dom/test-utils';
+
+import onePlaylist from '@/mocks/onlyOnePlaylist.json';
+import Playlist from '@/pages/playlist/[id]';
 
 jest
   .spyOn(window.HTMLMediaElement.prototype, 'pause')
