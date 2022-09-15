@@ -1,6 +1,6 @@
 import { PlaylistItems } from './../types/index.d';
 import { ISpotifyAlbum, ISpotifyPlaylist } from './../types/spotifyTypes.d';
-import { getPublicAuth } from '../helper';
+import { getPublicAuth } from '../utils/helper';
 
 interface fetchData<T> {
   [data: string]: {

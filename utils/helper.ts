@@ -1,4 +1,4 @@
-import { TokenSpotify } from './types';
+import { TokenSpotify } from '../types';
 
 export const getPublicAuth = async (): Promise<TokenSpotify> => {
   try {

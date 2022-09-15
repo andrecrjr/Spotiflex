@@ -3,7 +3,7 @@ import playlistData from '@/mocks/playlistMock.json';
 import playlistsGenre from '@/mocks/categoriesMock.json';
 import featuredPlaylists from '@/mocks/featuredPlaylistsMock.json';
 import latestReleases from '@/mocks/newReleasesMock.json';
-import * as helper from '../helper';
+import * as helper from '../utils/helper';
 
 const mockAuth = {
   access_token: '',
