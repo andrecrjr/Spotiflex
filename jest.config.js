@@ -3,6 +3,7 @@ const {defaults} = require('jest-config');
 module.exports = {
     setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
     testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
+    coveragePathIgnorePatterns: ['<rootDir>/next.config.js'],
     moduleFileExtensions: [...defaults.moduleFileExtensions, 'ts', 'tsx'],
     "transform": {
         "^.+\\.[t|j]sx?$": "babel-jest"
