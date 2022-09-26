@@ -26,6 +26,11 @@ describe('Services test', () => {
     expect(tracks).not.toStrictEqual(null);
   });
 
+  it('it should not fetch playlist spotify', async () => {
+    const tracks = await getTrackListContent('playlists', 'drama');
+    expect(tracks).toBeNull();
+  });
+
   it('it should return props when uses getLatestAndGenres', async () => {
     fetchMock
       .mockResponseOnce(JSON.stringify(playlistsGenre))

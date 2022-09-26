@@ -55,8 +55,7 @@ export const getDataSpotify = async <T>(query: string): Promise<T> => {
     const body = await response.json();
     return body;
   } catch (error) {
-    console.log(error);
-    return error;
+    throw new Error(`Problem to get spotify data ${query}`);
   }
 };
 
@@ -70,8 +69,7 @@ export const getTrackListContent = async (
     );
     return songContent;
   } catch (error) {
-    console.log('Problem to get album');
-
+    console.log('Problem to get tracklist');
     return null;
   }
 };

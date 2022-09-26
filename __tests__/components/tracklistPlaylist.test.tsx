@@ -7,11 +7,13 @@ import Playlist from '@/pages/playlist/[id]';
 
 jest
   .spyOn(window.HTMLMediaElement.prototype, 'pause')
-  .mockImplementation(() => {});
+  .mockImplementation(() => ({}));
 
 jest
   .spyOn(window.HTMLMediaElement.prototype, 'play')
-  .mockImplementation(async () => {});
+  .mockImplementation(async () => {
+    return Promise.resolve();
+  });
 
 describe('Tracklist Playlist test', () => {
   let wrapperContainer: HTMLElement;
