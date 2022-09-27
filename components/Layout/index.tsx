@@ -7,13 +7,13 @@ const Layout: React.FC<{
 }> = ({ children }) => {
   return (
     <>
-      <section className={`main--grid`}>
+      <main className={`main--grid`}>
         <Header />
         <section className='main--wrapper'>
-          <main className={`main--block`}>{children}</main>
+          <section className={`main--block`}>{children}</section>
         </section>
         <TrackPlayerFooter />
-      </section>
+      </main>
     </>
   );
 };

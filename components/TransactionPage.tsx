@@ -1,50 +1,30 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [displayChildren, setChildren] = useState(children);
-  const [transitionStage, setTransitionStage] = useState('fadeOut');
-
-  const ref = useRef<HTMLDivElement>(null);
-  const router = useRouter();
-  useEffect(() => {
-    router?.events.on('routeChangeComplete', () => {
-      ref?.current?.scrollIntoView({ block: 'start' });
-    });
-    () => {
-      router?.events.off('routeChangeComplete', () => {
-        ref?.current?.scrollIntoView({ block: 'start' });
-      });
-    };
-  }, [router?.events]);
-
-  useEffect(() => {
-    setTransitionStage('fadeIn');
-  }, []);
-
-  useEffect(() => {
-    if (children !== displayChildren) {
-      setTransitionStage('fadeOut');
-    }
-  }, [children, setChildren, displayChildren]);
+  const { asPath, pathname } = useRouter();
 
   return (
-    <div
-      className={`content ${transitionStage} ${
-        (router?.pathname !== '/' && 'subpage') || ''
-      }`}
-      ref={ref}
-      onTransitionEnd={() => {
-        if (transitionStage === 'fadeOut') {
-          setChildren(children);
-          setTransitionStage('fadeIn');
-        }
+    <AnimatePresence
+      initial={false}
+      onExitComplete={() => {
+        window.scrollTo(0, 0);
+        console.log('aqui no final');
       }}
     >
-      {displayChildren}
-    </div>
+      <motion.div
+        key={asPath}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className={`content ${(pathname !== '/' && 'subpage') || ''}`}
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
   );
 };
 
