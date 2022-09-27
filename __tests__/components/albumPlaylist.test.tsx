@@ -7,11 +7,13 @@ import Album from '@/pages/album/[id]';
 
 jest
   .spyOn(window.HTMLMediaElement.prototype, 'pause')
-  .mockImplementation(() => {});
+  .mockImplementation(() => ({}));
 
 jest
   .spyOn(window.HTMLMediaElement.prototype, 'play')
-  .mockImplementation(async () => {});
+  .mockImplementation(async () => {
+    return Promise.resolve();
+  });
 
 describe('Tracklist Album test', () => {
   let wrapperContainer: HTMLElement;
