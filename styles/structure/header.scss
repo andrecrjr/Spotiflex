@@ -71,12 +71,14 @@
   .header {
     display: flex;
     width: 30%;
+    min-height:100vh;
     transition: width 300ms linear;
     flex-direction: column;
     background: $black-background;
     border-right: $border-black-opacity;
     &__menu {
-      position: static;
+      position: sticky;
+      top:0;
       display: flex;
       justify-content: flex-end;
       transition: all 1s;

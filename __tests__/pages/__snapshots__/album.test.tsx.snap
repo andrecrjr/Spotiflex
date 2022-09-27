@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Album Page Test should render album in Album page 1`] = `
-<section
+<main
   class="main--grid"
 >
   <header
@@ -171,11 +171,12 @@ exports[`Album Page Test should render album in Album page 1`] = `
   <section
     class="main--wrapper"
   >
-    <main
+    <section
       class="main--block"
     >
       <div
-        class="content fadeIn subpage"
+        class="content subpage"
+        style="opacity: 1;"
       >
         <section
           class="header__album--wrapper"
@@ -183,8 +184,8 @@ exports[`Album Page Test should render album in Album page 1`] = `
           <div
             class="header__album--pic"
           >
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
             >
               <img
                 alt="One Hot Minute (Deluxe Edition)"
@@ -194,7 +195,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
               <noscript />
-            </div>
+            </span>
           </div>
           <div
             class="header__album--name"
@@ -208,7 +209,6 @@ exports[`Album Page Test should render album in Album page 1`] = `
               class="header__album--artist"
             >
               Red Hot Chili Peppers
-              
             </div>
           </div>
         </section>
@@ -216,7 +216,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
           class="tracklist__wrapper"
         >
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="1eLAEzLXUu6SFHS5rSCrx1"
           >
             <span
@@ -270,7 +270,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="0VLdJcQUsqHBBwqPp4CIKJ"
           >
             <span
@@ -324,7 +324,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4VgylHaBo55VXqX4AiZiyc"
           >
             <span
@@ -378,7 +378,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6HksxcBzMVdT17aq1Q79Xe"
           >
             <span
@@ -432,7 +432,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="2h3DA5sidcqjywLh36RFkU"
           >
             <span
@@ -486,7 +486,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6jR4FKWiil1FrsfEMt7jqu"
           >
             <span
@@ -540,7 +540,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="0lK2JLm8XIl9MyY7gR9vSV"
           >
             <span
@@ -594,7 +594,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="5K9kCwY1e68H7JxU6893Uv"
           >
             <span
@@ -648,7 +648,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="30vh2LXU2A9ccd0rgFYHpd"
           >
             <span
@@ -702,7 +702,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6IshpbXajBj4iFny8FqmZF"
           >
             <span
@@ -756,7 +756,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4aAu1APORWioiUZOjUgmR4"
           >
             <span
@@ -810,7 +810,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="29uoKpeQLuaCBAVp8oXCqR"
           >
             <span
@@ -864,7 +864,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="25tFjJ6tVaDrGOw4SaT5BR"
           >
             <span
@@ -918,7 +918,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7FGmrbu1GeHrxrr7lr15vH"
           >
             <span
@@ -972,7 +972,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="3natnOToviL79uuVacIdUO"
           >
             <span
@@ -1026,7 +1026,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6hMDMgqttllnWrN6g4vq9F"
           >
             <span
@@ -1081,7 +1081,7 @@ exports[`Album Page Test should render album in Album page 1`] = `
           </li>
         </ul>
       </div>
-    </main>
+    </section>
   </section>
-</section>
+</main>
 `;

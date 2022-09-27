@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search Page test should search taylor swift 1`] = `
-<section
+<main
   class="main--grid"
 >
   <header
@@ -171,11 +171,12 @@ exports[`Search Page test should search taylor swift 1`] = `
   <section
     class="main--wrapper"
   >
-    <main
+    <section
       class="main--block"
     >
       <div
-        class="content fadeIn subpage"
+        class="content subpage"
+        style="opacity: 1;"
       >
         <div
           class="block"
@@ -224,8 +225,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor Swift"
@@ -236,7 +237,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -255,8 +256,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor Swiftman"
@@ -267,7 +268,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -286,8 +287,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Minnz Piano"
@@ -298,7 +299,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -317,8 +318,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor Stephens"
@@ -329,7 +330,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -348,8 +349,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Big Red Machine"
@@ -360,7 +361,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -379,8 +380,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor"
@@ -391,7 +392,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -410,8 +411,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Keyrenity"
@@ -422,7 +423,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -441,8 +442,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor"
@@ -453,7 +454,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -472,8 +473,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Piano Tribute Players"
@@ -484,7 +485,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -503,8 +504,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor*"
@@ -515,7 +516,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -534,8 +535,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Guitar Dreamers"
@@ -546,7 +547,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -565,8 +566,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor Sutton"
@@ -577,7 +578,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -596,8 +597,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Little Big Town"
@@ -608,7 +609,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -627,8 +628,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor"
@@ -639,7 +640,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -658,8 +659,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="ZAYN"
@@ -670,7 +671,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -706,8 +707,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="One Direction"
@@ -718,7 +719,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -737,8 +738,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Taylor"
@@ -749,7 +750,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -768,8 +769,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                   <div
                     class="block__pane--genre"
                   >
-                    <div
-                      style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                    <span
+                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                     >
                       <img
                         alt="Selena Gomez"
@@ -780,7 +781,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                       />
                       <noscript />
-                    </div>
+                    </span>
                   </div>
                   <section
                     class="block__pane--item-description"
@@ -903,8 +904,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="reputation"
@@ -915,7 +916,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -938,8 +939,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Red (Taylor's Version)"
@@ -950,7 +951,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -973,8 +974,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Taylor Swift"
@@ -985,7 +986,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1008,8 +1009,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Lover"
@@ -1020,7 +1021,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1043,8 +1044,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Taylor Swift (Big Machine Radio Release Special)"
@@ -1055,7 +1056,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1078,8 +1079,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="1989 (Deluxe)"
@@ -1090,7 +1091,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1113,8 +1114,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="folklore"
@@ -1125,7 +1126,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1148,8 +1149,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="1989"
@@ -1160,7 +1161,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1183,8 +1184,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="folklore (deluxe version)"
@@ -1195,7 +1196,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1218,8 +1219,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Fearless (Taylor's Version)"
@@ -1230,7 +1231,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1253,8 +1254,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="ME! (Live From Paris)"
@@ -1265,7 +1266,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1288,8 +1289,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Speak Now (Deluxe Package)"
@@ -1300,7 +1301,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1323,8 +1324,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Carolina (From The Motion Picture “Where The Crawdads Sing”)"
@@ -1335,7 +1336,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1358,8 +1359,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Speak Now World Tour Live"
@@ -1370,7 +1371,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1393,8 +1394,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="evermore"
@@ -1405,7 +1406,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1428,8 +1429,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Taylor Swift Karaoke: 1989 (Deluxe)"
@@ -1440,7 +1441,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1463,8 +1464,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="evermore (deluxe version)"
@@ -1475,7 +1476,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1498,8 +1499,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Speak Now"
@@ -1510,7 +1511,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1533,8 +1534,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Fearless (Big Machine Radio Release Special)"
@@ -1545,7 +1546,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1568,8 +1569,8 @@ exports[`Search Page test should search taylor swift 1`] = `
                     <div
                       class="block__pane--genre"
                     >
-                      <div
-                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 140px; height: 140px;"
+                      <span
+                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
                       >
                         <img
                           alt="Wildest Dreams (Taylor's Version)"
@@ -1580,7 +1581,7 @@ exports[`Search Page test should search taylor swift 1`] = `
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
                         />
                         <noscript />
-                      </div>
+                      </span>
                     </div>
                     <section
                       class="block__pane--item-description"
@@ -1643,7 +1644,7 @@ exports[`Search Page test should search taylor swift 1`] = `
           </section>
         </div>
       </div>
-    </main>
+    </section>
   </section>
-</section>
+</main>
 `;

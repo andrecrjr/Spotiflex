@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home Page test should render Homepage 1`] = `
-<section
+<main
   class="main--grid"
 >
   <header
@@ -171,11 +171,12 @@ exports[`Home Page test should render Homepage 1`] = `
   <section
     class="main--wrapper"
   >
-    <main
+    <section
       class="main--block"
     >
       <div
-        class="content fadeIn subpage"
+        class="content subpage"
+        style="opacity: 1;"
       >
         <section
           class="block--herobanner"
@@ -194,7 +195,7 @@ exports[`Home Page test should render Homepage 1`] = `
           </div>
         </section>
       </div>
-    </main>
+    </section>
   </section>
-</section>
+</main>
 `;

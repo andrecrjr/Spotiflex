@@ -67,6 +67,11 @@
           font-size: 1rem;
         }
       }
+      &.track-playing{
+        .big-title{
+          color:$green-main-font;
+        }
+      }
     }
   }
 }

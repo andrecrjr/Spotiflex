@@ -4,6 +4,17 @@ import TransactionPage from '@/components/TransactionPage';
 import { render, RenderOptions } from '@testing-library/react';
 import { ReactElement } from 'react';
 
+jest.mock('next/router', () => ({
+  useRouter() {
+    return {
+      route: '/',
+      pathname: '',
+      query: '',
+      asPath: '',
+    };
+  },
+}));
+
 const AllProviders = ({ children }) => {
   return (
     <UserPlaylistWrapper>

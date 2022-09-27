@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Playlist Page test should show playlist songs 1`] = `
-<section
+<main
   class="main--grid"
 >
   <header
@@ -171,11 +171,12 @@ exports[`Playlist Page test should show playlist songs 1`] = `
   <section
     class="main--wrapper"
   >
-    <main
+    <section
       class="main--block"
     >
       <div
-        class="content fadeIn subpage"
+        class="content subpage"
+        style="opacity: 1;"
       >
         <section
           class="header__album--wrapper"
@@ -183,8 +184,8 @@ exports[`Playlist Page test should show playlist songs 1`] = `
           <div
             class="header__album--pic"
           >
-            <div
-              style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
             >
               <img
                 alt="ASMR Sleep Whispers"
@@ -194,7 +195,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
                 style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
               />
               <noscript />
-            </div>
+            </span>
           </div>
           <div
             class="header__album--meta"
@@ -219,7 +220,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
           class="tracklist__wrapper"
         >
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="5x4vUEtSMG1DT6QEMT1ZQn"
           >
             <span
@@ -273,7 +274,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="0fU7os8IzBtcblVO0YeIsR"
           >
             <span
@@ -327,7 +328,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="2MfNCtM55FPi6tYA9uaYfc"
           >
             <span
@@ -381,7 +382,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6kWaWKqVpNtvIdHTVY8vA0"
           >
             <span
@@ -435,7 +436,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="2KUF4YBM0ekcDf6aTsEbq1"
           >
             <span
@@ -489,7 +490,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4W30PQEyGVnNaqZEGWwUyK"
           >
             <span
@@ -543,7 +544,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="0kcQZkQc8JYh0Vcpke0dWL"
           >
             <span
@@ -597,7 +598,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="48yZMCOxznAnwEuqyiX1Cg"
           >
             <span
@@ -651,7 +652,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7fa12AeziG3ON4z80k5eFo"
           >
             <span
@@ -705,7 +706,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="01Zuq3xB12zBwqfbPT55r8"
           >
             <span
@@ -759,7 +760,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7JncmWmBHWrLXWtMkLWqCx"
           >
             <span
@@ -813,7 +814,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6Ult8KyCkQMVqhGWqxjZBy"
           >
             <span
@@ -867,7 +868,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7AmkjYnKthAdWlsisckn75"
           >
             <span
@@ -899,7 +900,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7d4fH9j6urESBf2WsbkmKt"
           >
             <span
@@ -953,7 +954,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="2WOAXC3ITSWMdQPcw28cHb"
           >
             <span
@@ -1007,7 +1008,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="1volF5Eo78NkxftiB0pg75"
           >
             <span
@@ -1061,7 +1062,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="55jujsnFOGPWk80wicrHsg"
           >
             <span
@@ -1115,7 +1116,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6AEOwjjFIvwtHy77gwiHiQ"
           >
             <span
@@ -1169,7 +1170,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="1WKMPkedR3z44hL8QifjOT"
           >
             <span
@@ -1223,7 +1224,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6Y53WoHgjy7RwHh7AXiROE"
           >
             <span
@@ -1277,7 +1278,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="24NTw0iCE8kjgY5BGKIqmh"
           >
             <span
@@ -1331,7 +1332,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="0EqQ9Z5oY0kP2Di8lqzOKa"
           >
             <span
@@ -1385,7 +1386,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="5k6j68qAUCCMtuFsuKPWSo"
           >
             <span
@@ -1439,7 +1440,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="3QcQqTLBYUp0ZjZatm3FUk"
           >
             <span
@@ -1493,7 +1494,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="2ElSMaqppBJZrM5wxRaJ0T"
           >
             <span
@@ -1547,7 +1548,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7rAyhoQ18VOFt9DLgzM0n2"
           >
             <span
@@ -1601,7 +1602,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7KyX01fc7U3dFZhOj9pe3l"
           >
             <span
@@ -1655,7 +1656,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="0yxwH0oTxs7ClQvIwBTBni"
           >
             <span
@@ -1709,7 +1710,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="7jFNTsHEIckQPm6nhLlJ0z"
           >
             <span
@@ -1763,7 +1764,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="69m3nD9Ju1Vo4rXxjfZrfr"
           >
             <span
@@ -1817,7 +1818,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4Dph1YEGoMe8mw6Kze3c0u"
           >
             <span
@@ -1871,7 +1872,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4tO8q7KwM67C86FJHDAeoY"
           >
             <span
@@ -1925,7 +1926,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4yjGib7nCw7bbM6lXZCPMi"
           >
             <span
@@ -1979,7 +1980,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6chyCwZ2KhBUqjTUfw0ZHS"
           >
             <span
@@ -2033,7 +2034,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4SizL2yMtF5wkXMuYh1edR"
           >
             <span
@@ -2087,7 +2088,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="04Q2sQ3OlvwjdAkEdjjO0w"
           >
             <span
@@ -2141,7 +2142,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="1oRrPXaq2PNiGYiUn6YV6a"
           >
             <span
@@ -2195,7 +2196,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="68NEZB7mPPWZtNhXoGtZ40"
           >
             <span
@@ -2249,7 +2250,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="5UGrS4xhF1lJR05FnFwINd"
           >
             <span
@@ -2303,7 +2304,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="6V2NV9XXpdZ6tAaWi36psL"
           >
             <span
@@ -2357,7 +2358,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="2iGO8SBiky4hRHVVGB270f"
           >
             <span
@@ -2411,7 +2412,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="3ejyzJpCraPR613IbUrnaL"
           >
             <span
@@ -2465,7 +2466,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="0EuUoivsrB7lBHZDffnvxc"
           >
             <span
@@ -2519,7 +2520,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="3Wbm2ioAtPkjMj3N46M5ez"
           >
             <span
@@ -2573,7 +2574,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="3Cid1Ne9qWeFJiU2Z6bhIx"
           >
             <span
@@ -2627,7 +2628,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="3FNsE3UYSS8IApdW75p3rq"
           >
             <span
@@ -2681,7 +2682,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="79NIaixDTBEYbQK5dO8aF1"
           >
             <span
@@ -2735,7 +2736,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="1zQ7QdMU2RKHR3mAzPHtJm"
           >
             <span
@@ -2789,7 +2790,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
             </div>
           </li>
           <li
-            class="tracklist__item"
+            class="tracklist__item "
             id="4gnmeGl4hzsjsMulvZto9O"
           >
             <span
@@ -2844,7 +2845,7 @@ exports[`Playlist Page test should show playlist songs 1`] = `
           </li>
         </ul>
       </div>
-    </main>
+    </section>
   </section>
-</section>
+</main>
 `;
