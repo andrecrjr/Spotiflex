@@ -12,7 +12,6 @@ const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
       initial={false}
       onExitComplete={() => {
         window.scrollTo(0, 0);
-        console.log('aqui no final');
       }}
     >
       <motion.div

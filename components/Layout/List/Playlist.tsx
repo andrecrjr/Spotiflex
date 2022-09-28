@@ -13,7 +13,7 @@ export const GeneralPlaylist: React.FC<{
   const router = useRouter();
 
   return (
-    <div className='block__pane--space' key={album.id}>
+    <div className='block__pane--space'>
       <div
         className='block__pane--genre'
         onClick={() => router.push(`/genre/${album.id}`)}
@@ -38,25 +38,23 @@ export const GeneralAlbum: React.FC<{
   return (
     <div
       className='block__pane--space'
-      data-album={album.id}
-      key={album.id}
       onClick={() => router.push(`/${album.type}/${album.id}`)}
     >
       <div className='block__pane--genre'>
-        {album.images.length > 0 && (
+        {album?.images?.length > 0 && (
           <Image
-            src={album.images[0].url}
+            src={album?.images[0].url}
             className='pane--pic'
-            alt={album.name}
+            alt={album?.name}
             layout='fixed'
             width='140px'
             height='140px'
           />
         )}
       </div>
-      <section className='block__pane--item-description'>
-        <h2 className='block__pane--item-title'>{album.name}</h2>
-      </section>
+      <div className='block__pane--item-description'>
+        <h2 className='block__pane--item-title'>{album?.name}</h2>
+      </div>
     </div>
   );
 };

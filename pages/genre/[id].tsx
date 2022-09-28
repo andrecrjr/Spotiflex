@@ -13,10 +13,10 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
       )}
       <ul className='block__page--wrapper'>
         {items &&
-          items.map((item) => (
-            <section className='block__pane' key={item.id}>
+          items.map((item, index) => (
+            <div className='block__pane' key={index}>
               <GeneralAlbum album={item} />
-            </section>
+            </div>
           ))}
       </ul>
     </>
@@ -36,19 +36,22 @@ export const getStaticPaths: GetStaticPaths = async () => {
   paths = categories.items.map((genres) => ({
     params: { id: genres.id },
   }));
+  console.log(paths);
   return { paths, fallback: true };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
+    console.log(params.id);
     const data = await getDataSpotify<ISpotifyPlaylistWrapper>(
       `browse/categories/${params.id}/playlists`
     );
     return {
-      props: { items: data.playlists.items, title: params.id },
+      props: { items: data?.playlists?.items || [], title: params.id },
       revalidate: 5,
     };
   } catch (error) {
+    console.log('errei', error);
     return { notFound: true };
   }
 };
