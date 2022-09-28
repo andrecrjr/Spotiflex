@@ -220,18 +220,17 @@ exports[`Search Page test should search taylor swift 1`] = `
               >
                 <div
                   class="block__pane--space"
-                  data-album="06HL4z0CvFAxyc27GXpf02"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor Swift"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -239,30 +238,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor Swift
-                    </h2>
-                  </section>
+                    Taylor Swift
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="5WiLThuSBwqF7SMRrzQbG6"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor Swiftman"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -270,30 +264,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor Swiftman
-                    </h2>
-                  </section>
+                    Taylor Swiftman
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="0IqjJsWlAPR2IafHTtnjPQ"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Minnz Piano"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -301,30 +290,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Minnz Piano
-                    </h2>
-                  </section>
+                    Minnz Piano
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="49Cmx1Yp6lQrseq3v712Kc"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor Stephens"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -332,30 +316,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor Stephens
-                    </h2>
-                  </section>
+                    Taylor Stephens
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="7gXy60xRcwYujBFoYHnR2O"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Big Red Machine"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -363,30 +342,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Big Red Machine
-                    </h2>
-                  </section>
+                    Big Red Machine
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="7xzdqdXfioPbZAVhbdrvG1"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -394,30 +368,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor
-                    </h2>
-                  </section>
+                    Taylor
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="10do1iTg94csIWaWuEvIFb"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Keyrenity"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -425,30 +394,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Keyrenity
-                    </h2>
-                  </section>
+                    Keyrenity
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="49hOQR3mPgqpfbPcyaOiC6"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -456,30 +420,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor
-                    </h2>
-                  </section>
+                    Taylor
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="4Xx6QMLTWppMwdABkN0Afj"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Piano Tribute Players"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -487,30 +446,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Piano Tribute Players
-                    </h2>
-                  </section>
+                    Piano Tribute Players
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="5zcgTnL7jjir7HRsDfGgZM"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor*"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -518,30 +472,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor*
-                    </h2>
-                  </section>
+                    Taylor*
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="4n79tc6TJlvs0oMdy307bR"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Guitar Dreamers"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -549,30 +498,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Guitar Dreamers
-                    </h2>
-                  </section>
+                    Guitar Dreamers
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="1kAlxl4TvdIiOIFxRXk6fU"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor Sutton"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -580,30 +524,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor Sutton
-                    </h2>
-                  </section>
+                    Taylor Sutton
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="3CygdxquGHurS7f9LjNLkv"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Little Big Town"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -611,30 +550,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Little Big Town
-                    </h2>
-                  </section>
+                    Little Big Town
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="7FYjn4nNgjskhNaWoWl8uy"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -642,30 +576,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor
-                    </h2>
-                  </section>
+                    Taylor
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="5ZsFI1h6hIdQRw2ti0hz81"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="ZAYN"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -673,47 +602,51 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      ZAYN
-                    </h2>
-                  </section>
+                    ZAYN
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="421rU7C3pIsOliHiiC1242"
-                >
-                  <div
-                    class="block__pane--genre"
-                  />
-                  <section
-                    class="block__pane--item-description"
-                  >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor (Rapper)
-                    </h2>
-                  </section>
-                </div>
-                <div
-                  class="block__pane--space"
-                  data-album="4AK6F7OLvEQ5QYCBNiQWHq"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+                    >
+                      <img
+                        alt="Taylor (Rapper)"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </span>
+                  </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Taylor (Rapper)
+                  </h2>
+                </div>
+                <div
+                  class="block__pane--space"
+                >
+                  <div
+                    class="block__pane--genre"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="One Direction"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -721,30 +654,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      One Direction
-                    </h2>
-                  </section>
+                    One Direction
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="5kuWDLwVfSgL4RFPUVDdnG"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Taylor"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -752,30 +680,25 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Taylor
-                    </h2>
-                  </section>
+                    Taylor
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="0C8ZW7ezQVs4URX5aX7Kqx"
                 >
                   <div
                     class="block__pane--genre"
                   >
                     <span
-                      style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
                       <img
                         alt="Selena Gomez"
                         class="pane--pic"
-                        data-nimg="fixed"
+                        data-nimg="fill"
                         decoding="async"
                         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                         style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -783,32 +706,37 @@ exports[`Search Page test should search taylor swift 1`] = `
                       <noscript />
                     </span>
                   </div>
-                  <section
-                    class="block__pane--item-description"
+                  <h2
+                    class="block__pane--item-title"
                   >
-                    <h2
-                      class="block__pane--item-title"
-                    >
-                      Selena Gomez
-                    </h2>
-                  </section>
+                    Selena Gomez
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
-                  data-album="1fFVQt5WdQyTBtFmKwGfdM"
                 >
                   <div
                     class="block__pane--genre"
-                  />
-                  <section
-                    class="block__pane--item-description"
                   >
-                    <h2
-                      class="block__pane--item-title"
+                    <span
+                      style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                     >
-                      Taylor Swindells
-                    </h2>
-                  </section>
+                      <img
+                        alt="Taylor Swindells"
+                        class="pane--pic"
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </span>
+                  </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Taylor Swindells
+                  </h2>
                 </div>
               </div>
             </ul>
@@ -899,18 +827,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="6DEjYFkNZh67HP7R9PSZvv"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="reputation"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -918,15 +845,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        reputation
-                      </h2>
-                    </section>
+                      reputation
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -934,18 +857,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="6kZ42qRrzov54LcAk4onW9"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Red (Taylor's Version)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -953,15 +875,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Red (Taylor's Version)
-                      </h2>
-                    </section>
+                      Red (Taylor's Version)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -969,18 +887,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="5eyZZoQEFQWRHkV2xgAeBw"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Taylor Swift"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -988,15 +905,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Taylor Swift
-                      </h2>
-                    </section>
+                      Taylor Swift
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1004,18 +917,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="1NAmidJlEaVgA3MpcPFYGq"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Lover"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1023,15 +935,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Lover
-                      </h2>
-                    </section>
+                      Lover
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1039,18 +947,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="2rU7u7C2v5i45MFVxx7xG1"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Taylor Swift (Big Machine Radio Release Special)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1058,15 +965,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Taylor Swift (Big Machine Radio Release Special)
-                      </h2>
-                    </section>
+                      Taylor Swift (Big Machine Radio Release Special)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1074,18 +977,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="1yGbNOtRIgdIiGHOEBaZWf"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="1989 (Deluxe)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1093,15 +995,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        1989 (Deluxe)
-                      </h2>
-                    </section>
+                      1989 (Deluxe)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1109,18 +1007,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="2fenSS68JI1h4Fo296JfGr"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="folklore"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1128,15 +1025,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        folklore
-                      </h2>
-                    </section>
+                      folklore
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1144,18 +1037,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="5fy0X0JmZRZnVa2UEicIOl"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="1989"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1163,15 +1055,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        1989
-                      </h2>
-                    </section>
+                      1989
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1179,18 +1067,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="1pzvBxYgT6OVwJLtHkrdQK"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="folklore (deluxe version)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1198,15 +1085,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        folklore (deluxe version)
-                      </h2>
-                    </section>
+                      folklore (deluxe version)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1214,18 +1097,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="4hDok0OAJd57SGIT8xuWJH"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Fearless (Taylor's Version)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1233,15 +1115,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Fearless (Taylor's Version)
-                      </h2>
-                    </section>
+                      Fearless (Taylor's Version)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1249,18 +1127,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="1jIp7CChnwdj9zUCvPxzQ7"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="ME! (Live From Paris)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1268,15 +1145,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        ME! (Live From Paris)
-                      </h2>
-                    </section>
+                      ME! (Live From Paris)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1284,18 +1157,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="6S6JQWzUrJVcJLK4fi74Fw"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Speak Now (Deluxe Package)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1303,15 +1175,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Speak Now (Deluxe Package)
-                      </h2>
-                    </section>
+                      Speak Now (Deluxe Package)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1319,18 +1187,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="5Bwg2XxrjTlrNy6BC7KQZf"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Carolina (From The Motion Picture “Where The Crawdads Sing”)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1338,15 +1205,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Carolina (From The Motion Picture “Where The Crawdads Sing”)
-                      </h2>
-                    </section>
+                      Carolina (From The Motion Picture “Where The Crawdads Sing”)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1354,18 +1217,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="6fyR4wBPwLHKcRtxgd4sGh"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Speak Now World Tour Live"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1373,15 +1235,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Speak Now World Tour Live
-                      </h2>
-                    </section>
+                      Speak Now World Tour Live
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1389,18 +1247,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="2Xoteh7uEpea4TohMxjtaq"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="evermore"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1408,15 +1265,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        evermore
-                      </h2>
-                    </section>
+                      evermore
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1424,18 +1277,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="0bEySlRAkuPxV9KVWhXXBr"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Taylor Swift Karaoke: 1989 (Deluxe)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1443,15 +1295,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Taylor Swift Karaoke: 1989 (Deluxe)
-                      </h2>
-                    </section>
+                      Taylor Swift Karaoke: 1989 (Deluxe)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1459,18 +1307,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="6AORtDjduMM3bupSWzbTSG"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="evermore (deluxe version)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1478,15 +1325,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        evermore (deluxe version)
-                      </h2>
-                    </section>
+                      evermore (deluxe version)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1494,18 +1337,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="6Ar2o9KCqcyYF9J0aQP3au"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Speak Now"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1513,15 +1355,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Speak Now
-                      </h2>
-                    </section>
+                      Speak Now
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1529,18 +1367,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="3EzFY9Rg0PpbADMth746zi"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Fearless (Big Machine Radio Release Special)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1548,15 +1385,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Fearless (Big Machine Radio Release Special)
-                      </h2>
-                    </section>
+                      Fearless (Big Machine Radio Release Special)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1564,18 +1397,17 @@ exports[`Search Page test should search taylor swift 1`] = `
                 >
                   <div
                     class="block__pane--space"
-                    data-album="5hxKw2PurC0i1VVJMAntDU"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Wildest Dreams (Taylor's Version)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1583,15 +1415,11 @@ exports[`Search Page test should search taylor swift 1`] = `
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Wildest Dreams (Taylor's Version)
-                      </h2>
-                    </section>
+                      Wildest Dreams (Taylor's Version)
+                    </h2>
                   </div>
                 </div>
               </div>

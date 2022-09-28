@@ -13,11 +13,10 @@ export interface TokenSpotify {
 }
 
 export interface PlaylistItems {
-  name: string;
-  image?: {};
-  href: string;
-  id: string;
-  icons: {
+  name?: string;
+  href?: string;
+  id?: string;
+  icons?: {
     url: string;
     height: number | unknown;
     width: number | unknown;

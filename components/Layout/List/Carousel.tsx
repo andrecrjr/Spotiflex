@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 import { ISpotifyArtist, Track } from '../../../types/spotifyTypes';
 import CarouselButton from './CarouselButton';
-import { GeneralPlaylist, GeneralAlbum } from './Playlist';
+import { GenericAlbumContent } from './Playlist';
 import { BsChevronRight, BsChevronLeft } from 'react-icons/bs';
 
 const Carousel: React.FC<{
@@ -87,7 +87,7 @@ const Carousel: React.FC<{
               {iconsWithTitle &&
                 playlists &&
                 playlists?.map((item, index) => (
-                  <GeneralPlaylist key={index} album={item} />
+                  <GenericAlbumContent key={index} album={item} />
                 ))}
             </div>
           </ul>
@@ -109,7 +109,7 @@ const Carousel: React.FC<{
               {iconsWithTitle &&
                 artists &&
                 artists.map((item, index) => (
-                  <GeneralAlbum key={index} album={item} />
+                  <GenericAlbumContent key={index} album={item} />
                 ))}
             </div>
           </ul>
@@ -130,7 +130,7 @@ const Carousel: React.FC<{
             <div className='block__pane' data-carousel={`carousel-${slugName}`}>
               {albums.map((item) => (
                 <div key={item.id} style={{ display: 'contents' }}>
-                  <GeneralAlbum album={item} slugName={slugName} />
+                  <GenericAlbumContent album={item} slugName={slugName} />
                 </div>
               ))}
             </div>

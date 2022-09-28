@@ -5,19 +5,19 @@ import { motion } from 'framer-motion';
 import { TrackPlayer } from './TrackPlayer';
 
 const variants = {
+  in: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.45,
+      delay: 0.1,
+    },
+  },
   out: {
     opacity: 0,
     y: 40,
     transition: {
       duration: 0.5,
-    },
-  },
-  in: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      delay: 0.5,
     },
   },
 };

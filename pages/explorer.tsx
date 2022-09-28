@@ -45,7 +45,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   try {
     return await getLatestAndGenres();
   } catch (error) {
-    console.log(error);
+    console.error(error);
     return {
       redirect: {
         statusCode: 301,

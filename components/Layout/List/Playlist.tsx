@@ -1,11 +1,6 @@
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import {
-  PlaylistItems,
-  ISpotifyAlbum,
-  ISpotifyPlaylist,
-  ISpotifyArtist,
-} from '../../../types';
+import { PlaylistItems, ISpotifyAlbum } from '../../../types';
 
 export const GeneralPlaylist: React.FC<{
   album: PlaylistItems;
@@ -24,37 +19,33 @@ export const GeneralPlaylist: React.FC<{
           alt={album.name}
           layout='fill'
         />
-        <h3 className='block__pane--title'>{album.name}</h3>
+        <h2 className='block__pane--item-title'>{album.name}</h2>
       </div>
     </div>
   );
 };
 
-export const GeneralAlbum: React.FC<{
-  album: ISpotifyAlbum | ISpotifyPlaylist | ISpotifyArtist;
+export const GenericAlbumContent: React.FC<{
+  album: ISpotifyAlbum & PlaylistItems;
   slugName?: string;
 }> = ({ album }) => {
   const router = useRouter();
   return (
     <div
       className='block__pane--space'
-      onClick={() => router.push(`/${album.type}/${album.id}`)}
+      onClick={() => router.push(`/${album.type || 'genre'}/${album.id}`)}
     >
       <div className='block__pane--genre'>
-        {album?.images?.length > 0 && (
+        {(!!album?.images || !!album?.icons) && (
           <Image
-            src={album?.images[0].url}
+            src={!!album.images ? album?.images[0]?.url : album?.icons[0].url}
             className='pane--pic'
             alt={album?.name}
-            layout='fixed'
-            width='140px'
-            height='140px'
+            layout='fill'
           />
         )}
       </div>
-      <div className='block__pane--item-description'>
-        <h2 className='block__pane--item-title'>{album?.name}</h2>
-      </div>
+      <h2 className='block__pane--item-title'>{album?.name}</h2>
     </div>
   );
 };

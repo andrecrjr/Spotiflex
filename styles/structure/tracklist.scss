@@ -46,6 +46,11 @@
         color: rgb(173, 173, 173);
       }
     }
+    &.track-playing{
+      .big-title{
+        color:$green-main-font;
+      }
+    }
   }
 }
 
@@ -65,11 +70,6 @@
         }
         h5 {
           font-size: 1rem;
-        }
-      }
-      &.track-playing{
-        .big-title{
-          color:$green-main-font;
         }
       }
     }

@@ -228,18 +228,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="3cf4iSSKd8ffTncbtKljXw"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Honestly, Nevermind"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -247,15 +246,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Honestly, Nevermind
-                      </h2>
-                    </section>
+                      Honestly, Nevermind
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -263,18 +258,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="4BYCmmwbSU2bxcQEEI6RBU"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="killer"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -282,15 +276,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        killer
-                      </h2>
-                    </section>
+                      killer
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -298,18 +288,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="5ob4kF4KkXFDqC5ysCdCV8"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Khaza"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -317,15 +306,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Khaza
-                      </h2>
-                    </section>
+                      Khaza
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -333,18 +318,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="3pc9LMhg8lyfpPTyywABMd"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Mercury"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -352,15 +336,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Mercury
-                      </h2>
-                    </section>
+                      Mercury
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -368,18 +348,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="16pHEysNz5Sp0iI9Aw7KXR"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Natural"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -387,15 +366,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Natural
-                      </h2>
-                    </section>
+                      Natural
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -403,18 +378,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="2q7cKHWIXtGBtEtARc5lyV"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Conceited"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -422,15 +396,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Conceited
-                      </h2>
-                    </section>
+                      Conceited
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -438,18 +408,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="2u0L2wbAbJAw5cx00Wk6zE"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Giving Up"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -457,15 +426,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Giving Up
-                      </h2>
-                    </section>
+                      Giving Up
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -473,18 +438,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="3plMoBhvQ07H4itII2Qdeb"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="DON'T YOU WORRY"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -492,15 +456,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        DON'T YOU WORRY
-                      </h2>
-                    </section>
+                      DON'T YOU WORRY
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -508,18 +468,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="3kdPIjFwMkIBCIsUqt3SrV"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Summer Moon (feat. Kevin Kaarl)"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -527,15 +486,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Summer Moon (feat. Kevin Kaarl)
-                      </h2>
-                    </section>
+                      Summer Moon (feat. Kevin Kaarl)
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -543,18 +498,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="53aYSRJmJeUO800GL3Wa1C"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="So Icy Gang: The ReUp"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -562,15 +516,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        So Icy Gang: The ReUp
-                      </h2>
-                    </section>
+                      So Icy Gang: The ReUp
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -578,18 +528,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="67b4tJxbnsJbbcTUjnlb3y"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Honey"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -597,15 +546,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Honey
-                      </h2>
-                    </section>
+                      Honey
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -613,18 +558,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="2C3rUs6GnKWT0c101eBiQb"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Surprise"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -632,15 +576,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Surprise
-                      </h2>
-                    </section>
+                      Surprise
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -648,18 +588,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="0wgrKGnsLCq4tM0jIOBmkP"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="B4PINK"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -667,15 +606,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        B4PINK
-                      </h2>
-                    </section>
+                      B4PINK
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -683,18 +618,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="2apZoa0oXih4sM7dDMNi2a"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="The Highs & The Lows"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -702,15 +636,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        The Highs & The Lows
-                      </h2>
-                    </section>
+                      The Highs & The Lows
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -718,18 +648,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="0YmzktvGgOcjZCYjSdcG6n"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Puffer"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -737,15 +666,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Puffer
-                      </h2>
-                    </section>
+                      Puffer
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -837,18 +762,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DXbcPC6Vvqudd"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Night Rain"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -856,15 +780,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Night Rain
-                      </h2>
-                    </section>
+                      Night Rain
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -872,18 +792,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DX8Sz1gsYZdwj"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Classical Sleep"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -891,15 +810,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Classical Sleep
-                      </h2>
-                    </section>
+                      Classical Sleep
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -907,18 +822,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DX0QKpU3cGsyb"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Bedroom Jams"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -926,15 +840,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Bedroom Jams
-                      </h2>
-                    </section>
+                      Bedroom Jams
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -942,18 +852,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DWVvXA824aCbn"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="The Piano Bar"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -961,15 +870,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        The Piano Bar
-                      </h2>
-                    </section>
+                      The Piano Bar
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -977,18 +882,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DWZd79rJ6a7lp"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Sleep"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -996,15 +900,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Sleep
-                      </h2>
-                    </section>
+                      Sleep
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1012,18 +912,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DWX3387IZmjNa"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="B.A.E."
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1031,15 +930,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        B.A.E.
-                      </h2>
-                    </section>
+                      B.A.E.
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1047,18 +942,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DX4sWSpwq3LiO"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Peaceful Piano"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1066,15 +960,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Peaceful Piano
-                      </h2>
-                    </section>
+                      Peaceful Piano
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1082,18 +972,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DWYcDQ1hSjOpY"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Deep Sleep"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1101,15 +990,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Deep Sleep
-                      </h2>
-                    </section>
+                      Deep Sleep
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1117,18 +1002,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DX2UgsUIg75Vg"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Chilled R&B"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1136,15 +1020,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Chilled R&B
-                      </h2>
-                    </section>
+                      Chilled R&B
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1152,18 +1032,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DXbZmKskFbVct"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="ASMR Sleep Whispers"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1171,15 +1050,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        ASMR Sleep Whispers
-                      </h2>
-                    </section>
+                      ASMR Sleep Whispers
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1187,18 +1062,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DWWSads6V2oIk"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="Sleep in the Rainforest"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1206,15 +1080,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        Sleep in the Rainforest
-                      </h2>
-                    </section>
+                      Sleep in the Rainforest
+                    </h2>
                   </div>
                 </div>
                 <div
@@ -1222,18 +1092,17 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                 >
                   <div
                     class="block__pane--space"
-                    data-album="37i9dQZF1DWUZ5bk6qqDSy"
                   >
                     <div
                       class="block__pane--genre"
                     >
                       <span
-                        style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 140px; height: 140px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
                       >
                         <img
                           alt="White Noise"
                           class="pane--pic"
-                          data-nimg="fixed"
+                          data-nimg="fill"
                           decoding="async"
                           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                           style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
@@ -1241,15 +1110,11 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                         <noscript />
                       </span>
                     </div>
-                    <section
-                      class="block__pane--item-description"
+                    <h2
+                      class="block__pane--item-title"
                     >
-                      <h2
-                        class="block__pane--item-title"
-                      >
-                        White Noise
-                      </h2>
-                    </section>
+                      White Noise
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -1355,12 +1220,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Top Lists
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Top Lists
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1381,12 +1246,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Brasil
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Brasil
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1407,12 +1272,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Sertanejo
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Sertanejo
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1433,12 +1298,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Em casa
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Em casa
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1459,12 +1324,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      LGBTQ+
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    LGBTQ+
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1485,12 +1350,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      No carro
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    No carro
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1511,12 +1376,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      EQUAL
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    EQUAL
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1537,12 +1402,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Pop
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Pop
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1563,12 +1428,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Samba & Pagode
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Samba & Pagode
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1589,12 +1454,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Bem-estar
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Bem-estar
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1615,12 +1480,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Rock
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Rock
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1641,12 +1506,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Hip hop
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Hip hop
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1667,12 +1532,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Cristã
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Cristã
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1693,12 +1558,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      AMPLIFIKA
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    AMPLIFIKA
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1719,12 +1584,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      MPB
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    MPB
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1745,12 +1610,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Música ambiente
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Música ambiente
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1771,12 +1636,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Crianças e família
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Crianças e família
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1797,12 +1662,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      RADAR
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    RADAR
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1823,12 +1688,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Dance/Eletrônica
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Dance/Eletrônica
+                  </h2>
                 </div>
                 <div
                   class="block__pane--space"
@@ -1849,12 +1714,12 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
                       />
                       <noscript />
                     </span>
-                    <h3
-                      class="block__pane--title"
-                    >
-                      Indie
-                    </h3>
                   </div>
+                  <h2
+                    class="block__pane--item-title"
+                  >
+                    Indie
+                  </h2>
                 </div>
               </div>
             </ul>

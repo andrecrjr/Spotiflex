@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { PropsGenre, ISpotifyPlaylistWrapper } from '../../types/spotifyTypes';
-import { GeneralAlbum } from '../../components/Layout/List/Playlist';
+import { GenericAlbumContent } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 import { getDataSpotify } from '../../components/services';
 
@@ -15,7 +15,7 @@ const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
         {items &&
           items.map((item, index) => (
             <div className='block__pane' key={index}>
-              <GeneralAlbum album={item} />
+              <GenericAlbumContent album={item} />
             </div>
           ))}
       </ul>
@@ -36,13 +36,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
   paths = categories.items.map((genres) => ({
     params: { id: genres.id },
   }));
-  console.log(paths);
   return { paths, fallback: true };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   try {
-    console.log(params.id);
     const data = await getDataSpotify<ISpotifyPlaylistWrapper>(
       `browse/categories/${params.id}/playlists`
     );
@@ -51,7 +49,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       revalidate: 5,
     };
   } catch (error) {
-    console.log('errei', error);
     return { notFound: true };
   }
 };
