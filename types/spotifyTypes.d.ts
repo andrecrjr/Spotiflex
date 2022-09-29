@@ -29,7 +29,7 @@ export interface Track {
     type?: string;
     uri?: string;
   }[];
-  album?: {};
+  album?: Record<string, unknown>;
   added_at?: string;
   added_by?: {
     external_urls?: {
@@ -107,7 +107,7 @@ export interface ISpotifyPlaylist {
     href: string | unknown;
     total: number;
   };
-  video_thumbnail?: {};
+  video_thumbnail?: Record<string, unknown>;
 }
 
 export type ISpotifyAllTrackList =

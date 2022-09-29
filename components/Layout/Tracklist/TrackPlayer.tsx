@@ -1,12 +1,6 @@
-import React, {
-  useState,
-  useRef,
-  useEffect,
-  useContext,
-  useCallback,
-} from 'react';
+import React from 'react';
 import { Track } from '../../../types/spotifyTypes';
-import { AlbumPlaylistContext, UserQueuePlaylist } from '../../context';
+
 import {
   CgPlayTrackNextO,
   CgPlayTrackPrevO,
@@ -14,81 +8,14 @@ import {
   CgPlayPauseO,
 } from 'react-icons/cg';
 
+import useTracklistSongControl from '@/components/hooks/useTracklistControlSong';
+
 export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
   track,
   isFooter = false,
 }) => {
-  const playerChild = useRef<HTMLAudioElement | null>(null);
-  const { albumList, playList, trackList } = useContext(AlbumPlaylistContext);
-
-  const { dispatchPlaylist } = useContext(UserQueuePlaylist);
-  const [statusPlayer, setStatus] = useState(false);
-  const [nowTrack, setNowPlaying] = useState<Track | null>(null);
-
-  const playSong = useCallback(
-    async (track) => {
-      try {
-        playerChild.current = new Audio(track.preview_url);
-        await playerChild.current.play();
-        setStatus(true);
-        setNowPlaying(track);
-      } catch {
-        dispatchPlaylist({
-          type: 'NEXT_TRACK',
-        });
-      }
-    },
-    [dispatchPlaylist]
-  );
-
-  useEffect(() => {
-    if (isFooter && track) {
-      playSong(track);
-    }
-    return () => {
-      if (isFooter) {
-        pauseSong();
-        setStatus(false);
-      }
-    };
-  }, [track, isFooter, playSong]);
-
-  useEffect(() => {
-    if (statusPlayer) {
-      playerChild.current.addEventListener('ended', (e) => {
-        e.preventDefault();
-        dispatchPlaylist({
-          type: 'NEXT_TRACK',
-        });
-      });
-    }
-  }, [statusPlayer, dispatchPlaylist]);
-
-  const pauseSong = () => {
-    playerChild?.current.pause();
-  };
-
-  const playTrack = (e: React.MouseEvent) => {
-    e.preventDefault();
-    if (isFooter) {
-      if (playerChild.current !== null && statusPlayer) {
-        pauseSong();
-        setStatus(false);
-      } else {
-        playSong(track);
-      }
-    } else {
-      const trackPlayList = playList || albumList || trackList;
-      dispatchPlaylist({
-        type: 'ADD_PLAYLIST',
-        payload: {
-          track,
-          playlist: trackPlayList,
-          type: trackPlayList.type,
-        },
-      });
-    }
-  };
+  const { playTrack, currentTrack, statusPlayer, dispatchPlaylist } =
+    useTracklistSongControl({ track, isFooter });
 
   return (
     <>
@@ -132,18 +59,21 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
             <CgPlayTrackNextO className={'player--control__icon'} />
           </span>
         )}
-        {isFooter && nowTrack && (
+        {isFooter && (
           <div className='track--footer__track-info'>
             <div className='track--footer__track-title'>
-              <h3 className='track--footer__title'>{nowTrack.name}</h3>
+              <h3 className='track--footer__title'>
+                {currentTrack && currentTrack.name}
+              </h3>
             </div>
             <div>
-              {nowTrack.artists?.map((artist, index) => (
-                <span className='track--footer__track-artist' key={artist.id}>
-                  {artist.name}
-                  {nowTrack.artists.length === index + 1 ? '' : ', '}
-                </span>
-              ))}
+              {currentTrack &&
+                currentTrack.artists?.map((artist, index) => (
+                  <span className='track--footer__track-artist' key={artist.id}>
+                    {artist.name}{' '}
+                    {currentTrack.artists.length === index + 1 ? '' : ', '}
+                  </span>
+                ))}
             </div>
           </div>
         )}
