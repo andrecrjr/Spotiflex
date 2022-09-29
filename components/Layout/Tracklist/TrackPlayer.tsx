@@ -70,7 +70,7 @@ export const TrackPlayer: React.FC<{ track: Track; isFooter: boolean }> = ({
               {currentTrack &&
                 currentTrack.artists?.map((artist, index) => (
                   <span className='track--footer__track-artist' key={artist.id}>
-                    {artist.name}{' '}
+                    {artist.name}
                     {currentTrack.artists.length === index + 1 ? '' : ', '}
                   </span>
                 ))}

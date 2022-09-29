@@ -44,18 +44,26 @@ const useTracklistSongControl = ({
   const [currentTrack, setNowPlaying] = useState<Track | null>(null);
 
   const playSong = useCallback(
-    async (track: Track, { firstPlay }: { firstPlay: boolean }) => {
+    async ({
+      firstPlaySong,
+      track,
+    }: {
+      firstPlaySong: boolean;
+      track: Track;
+    }) => {
       try {
-        if (firstPlay) {
+        if (firstPlaySong) {
           audioSongElementPlayer.current = new Audio(track.preview_url);
         }
         await audioSongElementPlayer.current.play();
         setStatus(true);
         setNowPlaying(track);
+        return 'play';
       } catch {
         dispatchPlaylist({
           type: 'NEXT_TRACK',
         });
+        return 'next';
       }
     },
     [dispatchPlaylist]
@@ -63,29 +71,26 @@ const useTracklistSongControl = ({
 
   useEffect(() => {
     if (isFooter && track) {
-      playSong(track, { firstPlay: true });
+      playSong({ firstPlaySong: true, track });
     }
     return () => {
-      if (isFooter) {
-        pauseSong();
-        setStatus(false);
-      }
+      isFooter && pauseSong() && setStatus(false);
     };
   }, [track, isFooter, playSong]);
 
   useEffect(() => {
-    if (statusPlayer) {
+    statusPlayer &&
       audioSongElementPlayer.current.addEventListener('ended', (e) => {
         e.preventDefault();
         dispatchPlaylist({
           type: 'NEXT_TRACK',
         });
       });
-    }
   }, [statusPlayer, dispatchPlaylist]);
 
   const pauseSong = () => {
     audioSongElementPlayer?.current.pause();
+    return !!audioSongElementPlayer && true;
   };
 
   const playTrack = (e: React.MouseEvent) => {
@@ -95,19 +100,20 @@ const useTracklistSongControl = ({
         pauseSong();
         setStatus(false);
       } else {
-        playSong(track, { firstPlay: false });
+        playSong({ firstPlaySong: false, track });
       }
-    } else {
-      const trackPlayList = playList || albumList || trackList;
-      dispatchPlaylist({
-        type: 'ADD_PLAYLIST',
-        payload: {
-          track,
-          playlist: trackPlayList,
-          type: trackPlayList.type,
-        },
-      });
+      return;
     }
+    const trackPlayList = playList || albumList || trackList;
+    dispatchPlaylist({
+      type: 'ADD_PLAYLIST',
+      payload: {
+        track,
+        playlist: trackPlayList,
+        type: trackPlayList.type,
+      },
+    });
+    return;
   };
 
   return { playTrack, currentTrack, dispatchPlaylist, statusPlayer };
