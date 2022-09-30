@@ -70,7 +70,7 @@
 
   .header {
     display: flex;
-    width: 30%;
+    min-width: 22vw;
     min-height:100vh;
     transition: width 300ms linear;
     flex-direction: column;
@@ -96,21 +96,24 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-            margin-left: 26px;
-          }
-          &--icon {
-            width: auto;
-            fill: $green-main-font;
-            justify-self: center;
-          }
-          &--option {
             margin-left: 24px;
-            min-height: 20px;
-            transition: color 400ms;
-            &:hover {
-              color: $green-main-font;
+            .menu--icon {
+              width: auto;
+              fill: $green-main-font;
+              justify-self: center;
+            }
+            .menu--option {
+              font-size: 1rem;
+              margin-left: 18px;
+              min-height: 20px;
+              transition: color 400ms;
+              &:hover {
+                color: $green-main-font;
+              }
             }
           }
+          
+          
         }
       }
     }
@@ -119,8 +122,15 @@
 
 @media (min-width: 967px) {
   .header {
-    width: 16%;
+    min-width: 14vw;
   }
 }
+
+@media (min-width: 2259px) {
+  .header {
+    min-width: 10vw;
+  }
+}
+
 
 @import './search-box.scss';
