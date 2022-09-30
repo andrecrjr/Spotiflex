@@ -185,12 +185,22 @@ exports[`Home Page test should render Homepage 1`] = `
             class="block--herobanner__wrapper"
           >
             <h2>
-              The best spotify client in the Web ever!
+              Another "ok" spotify client over the World Wide Web!
             </h2>
+            <p
+              class="link--portfolio"
+            >
+              <a
+                href="https://andrecrjr.github.io/"
+              >
+                by A.c. Junior
+              </a>
+            </p>
             <a
+              class="button-hero"
               href="/explorer"
             >
-              ACCESS
+              EXPLORE
             </a>
           </div>
         </section>
