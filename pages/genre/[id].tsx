@@ -3,14 +3,13 @@ import { PropsGenre, ISpotifyPlaylistWrapper } from '../../types/spotifyTypes';
 import { GenericAlbumContent } from '../../components/Layout/List/Playlist';
 import LayoutMetaSEO from '../../components/Layout/LayoutMetaSEO';
 import { getDataSpotify } from '../../components/services';
+import { PlaylistItems } from '@/types/index';
 
 const Genre: React.FunctionComponent<PropsGenre> = ({ items, title }) => {
   return (
     <>
       <LayoutMetaSEO title={title} />
-      {title && (
-        <h1 className='block__page--title'>{title.replace(/\-|\_/g, ' ')}</h1>
-      )}
+      {title && <h1 className='block__page--title'>{title}</h1>}
       <ul className='block__page--wrapper'>
         {items &&
           items.map((item, index) => (
@@ -44,9 +43,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const data = await getDataSpotify<ISpotifyPlaylistWrapper>(
       `browse/categories/${params.id}/playlists`
     );
+    const nameCategory = await getDataSpotify<PlaylistItems>(
+      `browse/categories/${params.id}`
+    );
 
     return {
-      props: { items: data?.playlists?.items || [], title: params.id },
+      props: { items: data?.playlists?.items || [], title: nameCategory.name },
       revalidate: 5,
     };
   } catch (error) {
