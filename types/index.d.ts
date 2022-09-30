@@ -16,6 +16,7 @@ export interface PlaylistItems {
   name?: string;
   href?: string;
   id?: string;
+  name?: string;
   icons?: {
     url: string;
     height: number | unknown;

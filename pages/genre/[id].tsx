@@ -44,6 +44,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     const data = await getDataSpotify<ISpotifyPlaylistWrapper>(
       `browse/categories/${params.id}/playlists`
     );
+
     return {
       props: { items: data?.playlists?.items || [], title: params.id },
       revalidate: 5,
