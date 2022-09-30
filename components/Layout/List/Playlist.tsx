@@ -38,7 +38,7 @@ export const GenericAlbumContent: React.FC<{
       <div className='block__pane--genre'>
         {(!!album?.images || !!album?.icons) && (
           <Image
-            src={!!album.images ? album?.images[0]?.url : album?.icons[0].url}
+            src={!!album.images ? album?.images[0]?.url : album?.icons[0]?.url}
             className='pane--pic'
             alt={album?.name}
             layout='fill'
