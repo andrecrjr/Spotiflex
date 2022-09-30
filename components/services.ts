@@ -69,7 +69,6 @@ export const getTrackListContent = async (
     );
     return songContent;
   } catch (error) {
-    console.error('Problem to get tracklist', error);
-    return null;
+    throw new Error(`Problem to get tracklist content ${error}`);
   }
 };

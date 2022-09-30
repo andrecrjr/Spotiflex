@@ -27,8 +27,13 @@ describe('Services test', () => {
   });
 
   it('it should not fetch playlist spotify', async () => {
-    const tracks = await getTrackListContent('playlists', 'drama');
-    expect(tracks).toBeNull();
+    try {
+      await getTrackListContent('playlists', 'rock');
+    } catch (error) {
+      expect(error.message).toBe(
+        'Problem to get tracklist content Error: Problem to get spotify data playlists/rock'
+      );
+    }
   });
 
   it('it should return props when uses getLatestAndGenres', async () => {
