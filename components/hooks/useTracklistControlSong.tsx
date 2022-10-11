@@ -1,42 +1,12 @@
+import { IHookProps, IHookTracklistControlReturn } from '@/types/hooks';
 import { Track } from '@/types/spotifyTypes';
-import {
-  useRef,
-  useContext,
-  useState,
-  useCallback,
-  useEffect,
-  Dispatch,
-} from 'react';
+import { useRef, useContext, useState, useCallback, useEffect } from 'react';
 import { AlbumPlaylistContext, UserQueuePlaylist } from '../context';
-import {
-  ISpotifyAlbum,
-  ISpotifyPlaylist,
-  ISpotifyTopTrack,
-} from '../../types/spotifyTypes';
-
-type Props = {
-  track: Track;
-  isFooter: boolean;
-};
-
-type IHookTracklistControlReturn = {
-  playTrack: (e: React.MouseEvent) => void;
-  currentTrack: Track | null;
-  dispatchPlaylist: Dispatch<{
-    type: string;
-    payload?: {
-      track?: Track;
-      playlist?: ISpotifyAlbum | ISpotifyPlaylist | ISpotifyTopTrack;
-      type?: string;
-    };
-  }>;
-  statusPlayer: boolean;
-};
 
 const useTracklistSongControl = ({
   track,
   isFooter,
-}: Props): IHookTracklistControlReturn => {
+}: IHookProps): IHookTracklistControlReturn => {
   const audioSongElementPlayer = useRef<HTMLAudioElement | null>(null);
   const { dispatchPlaylist } = useContext(UserQueuePlaylist);
   const { albumList, playList, trackList } = useContext(AlbumPlaylistContext);
