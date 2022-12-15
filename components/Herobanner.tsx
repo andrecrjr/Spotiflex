@@ -3,7 +3,7 @@ function Herobanner(): JSX.Element {
   return (
     <section className='block--herobanner'>
       <div className='block--herobanner__wrapper'>
-        <h2>Another "ok" spotify client over the World Wide Web!</h2>
+        <h2>Just an unnoficial Spotify for my portfolio! (only demo songs)</h2>
         <p className='link--portfolio'>
           <Link href={'https://andrecrjr.github.io/'}>by A.c. Junior</Link>
         </p>

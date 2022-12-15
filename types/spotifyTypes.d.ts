@@ -55,7 +55,7 @@ export interface Track {
   popularity?: number;
   preview_url?: string;
   track_number?: number;
-  track?: Tracks;
+  track?: Track;
   type?: string;
   uri?: string;
 }

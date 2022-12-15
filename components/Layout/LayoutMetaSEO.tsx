@@ -7,7 +7,7 @@ const LayoutMetaSEO: React.FC<{
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title} - Spotiflex</title>
       </Head>
     </>
   );

@@ -185,7 +185,7 @@ exports[`Home Page test should render Homepage 1`] = `
             class="block--herobanner__wrapper"
           >
             <h2>
-              Another "ok" spotify client over the World Wide Web!
+              Just an unnoficial Spotify for my portfolio! (only demo songs)
             </h2>
             <p
               class="link--portfolio"
