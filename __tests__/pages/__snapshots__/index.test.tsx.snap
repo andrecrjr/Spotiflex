@@ -176,7 +176,7 @@ exports[`Home Page test should render Homepage 1`] = `
     >
       <div
         class="content subpage"
-        style="opacity: 1;"
+        style="opacity: 1; transform: translateY(1px) translateZ(0);"
       >
         <section
           class="block--herobanner"

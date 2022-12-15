@@ -16,9 +16,9 @@ const TransactionPage: React.FC<{ children: React.ReactNode }> = ({
     >
       <motion.div
         key={asPath}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
+        initial={{ opacity: 0, translateY: 100 }}
+        animate={{ opacity: 1, translateY: 1 }}
+        transition={{ duration: 0.5 }}
         className={`content ${(pathname !== '/' && 'subpage') || ''}`}
       >
         {children}
