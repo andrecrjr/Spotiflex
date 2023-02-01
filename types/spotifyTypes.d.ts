@@ -195,3 +195,8 @@ export interface ITracklist {
   type: 'track';
   uri: 'spotify:track:5fBCiTK3cN8RJb7AlfwXfB';
 }
+
+type PropsGenre = {
+  items: ISpotifyPlaylist[];
+  title?: string;
+};
