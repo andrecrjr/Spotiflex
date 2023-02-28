@@ -746,6 +746,7 @@ exports[`Search Page test should search taylor swift 1`] = `
               <button
                 class="slider__button"
                 data-control="next"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -766,7 +767,7 @@ exports[`Search Page test should search taylor swift 1`] = `
               <button
                 class="slider__button"
                 data-control="previous"
-                style="opacity: 0.1;"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -1430,6 +1431,7 @@ exports[`Search Page test should search taylor swift 1`] = `
               <button
                 class="slider__button"
                 data-control="next"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -1450,7 +1452,7 @@ exports[`Search Page test should search taylor swift 1`] = `
               <button
                 class="slider__button"
                 data-control="previous"
-                style="opacity: 0.1;"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"

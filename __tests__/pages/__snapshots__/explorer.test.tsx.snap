@@ -681,6 +681,7 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
               <button
                 class="slider__button"
                 data-control="next"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -701,7 +702,7 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
               <button
                 class="slider__button"
                 data-control="previous"
-                style="opacity: 0.1;"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -1125,6 +1126,7 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
               <button
                 class="slider__button"
                 data-control="next"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -1145,7 +1147,7 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
               <button
                 class="slider__button"
                 data-control="previous"
-                style="opacity: 0.1;"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -1729,6 +1731,7 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
               <button
                 class="slider__button"
                 data-control="next"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
@@ -1749,7 +1752,7 @@ exports[`Explorer Page Test should render playlists, latest and featured on Expl
               <button
                 class="slider__button"
                 data-control="previous"
-                style="opacity: 0.1;"
+                style="opacity: 0.1; pointer-events: none; cursor: unset;"
               >
                 <svg
                   class="slider__arrow"
