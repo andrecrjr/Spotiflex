@@ -29,8 +29,9 @@ export const GenericAlbumContent: React.FC<{
   album: ISpotifyAlbum & PlaylistItems;
   slugName?: string;
 }> = ({ album }) => {
-  const hasImageAlbumOrIcon = !!album.images;
   const router = useRouter();
+  const hasImageAlbumOrIcon = !!album && !!album.images;
+
   return (
     <div
       className='block__pane--space'
