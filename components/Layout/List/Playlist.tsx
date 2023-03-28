@@ -29,6 +29,7 @@ export const GenericAlbumContent: React.FC<{
   album: ISpotifyAlbum & PlaylistItems;
   slugName?: string;
 }> = ({ album }) => {
+  const hasImageAlbumOrIcon = !!album.images;
   const router = useRouter();
   return (
     <div
@@ -38,7 +39,9 @@ export const GenericAlbumContent: React.FC<{
       <div className='block__pane--genre'>
         {(!!album?.images || !!album?.icons) && (
           <Image
-            src={!!album.images ? album?.images[0]?.url : album?.icons[0]?.url}
+            src={
+              hasImageAlbumOrIcon ? album?.images[0]?.url : album?.icons[0]?.url
+            }
             className='pane--pic'
             alt={album?.name}
             layout='fill'

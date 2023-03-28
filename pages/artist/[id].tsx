@@ -30,7 +30,9 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
       ...artistTopTrackList,
     };
     return { props: { artistProfile, artistTopTrack } };
-  } catch (error) {}
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 export default Artist;
