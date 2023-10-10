@@ -13,6 +13,7 @@ module.exports = {
       'charts-images.scdn.co',
       'thisis-images.scdn.co',
     ],
+    unoptimized: true,
   },
   serverRuntimeConfig: {
     spotifySecretKey: process.env.SPOTIFY_SECRET_KEY,
